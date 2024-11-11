@@ -1,0 +1,36 @@
+/* .center {
+  z-index: -1;
+  /* position: absolute; */
+/* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto; */
+/* } */
+/* .textOverlay { */
+/* background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  z-index: 10; /* Text über das Bild legen */
+/* text-align: center; */
+
+.center {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+.textOverlay {
+  display: flex;
+  align-items: center; /* Zentriert den Inhalt vertikal */
+  justify-content: center; /* Zentriert den Inhalt horizontal */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4em;
+  z-index: 10; /* Text über das Bild legen */
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+.buttonContainer {
+  background-color: white;
+  height: 40px;
+  cursor: pointer;
+  border: 1px black solid;
+  border-radius: 2px;
+  margin: 4px;
+  transition: 200ms ease-in-out;
+  &:hover {
+    background-color: burlywood;
+    color: white;
+    border: 0;
+  }
+}
