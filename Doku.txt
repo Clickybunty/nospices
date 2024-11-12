@@ -104,3 +104,20 @@ die für das Rezept benötigt werden.
 
 
 
+MongoDB-Datenbank in AWS
+Die Anwendung nutzt MongoDB für die Speicherung von Rezepten, 
+Zutaten und anderen relevanten Daten. 
+Diese Datenbank wird in AWS gehostet, 
+um Skalierbarkeit und hohe Verfügbarkeit zu gewährleisten.
+
+MongoDB Setup
+Erstellen Sie ein MongoDB-Cluster auf MongoDB Atlas.
+Konfigurieren Sie den Cluster und 
+generieren Sie eine Verbindung URI.
+Fügen Sie die URI in der Backend-Anwendung ein, 
+um die Verbindung zur MongoDB-Datenbank herzustellen.
+Datenbankstruktur
+Rezepte: Eine Sammlung von Rezepten, 
+wobei jedes Rezept eine Referenz zu den benötigten Zutaten hat.
+Zutaten: Eine Sammlung von Zutaten, 
+die durch eine eindeutige ID identifiziert werden.
