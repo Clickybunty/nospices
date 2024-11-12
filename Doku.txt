@@ -1,0 +1,106 @@
+NoSpieces - Dokumentation
+Projektübersicht
+NoSpieces ist eine Anwendung, 
+die Rezepte und deren Zutaten verwaltet. 
+Sie enthält ein Frontend, 
+das mit React entwickelt wurde, 
+und ein Backend, 
+das mit Node.js und Express aufgebaut ist. 
+Die Daten werden in einer MongoDB-Datenbank gespeichert, 
+die in AWS gehostet wird.
+
+Teammitglieder
+Stevan (51)
+Markus (24/5)
+Stefan (24/5)
+
+
+
+Architektur
+Frontend (React)
+Das Frontend ist mit React entwickelt, 
+um eine benutzerfreundliche Oberfläche zu bieten. 
+Es kommuniziert mit dem Backend über HTTP-Anfragen, 
+um Rezepte und Zutaten anzuzeigen und zu verwalten.
+
+Installationsanweisungen:
+
+Navigiere ins Frontend-Verzeichnis:
+bash
+Code kopieren
+cd nospicesfrontend
+Erstelle die React-App:
+bash
+Code kopieren
+npx create-react-app nospices
+Installiere Axios für die HTTP-Kommunikation:
+bash
+Code kopieren
+npm install axios
+Starte die Entwicklungsversion:
+bash
+Code kopieren
+npm start
+
+
+Backend (Node.js mit Express)
+Das Backend bietet APIs, 
+um Rezepte und 
+Zutaten zu verwalten und mit der Datenbank zu kommunizieren.
+
+Installationsanweisungen:
+
+Navigiere ins Backend-Verzeichnis:
+bash
+Code kopieren
+cd backend
+Initialisiere das Node.js-Projekt:
+bash
+Code kopieren
+npm init -y
+Installiere die erforderlichen Abhängigkeiten:
+bash
+Code kopieren
+npm install express cors
+npm install nodemon
+Starte den Server:
+bash
+Code kopieren
+node index.js
+oder für Entwicklungsmodus:
+bash
+Code kopieren
+npm run dev
+
+
+
+Datenmodell
+Rezepte
+Rezepte sind in einem einfachen JSON-Format gespeichert. 
+Jedes Rezept hat eine eindeutige ID und einen Namen. 
+Beispiel:
+
+json
+{
+  "Spaghetti Carbonara": "0001"
+}
+
+Zutaten
+Die Zutaten sind ebenfalls in einem JSON-Format gespeichert, 
+wobei jede Zutat durch eine eindeutige ID referenziert wird. 
+Beispiel:
+
+json
+{
+  "0001": [6002, 5001, 1002, 9002]
+}
+
+Die Zahlensequenzen 
+
+(z. B. 6002, 5001, etc.) 
+
+repräsentieren die IDs der Zutaten, 
+die für das Rezept benötigt werden.
+
+
+
