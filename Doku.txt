@@ -121,3 +121,5 @@ Rezepte: Eine Sammlung von Rezepten,
 wobei jedes Rezept eine Referenz zu den benötigten Zutaten hat.
 Zutaten: Eine Sammlung von Zutaten, 
 die durch eine eindeutige ID identifiziert werden.
+
+Datenbank lokal mit MySQL erstellt. Daten händisch eingefügt von json-Datei aus.
