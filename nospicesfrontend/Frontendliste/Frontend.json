@@ -1,0 +1,212 @@
+{ 
+    "2001": {
+        "de": "Suchen",
+        "it": "Ricerca",
+        "fr": "Recherche",
+        "es": "Buscar",
+        "ar": "بحث",
+        "iw": "חיפוש",
+        "el": "Αναζήτηση",
+        "en": "Search"
+    },
+    "2002": {
+        "de": "Rezeptliste",
+        "it": "Elenco delle ricette",
+        "fr": "Liste de recettes",
+        "es": "Lista de recetas",
+        "ar": "قائمة الوصفات",
+        "iw": "רשימת מתכונים",
+        "el": "Λίστα συνταγών",
+        "en": "Recipe list"
+    },
+    "2003": {
+        "de": "Empfehlungen",
+        "it": "Raccomandazioni",
+        "fr": "Recommandations",
+        "es": "Recomendaciones",
+        "ar": "توصيات",
+        "iw": "המלצות",
+        "el": "Προτάσεις",
+        "en": "Recommendations"
+    },
+    "2004": {
+        "de": "Ergebnis",
+        "it": "Risultato",
+        "fr": "Résultat",
+        "es": "Resultado",
+        "ar": "نتيجة",
+        "iw": "תוצאה",
+        "el": "Αποτέλεσμα",
+        "en": "Result"
+    },
+    "2005": {
+        "de": "Rezeptempfehlungen",
+        "it": "Raccomandazioni di ricette",
+        "fr": "Recommandations de recettes",
+        "es": "Recomendaciones de recetas",
+        "ar": "توصيات الوصفات",
+        "iw": "המלצות מתכונים",
+        "el": "Προτάσεις συνταγών",
+        "en": "Recipe recommendations"
+    },
+        "2010": {
+        "de": "YouTube Ergebnisse",
+        "it": "Risultati di YouTube",
+        "fr": "Résultats YouTube",
+        "es": "Resultados de YouTube",
+        "ar": "نتائج يوتيوب",
+        "iw": "תוצאות יוטיוב",
+        "el": "Αποτελέσματα YouTube",
+        "en": "YouTube Results"
+    },
+    "2011": {
+        "de": "Chefkoch Links",
+        "it": "Link di Chefkoch",
+        "fr": "Liens Chefkoch",
+        "es": "Enlaces de Chefkoch",
+        "ar": "روابط شيفكوخ",
+        "iw": "קישורי שף קוך",
+        "el": "Σύνδεσμοι Chefkoch",
+        "en": "Chefkoch Links"
+    },
+    "2012": {
+        "de": "Rezept suchen",
+        "it": "Cerca ricetta",
+        "fr": "Rechercher une recette",
+        "es": "Buscar receta",
+        "ar": "ابحث عن وصفة",
+        "iw": "חפש מתכון",
+        "el": "Αναζήτηση συνταγής",
+        "en": "Search Recipe"
+    },
+    "2013": {
+        "de": "Favoriten",
+        "it": "Preferiti",
+        "fr": "Favoris",
+        "es": "Favoritos",
+        "ar": "المفضلة",
+        "iw": "מועדפים",
+        "el": "Αγαπημένα",
+        "en": "Favorites"
+    },
+    "2014": {
+        "de": "Neue Rezepte",
+        "it": "Nuove ricette",
+        "fr": "Nouvelles recettes",
+        "es": "Nuevas recetas",
+        "ar": "وصفات جديدة",
+        "iw": "מתכונים חדשים",
+        "el": "Νέες συνταγές",
+        "en": "New Recipes"
+    },
+        "2020": {
+        "de": "Konto anlegen",
+        "it": "Crea un account",
+        "fr": "Créer un compte",
+        "es": "Crear una cuenta",
+        "ar": "إنشاء حساب",
+        "iw": "צור חשבון",
+        "el": "Δημιουργία λογαριασμού",
+        "en": "Create Account"
+    },
+    "2021": {
+        "de": "Rezept erstellen",
+        "it": "Crea ricetta",
+        "fr": "Créer une recette",
+        "es": "Crear receta",
+        "ar": "إنشاء وصفة",
+        "iw": "צור מתכון",
+        "el": "Δημιουργία συνταγής",
+        "en": "Create Recipe"
+    },
+    "2022": {
+        "de": "Speichern",
+        "it": "Salva",
+        "fr": "Enregistrer",
+        "es": "Guardar",
+        "ar": "حفظ",
+        "iw": "שמור",
+        "el": "Αποθήκευση",
+        "en": "Save"
+    },
+    "2023": {
+        "de": "Löschen",
+        "it": "Elimina",
+        "fr": "Supprimer",
+        "es": "Eliminar",
+        "ar": "حذف",
+        "iw": "מחק",
+        "el": "Διαγραφή",
+        "en": "Delete"
+    },
+    "2024": {
+        "de": "Weiter benutzen",
+        "it": "Continua a usare",
+        "fr": "Continuer à utiliser",
+        "es": "Continuar usando",
+        "ar": "متابعة الاستخدام",
+        "iw": "המשך להשתמש",
+        "el": "Συνέχεια χρήσης",
+        "en": "Continue using"
+    },
+    "2025": {
+        "de": "Mit Google anmelden",
+        "it": "Accedi con Google",
+        "fr": "Se connecter avec Google",
+        "es": "Iniciar sesión con Google",
+        "ar": "تسجيل الدخول باستخدام جوجل",
+        "iw": "התחבר עם Google",
+        "el": "Σύνδεση με Google",
+        "en": "Sign in with Google"
+    },
+    "2026": {
+        "de": "Abmelden",
+        "it": "Disconnetti",
+        "fr": "Déconnexion",
+        "es": "Cerrar sesión",
+        "ar": "تسجيل الخروج",
+        "iw": "התנתק",
+        "el": "Αποσύνδεση",
+        "en": "Log out"
+    },
+    "2027": {
+        "de": "Profil bearbeiten",
+        "it": "Modifica profilo",
+        "fr": "Modifier le profil",
+        "es": "Editar perfil",
+        "ar": "تحرير الملف الشخصي",
+        "iw": "ערוך פרופיל",
+        "el": "Επεξεργασία προφίλ",
+        "en": "Edit Profile"
+    },
+    "2028": {
+        "de": "Passwort ändern",
+        "it": "Cambia password",
+        "fr": "Changer le mot de passe",
+        "es": "Cambiar la contraseña",
+        "ar": "تغيير كلمة المرور",
+        "iw": "שנה סיסמא",
+        "el": "Αλλαγή κωδικού πρόσβασης",
+        "en": "Change Password"
+    },
+    "2029": {
+        "de": "Favoriten",
+        "it": "Preferiti",
+        "fr": "Favoris",
+        "es": "Favoritos",
+        "ar": "المفضلة",
+        "iw": "מועדפים",
+        "el": "Αγαπημένα",
+        "en": "Favorites"
+    },
+    "2030": {
+        "de": "Einstellungen",
+        "it": "Impostazioni",
+        "fr": "Paramètres",
+        "es": "Configuración",
+        "ar": "إعدادات",
+        "iw": "הגדרות",
+        "el": "Ρυθμίσεις",
+        "en": "Settings"
+    }
+}
