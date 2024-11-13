@@ -1,0 +1,75 @@
+/* Der Container für das Eingabefeld und das Dropdown */
+.inputContainer {
+  position: relative; /* Ermöglicht es, das Dropdown relativ zu diesem Container zu positionieren */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* Stellt sicher, dass der Container die gesamte Breite einnimmt */
+  margin-top: 20px; /* Abstand zum oberen Rand */
+}
+
+/* Eingabefeld selbst */
+.inputField {
+  width: 100%; /* Volle Breite für das Eingabefeld */
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Abstand zwischen dem Eingabefeld und dem Dropdown */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Container für das Dropdown-Menü */
+.dropdownContainer {
+  position: absolute; /* Das Dropdown wird relativ zum Container positioniert */
+  top: 50px; /* Der Abstand unterhalb des Eingabefelds */
+  left: 0;
+  right: 0;
+  max-height: 300px; /* Maximale Höhe für vertikales Scrollen */
+  overflow-y: auto; /* Vertikales Scrollen bei Bedarf */
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  z-index: 1000; /* Das Dropdown sollte immer oben erscheinen */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional, um das Dropdown hervorzuheben */
+  padding: 10px;
+}
+
+/* Eine horizontale Zeile im Karussell */
+.dropdownRow {
+  display: flex;
+  flex-wrap: nowrap; /* Verhindert Zeilenumbruch */
+  overflow-x: auto; /* Horizontal scrollen */
+  padding: 10px 0;
+}
+
+/* Ein Dropdown-Item */
+.dropdownItem {
+  min-width: 120px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdownItem:hover {
+  background-color: #bbb;
+}
+
+.languageButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.languageButton:hover {
+  opacity: 0.7;
+}
+
+.languageSelector {
+  margin-top: 10px;
+}
