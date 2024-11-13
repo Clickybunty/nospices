@@ -72,6 +72,17 @@ bash
 Code kopieren
 npm run dev
 
+## Weitere Abhängigkeiten
+
+npm i node-fetch
+
+npm install axios   
+
+npm install dotenv
+
+npm install react-world-flag
+
+npm install mysql
 
 
 Datenmodell
