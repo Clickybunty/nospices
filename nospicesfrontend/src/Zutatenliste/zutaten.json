@@ -1,0 +1,842 @@
+{
+    "1001": {
+        "de": "Fleisch",
+        "it": "Carne",
+        "fr": "Viande",
+        "es": "Carne",
+        "ar": "لحم",
+        "iw": "בשר",
+        "el": "Κρέας",
+        "en": "Meat"
+    },
+    "1002": {
+        "de": "Wurst",
+        "it": "Salsiccia",
+        "fr": "Saucisse",
+        "es": "Salchicha",
+        "ar": "نقانق",
+        "iw": "נקניק",
+        "el": "Λουκάνικο",
+        "en": "Sausage"
+    },
+    "1003": {
+        "de": "Hackfleisch",
+        "it": "Carne macinata",
+        "fr": "Viande hachée",
+        "es": "Carne picada",
+        "ar": "لحم مفروم",
+        "iw": "בשר טחון",
+        "el": "Κιμάς",
+        "en": "Ground meat"
+    },
+    "1004": {
+        "de": "Geflügel",
+        "it": "Pollame",
+        "fr": "Volaille",
+        "es": "Ave",
+        "ar": "دواجن",
+        "iw": "עוף",
+        "el": "Πουλερικά",
+        "en": "Poultry"
+    },
+    "2001": {
+        "de": "Fisch",
+        "it": "Pesce",
+        "fr": "Poisson",
+        "es": "Pescado",
+        "ar": "سمك",
+        "iw": "דג",
+        "el": "Ψάρι",
+        "en": "Fish"
+    },
+    "2002": {
+        "de": "Meeresfrüchte",
+        "it": "Frutti di mare",
+        "fr": "Fruits de mer",
+        "es": "Mariscos",
+        "ar": "مأكولات بحرية",
+        "iw": "פירות ים",
+        "el": "Θαλασσινά",
+        "en": "Seafood"
+    },
+    "2003": {
+        "de": "Muscheln",
+        "it": "Cozze",
+        "fr": "Moules",
+        "es": "Mejillones",
+        "ar": "بلح البحر",
+        "iw": "צדפות",
+        "el": "Μύδια",
+        "en": "Clams"
+    },
+    "2004": {
+        "de": "Garnelen",
+        "it": "Gamberetti",
+        "fr": "Crevettes",
+        "es": "Camarones",
+        "ar": "روبيان",
+        "iw": "שרימפס",
+        "el": "Γαρίδες",
+        "en": "Shrimp"
+    },
+    "2005": {
+        "de": "Ei",
+        "it": "Uovo",
+        "fr": "Œuf",
+        "es": "Huevo",
+        "ar": "بيضة",
+        "iw": "ביצה",
+        "el": "Αυγό",
+        "en": "Egg"
+    },
+    "3001": {
+        "de": "Kartoffeln",
+        "it": "Patate",
+        "fr": "Pommes de terre",
+        "es": "Papas",
+        "ar": "بطاطا",
+        "iw": "תפוחי אדמה",
+        "el": "Πατάτες",
+        "en": "Potatoes"
+    },
+    "3002": {
+        "de": "Zwiebeln",
+        "it": "Cipolle",
+        "fr": "Oignons",
+        "es": "Cebollas",
+        "ar": "بصل",
+        "iw": "בצל",
+        "el": "Κρεμμύδια",
+        "en": "Onions"
+    },
+    "3003": {
+        "de": "Tomaten",
+        "it": "Pomodori",
+        "fr": "Tomates",
+        "es": "Tomates",
+        "ar": "طماطم",
+        "iw": "עגבניות",
+        "el": "Ντομάτες",
+        "en": "Tomatoes"
+    },
+    "3004": {
+        "de": "Karotten",
+        "it": "Carote",
+        "fr": "Carottes",
+        "es": "Zanahorias",
+        "ar": "جزر",
+        "iw": "גזר",
+        "el": "Καρότα",
+        "en": "Carrots"
+    },
+    "3005": {
+        "de": "Paprika",
+        "it": "Peperoni",
+        "fr": "Poivrons",
+        "es": "Pimientos",
+        "ar": "فلفل حلو",
+        "iw": "פלפלים",
+        "el": "Πιπεριές",
+        "en": "Bell Peppers"
+    },
+    "3006": {
+        "de": "Kürbis",
+        "it": "Zucca",
+        "fr": "Citrouille",
+        "es": "Calabaza",
+        "ar": "قرع",
+        "iw": "דלעת",
+        "el": "Κολοκύθα",
+        "en": "Pumpkin"
+    },
+    "3007": {
+        "de": "Brokkoli",
+        "it": "Broccoli",
+        "fr": "Brocoli",
+        "es": "Brócoli",
+        "ar": "بروكلي",
+        "iw": "ברוקולי",
+        "el": "Μπρόκολο",
+        "en": "Broccoli"
+    },
+    "3008": {
+        "de": "Blumenkohl",
+        "it": "Cavolfiore",
+        "fr": "Chou-fleur",
+        "es": "Coliflor",
+        "ar": "قرنبيط",
+        "iw": "כרובית",
+        "el": "Κουνουπίδι",
+        "en": "Cauliflower"
+    },
+    "3009": {
+        "de": "Spinat",
+        "it": "Spinaci",
+        "fr": "Épinards",
+        "es": "Espinacas",
+        "ar": "سبانخ",
+        "iw": "תרד",
+        "el": "Σπανάκι",
+        "en": "Spinach"
+    },
+    "3010": {
+        "de": "Salat",
+        "it": "Lattuga",
+        "fr": "Laitue",
+        "es": "Lechuga",
+        "ar": "خس",
+        "iw": "חסה",
+        "el": "Μαρούλι",
+        "en": "Lettuce"
+    },
+    "3011": {
+        "de": "Kohl",
+        "it": "Cavolo",
+        "fr": "Chou",
+        "es": "Col",
+        "ar": "كرنب",
+        "iw": "כרוב",
+        "el": "Λάχανο",
+        "en": "Cabbage"
+    },
+    "3012": {
+        "de": "Erbsen",
+        "it": "Piselli",
+        "fr": "Petits pois",
+        "es": "Guisantes",
+        "ar": "بازلاء",
+        "iw": "אפונה",
+        "el": "Μπιζέλια",
+        "en": "Peas"
+    },
+    "3013": {
+        "de": "Bohnen",
+        "it": "Fagioli",
+        "fr": "Haricots",
+        "es": "Frijoles",
+        "ar": "فاصوليا",
+        "iw": "שעועית",
+        "el": "Φασόλια",
+        "en": "Beans"
+    },
+    "4001": {
+        "de": "Äpfel",
+        "it": "Mele",
+        "fr": "Pommes",
+        "es": "Manzanas",
+        "ar": "تفاح",
+        "iw": "תפוחים",
+        "el": "Μήλα",
+        "en": "Apples"
+    },
+    "4002": {
+        "de": "Bananen",
+        "it": "Banane",
+        "fr": "Bananes",
+        "es": "Plátanos",
+        "ar": "موز",
+        "iw": "בננות",
+        "el": "Μπανάνες",
+        "en": "Bananas"
+    },
+    "4003": {
+        "de": "Orangen",
+        "it": "Arance",
+        "fr": "Oranges",
+        "es": "Naranjas",
+        "ar": "برتقال",
+        "iw": "תפוזים",
+        "el": "Πορτοκάλια",
+        "en": "Oranges"
+    },
+    "4004": {
+        "de": "Erdbeeren",
+        "it": "Fragole",
+        "fr": "Fraises",
+        "es": "Fresas",
+        "ar": "فراولة",
+        "iw": "תותים",
+        "el": "Φράουλες",
+        "en": "Strawberries"
+    },
+    "4005": {
+        "de": "Kirschen",
+        "it": "Ciliegie",
+        "fr": "Cerises",
+        "es": "Cerezas",
+        "ar": "كرز",
+        "iw": "דובדבנים",
+        "el": "Κεράσια",
+        "en": "Cherries"
+    },
+    "4006": {
+        "de": "Ananas",
+        "it": "Ananas",
+        "fr": "Ananas",
+        "es": "Piñas",
+        "ar": "أناناس",
+        "iw": "אננס",
+        "el": "Ανανάς",
+        "en": "Pineapple"
+    },
+    "4007": {
+        "de": "Trauben",
+        "it": "Uva",
+        "fr": "Raisins",
+        "es": "Uvas",
+        "ar": "عنب",
+        "iw": "ענבים",
+        "el": "Σταφύλια",
+        "en": "Grapes"
+    },
+    "4008": {
+        "de": "Pfirsiche",
+        "it": "Pesche",
+        "fr": "Pêches",
+        "es": "Duraznos",
+        "ar": "خوخ",
+        "iw": "אפרסקים",
+        "el": "Ροδάκινα",
+        "en": "Peaches"
+    },
+    "4009": {
+        "de": "Aprikosen",
+        "it": "Albicocche",
+        "fr": "Abricots",
+        "es": "Albaricoques",
+        "ar": "مشمش",
+        "iw": "משמשים",
+        "el": "Βερίκοκα",
+        "en": "Apricots"
+    },
+    "4010": {
+        "de": "Zitronen",
+        "it": "Limoni",
+        "fr": "Citrons",
+        "es": "Limones",
+        "ar": "ليمون",
+        "iw": "לימונים",
+        "el": "Λεμόνια",
+        "en": "Lemons"
+    },
+    "5001": {
+        "de": "Käse",
+        "it": "Formaggio",
+        "fr": "Fromage",
+        "es": "Queso",
+        "ar": "جبن",
+        "iw": "גבינה",
+        "el": "Τυρί",
+        "en": "Cheese"
+    },
+    "5002": {
+        "de": "Gouda",
+        "it": "Gouda",
+        "fr": "Gouda",
+        "es": "Gouda",
+        "ar": "غودا",
+        "iw": "גאודה",
+        "el": "Γκούντα",
+        "en": "Gouda"
+    },
+    "5003": {
+        "de": "Mozzarella",
+        "it": "Mozzarella",
+        "fr": "Mozzarella",
+        "es": "Mozzarella",
+        "ar": "موزاريلا",
+        "iw": "מוצרלה",
+        "el": "Μοτσαρέλα",
+        "en": "Mozzarella"
+    },
+    "5004": {
+        "de": "Cheddar",
+        "it": "Cheddar",
+        "fr": "Cheddar",
+        "es": "Cheddar",
+        "ar": "شيدر",
+        "iw": "צ'דר",
+        "el": "Τσένταρ",
+        "en": "Cheddar"
+    },
+    "5005": {
+        "de": "Parmesan",
+        "it": "Parmigiano",
+        "fr": "Parmesan",
+        "es": "Parmesano",
+        "ar": "بارميزان",
+        "iw": "פרמזן",
+        "el": "Παραμεζάνα",
+        "en": "Parmesan"
+    },
+    "5006": {
+        "de": "Feta",
+        "it": "Feta",
+        "fr": "Feta",
+        "es": "Feta",
+        "ar": "فيتا",
+        "iw": "פטה",
+        "el": "Φέτα",
+        "en": "Feta"
+    },
+    "5007": {
+        "de": "Brie",
+        "it": "Brie",
+        "fr": "Brie",
+        "es": "Brie",
+        "ar": "بري",
+        "iw": "ברי",
+        "el": "Μπρι",
+        "en": "Brie"
+    },
+    "5008": {
+        "de": "Camembert",
+        "it": "Camembert",
+        "fr": "Camembert",
+        "es": "Camembert",
+        "ar": "كاممبير",
+        "iw": "קממבר",
+        "el": "Καμαμπέρ",
+        "en": "Camembert"
+    },
+    "5009": {
+        "de": "Ricotta",
+        "it": "Ricotta",
+        "fr": "Ricotta",
+        "es": "Ricota",
+        "ar": "ريكوتا",
+        "iw": "ריקוטה",
+        "el": "Ρικότα",
+        "en": "Ricotta"
+    },
+    "6001": {
+        "de": "Reis",
+        "it": "Riso",
+        "fr": "Riz",
+        "es": "Arroz",
+        "ar": "أرز",
+        "iw": "אורז",
+        "el": "Ρύζι",
+        "en": "Rice"
+    },
+    "6002": {
+        "de": "Weizen",
+        "it": "Grano",
+        "fr": "Blé",
+        "es": "Trigo",
+        "ar": "قمح",
+        "iw": "חיטה",
+        "el": "Σιτάρι",
+        "en": "Wheat"
+    },
+    "6003": {
+        "de": "Hafer",
+        "it": "Avena",
+        "fr": "Avoine",
+        "es": "Avena",
+        "ar": "شوفان",
+        "iw": "שיבולת שועל",
+        "el": "Βρώμη",
+        "en": "Oats"
+    },
+    "6004": {
+        "de": "Quinoa",
+        "it": "Quinoa",
+        "fr": "Quinoa",
+        "es": "Quinoa",
+        "ar": "كينوا",
+        "iw": "קינואה",
+        "el": "Κινόα",
+        "en": "Quinoa"
+    },
+    "6005": {
+        "de": "Gerste",
+        "it": "Orzo",
+        "fr": "Orge",
+        "es": "Cebada",
+        "ar": "شعير",
+        "iw": "שעורה",
+        "el": "Κριθάρι",
+        "en": "Barley"
+    },
+    "6006": {
+        "de": "Roggen",
+        "it": "Segale",
+        "fr": "Seigle",
+        "es": "Centeno",
+        "ar": "جاودار",
+        "iw": "שיפון",
+        "el": "Σίκαλη",
+        "en": "Rye"
+    },
+    "6007": {
+        "de": "Couscous",
+        "it": "Cuscus",
+        "fr": "Couscous",
+        "es": "Cuscús",
+        "ar": "كسكس",
+        "iw": "קוסקוס",
+        "el": "Κους Κους",
+        "en": "Couscous"
+    },
+    "6008": {
+        "de": "Polenta",
+        "it": "Polenta",
+        "fr": "Polenta",
+        "es": "Polenta",
+        "ar": "بولينتا",
+        "iw": "פולנטה",
+        "el": "Πολέντα",
+        "en": "Polenta"
+    },
+    "6009": {
+        "de": "Bulgur",
+        "it": "Bulgur",
+        "fr": "Boulgour",
+        "es": "Bulgur",
+        "ar": "برغل",
+        "iw": "בורגול",
+        "el": "Πλιγούρι",
+        "en": "Bulgur"
+    },
+    "7001": {
+        "de": "Erbsen",
+        "it": "Piselli",
+        "fr": "Petits pois",
+        "es": "Guisantes",
+        "ar": "بازلاء",
+        "iw": "אפונה",
+        "el": "Μπιζέλια",
+        "en": "Peas"
+    },
+    "7002": {
+        "de": "Linsen",
+        "it": "Lenticchie",
+        "fr": "Lentilles",
+        "es": "Lentejas",
+        "ar": "عدس",
+        "iw": "עדשים",
+        "el": "Φακές",
+        "en": "Lentils"
+    },
+    "7003": {
+        "de": "Bohnen",
+        "it": "Fagioli",
+        "fr": "Haricots",
+        "es": "Frijoles",
+        "ar": "فاصوليا",
+        "iw": "שעועית",
+        "el": "Φασόλια",
+        "en": "Beans"
+    },
+    "7004": {
+        "de": "Kichererbsen",
+        "it": "Ceci",
+        "fr": "Pois chiches",
+        "es": "Garbanzos",
+        "ar": "حمص",
+        "iw": "חומוס",
+        "el": "Ρεβίθια",
+        "en": "Chickpeas"
+    },
+    "7005": {
+        "de": "Sojabohnen",
+        "it": "Soia",
+        "fr": "Soja",
+        "es": "Soja",
+        "ar": "فول الصويا",
+        "iw": "סויה",
+        "el": "Σόγια",
+        "en": "Soybeans"
+    },
+    "8001": {
+        "de": "Mandeln",
+        "it": "Mandorle",
+        "fr": "Amandes",
+        "es": "Almendras",
+        "ar": "لوز",
+        "iw": "שקדים",
+        "el": "Αμύγδαλα",
+        "en": "Almonds"
+    },
+    "8002": {
+        "de": "Walnüsse",
+        "it": "Noci",
+        "fr": "Noix",
+        "es": "Nueces",
+        "ar": "جوز",
+        "iw": "אגוזי מלך",
+        "el": "Καρύδια",
+        "en": "Walnuts"
+    },
+    "8003": {
+        "de": "Haselnüsse",
+        "it": "Nocciole",
+        "fr": "Noisettes",
+        "es": "Avellanas",
+        "ar": "بندق",
+        "iw": "אגוזי לוז",
+        "el": "Φουντούκια",
+        "en": "Hazelnuts"
+    },
+    "8004": {
+        "de": "Cashewkerne",
+        "it": "Anacardi",
+        "fr": "Noix de cajou",
+        "es": "Anacardos",
+        "ar": "كاجو",
+        "iw": "קשיו",
+        "el": "Κάσιους",
+        "en": "Cashews"
+    },
+    "8005": {
+        "de": "Sonnenblumenkerne",
+        "it": "Semi di girasole",
+        "fr": "Graines de tournesol",
+        "es": "Semillas de girasol",
+        "ar": "بذور عباد الشمس",
+        "iw": "גרעיני חמניה",
+        "el": "Ηλιόσποροι",
+        "en": "Sunflower seeds"
+    },
+    "8006": {
+        "de": "Kürbiskerne",
+        "it": "Semi di zucca",
+        "fr": "Graines de courge",
+        "es": "Semillas de calabaza",
+        "ar": "بذور اليقطين",
+        "iw": "גרעיני דלעת",
+        "el": "Κολοκυθόσποροι",
+        "en": "Pumpkin seeds"
+    },
+    "8007": {
+        "de": "Chiasamen",
+        "it": "Semi di chia",
+        "fr": "Graines de chia",
+        "es": "Semillas de chía",
+        "ar": "بذور الشيا",
+        "iw": "זרעי צ'יה",
+        "el": "Σπόροι chia",
+        "en": "Chia seeds"
+    },
+    "9001": {
+        "de": "Milch",
+        "it": "Latte",
+        "fr": "Lait",
+        "es": "Leche",
+        "ar": "حليب",
+        "iw": "חלב",
+        "el": "Γάλα",
+        "en": "Milk"
+    },
+    "9002": {
+        "de": "Butter",
+        "it": "Burro",
+        "fr": "Beurre",
+        "es": "Mantequilla",
+        "ar": "زبدة",
+        "iw": "חמאה",
+        "el": "Βούτυρο",
+        "en": "Butter"
+    },
+    "9003": {
+        "de": "Sahne",
+        "it": "Panna",
+        "fr": "Crème",
+        "es": "Crema",
+        "ar": "كريمة",
+        "iw": "שמנת",
+        "el": "Κρέμα",
+        "en": "Cream"
+    },
+    "9004": {
+        "de": "Joghurt",
+        "it": "Yogurt",
+        "fr": "Yaourt",
+        "es": "Yogur",
+        "ar": "زبادي",
+        "iw": "יוגורט",
+        "el": "Γιαούρτι",
+        "en": "Yogurt"
+    },
+    "9005": {
+        "de": "Kefir",
+        "it": "Kefir",
+        "fr": "Kéfir",
+        "es": "Kéfir",
+        "ar": "كفير",
+        "iw": "קפיר",
+        "el": "Κεφίρ",
+        "en": "Kefir"
+    },
+    "9006": {
+        "de": "Quark",
+        "it": "Quark",
+        "fr": "Quark",
+        "es": "Requesón",
+        "ar": "جبن قريش",
+        "iw": "גבינת קוטג'",
+        "el": "Κουάρκ",
+        "en": "Quark"
+    },
+    "9007": {
+        "de": "Mascarpone",
+        "it": "Mascarpone",
+        "fr": "Mascarpone",
+        "es": "Mascarpone",
+        "ar": "ماسكاربوني",
+        "iw": "מסקרפונה",
+        "el": "Μασκαρπόνε",
+        "en": "Mascarpone"
+    },
+    "1016": {
+        "de": "Salz",
+        "it": "Sale",
+        "fr": "Sel",
+        "es": "Sal",
+        "ar": "ملح",
+        "iw": "מלח",
+        "el": "Αλάτι",
+        "en": "Salt"
+    },
+    "1017": {
+        "de": "Pfeffer",
+        "it": "Pepe",
+        "fr": "Poivre",
+        "es": "Pimienta",
+        "ar": "فلفل",
+        "iw": "פלפל",
+        "el": "Πιπέρι",
+        "en": "Pepper"
+    },
+    "1018": {
+        "de": "Paprika",
+        "it": "Paprika",
+        "fr": "Paprika",
+        "es": "Pimentón",
+        "ar": "بابريكا",
+        "iw": "פפריקה",
+        "el": "Πάπρικα",
+        "en": "Paprika"
+    },
+    "1019": {
+        "de": "Chili",
+        "it": "Peperoncino",
+        "fr": "Piment",
+        "es": "Chile",
+        "ar": "فلفل حار",
+        "iw": "צ'ילי",
+        "el": "Τσίλι",
+        "en": "Chili"
+    },
+    "1005": {
+        "de": "Oregano",
+        "it": "Origano",
+        "fr": "Origan",
+        "es": "Orégano",
+        "ar": "زعتر",
+        "iw": "אורגנו",
+        "el": "Ρίγανη",
+        "en": "Oregano"
+    },
+    "1006": {
+        "de": "Basilikum",
+        "it": "Basilico",
+        "fr": "Basilic",
+        "es": "Albahaca",
+        "ar": "ريحان",
+        "iw": "בזיליקום",
+        "el": "Βασιλικός",
+        "en": "Basil"
+    },
+    "1007": {
+        "de": "Petersilie",
+        "it": "Prezzemolo",
+        "fr": "Persil",
+        "es": "Perejil",
+        "ar": "بقدونس",
+        "iw": "פטרוזיליה",
+        "el": "Μαϊντανός",
+        "en": "Parsley"
+    },
+    "1008": {
+        "de": "Thymian",
+        "it": "Timo",
+        "fr": "Thym",
+        "es": "Tomillo",
+        "ar": "زعتر",
+        "iw": "טימין",
+        "el": "Θυμάρι",
+        "en": "Thyme"
+    },
+    "1009": {
+        "de": "Rosmarin",
+        "it": "Rosmarino",
+        "fr": "Romarin",
+        "es": "Romero",
+        "ar": "إكليل الجبل",
+        "iw": "רוזמרין",
+        "el": "Δεντρολίβανο",
+        "en": "Rosemary"
+    },
+    "1010": {
+        "de": "Muskatnuss",
+        "it": "Noce moscata",
+        "fr": "Muscade",
+        "es": "Nuez moscada",
+        "ar": "جوزة الطيب",
+        "iw": "אגוז מוסקט",
+        "el": "Μοσχοκάρυδο",
+        "en": "Nutmeg"
+    },
+    "1011": {
+        "de": "Kreuzkümmel",
+        "it": "Cumino",
+        "fr": "Cumin",
+        "es": "Comino",
+        "ar": "كمون",
+        "iw": "כמון",
+        "el": "Κύμινο",
+        "en": "Cumin"
+    },
+    "1012": {
+        "de": "Curry",
+        "it": "Curry",
+        "fr": "Curry",
+        "es": "Curry",
+        "ar": "كاري",
+        "iw": "קארי",
+        "el": "Κάρυ",
+        "en": "Curry"
+    },
+    "1013": {
+        "de": "Zimt",
+        "it": "Cannella",
+        "fr": "Cannelle",
+        "es": "Canela",
+        "ar": "قرفة",
+        "iw": "קינמון",
+        "el": "Κανέλα",
+        "en": "Cinnamon"
+    },
+    "1014": {
+        "de": "Ingwer",
+        "it": "Zenzero",
+        "fr": "Gingembre",
+        "es": "Jengibre",
+        "ar": "زنجبيل",
+        "iw": "ג'ינג'ר",
+        "el": "Τζίντζερ",
+        "en": "Ginger"
+    },
+    "1015": {
+        "de": "Knoblauch",
+        "it": "Aglio",
+        "fr": "Ail",
+        "es": "Ajo",
+        "ar": "ثوم",
+        "iw": "שום",
+        "el": "Σκόρδο",
+        "en": "Garlic"
+    }
+}

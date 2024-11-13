@@ -1,0 +1,146 @@
+1. Fleisch                     = 10    
+Fleisch.....................ID = 1001
+Wurst.......................ID = 1002
+Hackfleisch.................ID = 1003
+Geflügel....................ID = 1004
+
+2. Fisch und Meeresfrüchte     = 20
+Fisch.......................ID = 2001
+Meeresfrüchte               ID = 2002
+Muscheln                    ID = 2003
+Garnelen                    ID = 2004
+Ei..........................ID = 2005
+
+3. Gemüse                      = 30
+Kartoffeln                  ID = 3001
+Zwiebeln                    ID = 3002
+Tomaten                     ID = 3003
+Karotten                    ID = 3004
+Paprika                     ID = 3005
+Kürbis                      ID = 3006
+Brokkoli                    ID = 3007
+Blumenkohl                  ID = 3008
+Spinat                      ID = 3009
+Salat                       ID = 3010
+Kohl                        ID = 3011
+Erbsen                      ID = 3012
+Bohnen                      ID = 3013
+
+4. Obst                        = 40
+Äpfel                       ID = 4001
+Bananen                     ID = 4002
+Orangen                     ID = 4003
+Erdbeeren                   ID = 4004
+Kirschen                    ID = 4005
+Ananas                      ID = 4006
+Trauben                     ID = 4007
+Pfirsiche                   ID = 4008
+Aprikosen                   ID = 4009
+Zitronen                    ID = 4010
+
+5. Käse                        = 50
+Käse                        ID = 5001
+Gouda                       ID = 5002
+Mozzarella                  ID = 5003
+Cheddar                     ID = 5004
+Parmesan                    ID = 5005
+Feta                        ID = 5006
+Brie                        ID = 5007
+Camembert                   ID = 5008
+Ricotta                     ID = 5009
+
+6. Getreideprodukte            = 60
+Reis                        ID = 6001
+Weizen                      ID = 6002
+Hafer                       ID = 6003
+Quinoa                      ID = 6004
+Gerste                      ID = 6005
+Roggen                      ID = 6006
+Couscous                    ID = 6007
+Polenta                     ID = 6008
+Bulgur                      ID = 6009
+
+7. Hülsenfrüchte               = 70
+Erbsen                      ID = 7001
+Linsen                      ID = 7002
+
+(grüne, weiße, schwarze, Kidneybohnen)
+Bohnen                      ID = 7003
+Kichererbsen                ID = 7004
+Sojabohnen                  ID = 7005
+
+8. Nüsse und Samen             = 80
+Mandeln                     ID = 8001
+Walnüsse                    ID = 8002
+Haselnüsse                  ID = 8003
+Cashewkerne                 ID = 8004
+Sonnenblumenkerne           ID = 8005
+Kürbiskerne                 ID = 8006
+Chiasamen                   ID = 8007
+
+9. Milchprodukte            ID = 90
+Milch                       ID = 9001
+Butter                      ID = 9002
+Sahne                       ID = 9003
+Joghurt                     ID = 9004
+Kefir                       ID = 9005
+Quark                       ID = 9006
+Mascarpone                  ID = 9007
+
+10. Gewürze und Kräuter        = 100
+Salz                        ID = 1001
+Pfeffer                     ID = 1002
+Paprika                     ID = 1003
+Chili                       ID = 1004
+Oregano                     ID = 1005
+Basilikum                   ID = 1006
+Petersilie                  ID = 1007
+Thymian                     ID = 1008
+Rosmarin                    ID = 1009
+Muskatnuss                  ID = 1010
+Kreuzkümmel                 ID = 1011
+Curry                       ID = 1012
+Zimt                        ID = 1013
+Ingwer                      ID = 1014
+Knoblauch                   ID = 1015
+
+11. Öle und Fette              = 11
+Olivenöl                    ID = 1101
+Sonnenblumenöl              ID = 1102
+Rapsöl                      ID = 1103
+Kokosöl                     ID = 1104
+Butter                      ID = 1105
+Margarine                   ID = 1106
+
+12. Süßungsmittel              = 12
+Zucker                      ID = 1201
+Honig                       ID = 1202
+Ahornsirup                  ID = 1203
+Agavendicksaft              ID = 1204
+Stevia                      ID = 1205
+
+13. Getränke                   = 13
+Wasser          	        ID = 1301
+Tee                         ID = 1302
+Kaffee                      ID = 1303
+Fruchtsäfte                 ID = 1304
+Limonade                    ID = 1305
+Milchshakes                 ID = 1306
+
+14. Mehlarten                  = 14
+Weizenmehl                  ID = 1401
+Roggenmehl                  ID = 1402
+Dinkelmehl                  ID = 1403
+Maismehl                    ID = 1404
+Reismehl                    ID = 1405
+Hafermehl                   ID = 1406
+
+15. Brot und Backwaren         = 15
+Brot				        ID = 1501
+Brötchen		        	ID = 1502
+Croissants		        	ID = 1503
+Baguette		        	ID = 1504
+Kuchen			            ID = 1505
+Kekse			        	ID = 1506
+Muffins			        	ID = 1507
+

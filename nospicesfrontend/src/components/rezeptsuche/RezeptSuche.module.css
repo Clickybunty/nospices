@@ -1,0 +1,56 @@
+/* Container für das Eingabefeld und das Dropdown */
+.inputContainer {
+  position: relative; /* Ermöglicht das Dropdown relativ zum Container zu positionieren */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Eingabefeld */
+.inputField {
+  width: 100%; /* Volle Breite */
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Container für das Dropdown-Menü */
+.dropdownContainer {
+  position: absolute; /* Das Dropdown wird relativ zum Eingabefeld positioniert */
+  top: 45px; /* Der Abstand unterhalb des Eingabefelds */
+  left: 0;
+  right: 0;
+  max-height: 300px; /* Maximale Höhe für vertikales Scrollen */
+  overflow-y: auto; /* Vertikales Scrollen bei Bedarf */
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  z-index: 1000; /* Dropdown über anderen Inhalten */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional für visuelle Hervorhebung */
+  padding: 10px;
+}
+
+/* Eine horizontale Zeile im Karussell */
+.dropdownRow {
+  display: flex;
+  flex-wrap: nowrap; /* Kein Umbruch, Zutaten bleiben in einer Reihe */
+  overflow-x: auto; /* Ermöglicht horizontales Scrollen */
+  padding: 10px 0;
+}
+
+/* Ein Dropdown-Item */
+.dropdownItem {
+  min-width: 120px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdownItem:hover {
+  background-color: #bbb;
+}
