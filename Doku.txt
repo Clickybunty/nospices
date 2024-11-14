@@ -154,5 +154,14 @@ Auswahlbox. Außerdem wurden die Anpassungen der Eingabemaske so vorgenommen,
 dass man beim Eingeben einer Zutat sofort die passenden Vorschläge aus der Auswahlbox 
 wählen konnte.
 
+Des Weiteren wurden eine transformFile- sowie eine insertData-Datei erstellt um die Zutaten in folgendes Format umzuwandeln:
+"id": "0001",
+    "ids": [
+      2005,
+      5005,
+      1002
+
+Die insert-Data-Datei fügt dann die fertig formatierten Daten in die MySQL-Datenbank ein.
+
 Zuvor gab es Herausforderungen bzgl. des Mergens. Dieser stellte sich als Bug heraus,
 welcher behoben werden konnte. Nun sind alle Synchronisationen angepasst. 
