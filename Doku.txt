@@ -132,3 +132,18 @@ Rezepte: Eine Sammlung von Rezepten,
 wobei jedes Rezept eine Referenz zu den benötigten Zutaten hat.
 Zutaten: Eine Sammlung von Zutaten, 
 die durch eine eindeutige ID identifiziert werden.
+
+
+DB Update wir haben Fertig und nun machen wir
+
+# MySQL Installer 8.0.40
+
+Note: MySQL 8.0 is the final series with MySQL Installer. 
+As of MySQL 8.1, use a MySQL product's MSI or Zip archive for installation. 
+MySQL Server 8.1 and higher also bundle MySQL Configurator, 
+a tool that helps configure MySQL Server.
+
+Windows (x86, 32-bit), 
+MSI Installer	8.0.40	306.5M	
+Download
+(mysql-installer-community-8.0.40.0.msi)
