@@ -36,12 +36,14 @@ function RezeptSuche() {
   useEffect(() => {
     if (zutaten.trim() === "") {
       setFilteredZutaten(zutatenDaten); // Alle Zutaten anzeigen, wenn das Eingabefeld leer ist
+      setIsDropdownOpen(false); // Dropdown schließen, wenn das Eingabefeld leer ist
     } else {
       setFilteredZutaten(
         zutatenDaten.filter(
           (zutat) => zutat.toLowerCase().includes(zutaten.toLowerCase()) // Filter nach der Eingabe
         )
       );
+      setIsDropdownOpen(true); // Dropdown öffnen, wenn Eingabe vorhanden
     }
   }, [zutaten, zutatenDaten]); // Effekt wird bei Änderung der Eingabe oder Zutaten-Daten ausgelöst
 
@@ -107,11 +109,11 @@ function RezeptSuche() {
         value={zutaten}
         onChange={handleInputChange}
         onFocus={loadZutaten} // Zutaten bei Fokussierung laden
-        placeholder="Rezepte mit Zutaten suchen..."
+        placeholder="🔍"
       />
 
-      {/* Dropdown anzeigen, wenn Zutaten vorhanden sind */}
-      {filteredZutaten.length > 0 && (
+      {/* Dropdown anzeigen, wenn Zutaten vorhanden und das Eingabefeld befüllt ist */}
+      {isDropdownOpen && filteredZutaten.length > 0 && (
         <div
           className={styles.dropdownContainer}
           style={{ top: isLanguageMenuOpen ? "80px" : "45px" }}
