@@ -107,7 +107,7 @@ function RezeptSuche() {
         value={zutaten}
         onChange={handleInputChange}
         onFocus={loadZutaten} // Zutaten bei Fokussierung laden
-        placeholder="Was denn Du Schmock!"
+        placeholder="Rezepte mit Zutaten suchen..."
       />
 
       {/* Dropdown anzeigen, wenn Zutaten vorhanden sind */}
