@@ -194,7 +194,10 @@ Backend und Frontend initialisiert
 
 ## Tuesday	
 MongoDB Setup und erste API-Verbindungen
-Zutaten Beispiel-Rezepte und IDs erstellt	Tuesday	Beispiel-Rezepte und Zutaten IDs erstellt
+Zutaten Beispiel-Rezepte und IDs erstellt	
+
+## Tuesday	
+Beispiel-Rezepte und Zutaten IDs erstellt
 Datenbank lokal erstellt	
 
 ## Wednesday
@@ -205,7 +208,7 @@ Doku MongoDB hinzugefügt
 Datenbank lokal erstellt und konfiguriert
 Datenformat-Transformation und Insert-Skripte erstellt	
 
-##Wednesday	
+## Wednesday	
 Datenformat-Transformation und Insert-Skripte erstellt
 Frontend-Anpassungen und Tests abgeschlossen	
 
@@ -213,8 +216,8 @@ Frontend-Anpassungen und Tests abgeschlossen
 Frontend-Anpassungen und Tests abgeschlossen
 Get Call und Frontend-Kommunikation implementiert	
 
-## Thursday	Get Call und Frontend-Kommunikation implementiert
-Ausgewählte Zutaten im Frontend ausgegeben	
+## Thursday	
+Get Call und Frontend-Kommunikation implementiert
 
 ## Thursday	
 Ausgewählte Zutaten im Frontend ausgegeben
