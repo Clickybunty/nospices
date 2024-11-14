@@ -185,24 +185,36 @@ Während der Entwicklung gab es Herausforderungen beim **Mergen** der Branches, 
 
 ---
 
-,commit_message,timestamp,weekday,success
-14,Backend und Frontend initialisiert,2024-11-11 13:34:00,Monday,Projekt initialisieren und Struktur aufbauen
-12,"Datenbank geändert auf MariaDB, aufgrund von Problemen mit der MongoDB",2024-11-12 14:34:00,Tuesday,MongoDB Setup und erste API-Verbindungen
-13,Zutaten Beispiel-Rezepte und IDs erstellt,2024-11-12 14:34:00,Tuesday,Beispiel-Rezepte und Zutaten IDs erstellt
-10,Datenbank lokal erstellt,2024-11-13 15:34:00,Wednesday,Datenbank-Migration von MongoDB zu MariaDB durchgeführt
-11,Doku MongoDB hinzugefügt,2024-11-13 15:34:00,Wednesday,Datenbank lokal erstellt und konfiguriert
-8,Fronend zwischenstand fertig,2024-11-14 16:34:00,Thursday,Doku MongoDB hinzugefügt
-9,Sprachauswahl erstellt,2024-11-14 16:34:00,Thursday,Datenformat-Transformation und Insert-Skripte erstellt
-7,Doku an heutige Arbeiten angepasst.,2024-11-14 17:34:00,Thursday,Frontend-Anpassungen und Tests abgeschlossen
-4,Get Call im Frontend implementiert,2024-11-14 18:34:00,Thursday,Get Call und Frontend-Kommunikation implementiert
-5,Ausgewählte Zutaten werden im Frontend ausgegeben,2024-11-14 18:34:00,Thursday,Ausgewählte Zutaten im Frontend ausgegeben
-6,Merge branch 'main' von https://github.com/Clickybunty/nospices,2024-11-14 18:34:00,Thursday,Merge Konflikte behoben und Branches synchronisiert
-0,Projekt initialisieren mit Vite und React,2024-11-14 21:34:00,Thursday,Doku für heutige Arbeiten angepasst
-1,Frontend Anpassungen,2024-11-14 21:34:00,Thursday,Sprachauswahl und Backend-Integration abgeschlossen
-2,Dokumentation angepasst,2024-11-14 21:34:00,Thursday,Frontend Zwischenstand fertiggestellt
-3,Dokumentation aktualisiert,2024-11-14 21:34:00,Thursday,Dokumentation abgeschlossen und gepusht
 
 
-Diese Dokumentation stellt den aktuellen Stand des Projekts dar und wird regelmäßig aktualisiert, um neue Änderungen und Fortschritte widerzuspiegeln.
+## Monday	
+Projekt initialisieren und Struktur aufbauen
+Datenbank geändert auf MariaDB, aufgrund von Problemen mit der MongoDB	
+Backend und Frontend initialisiert	
 
----
+## Tuesday	
+MongoDB Setup und erste API-Verbindungen
+Zutaten Beispiel-Rezepte und IDs erstellt	Tuesday	Beispiel-Rezepte und Zutaten IDs erstellt
+Datenbank lokal erstellt	
+
+## Wednesday
+Datenbank-Migration von MongoDB zu MariaDB durchgeführt
+Doku MongoDB hinzugefügt	
+
+## Wednesday	
+Datenbank lokal erstellt und konfiguriert
+Datenformat-Transformation und Insert-Skripte erstellt	
+
+##Wednesday	
+Datenformat-Transformation und Insert-Skripte erstellt
+Frontend-Anpassungen und Tests abgeschlossen	
+
+## Wednesday	
+Frontend-Anpassungen und Tests abgeschlossen
+Get Call und Frontend-Kommunikation implementiert	
+
+## Thursday	Get Call und Frontend-Kommunikation implementiert
+Ausgewählte Zutaten im Frontend ausgegeben	
+
+## Thursday	
+Ausgewählte Zutaten im Frontend ausgegeben
