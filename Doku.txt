@@ -134,7 +134,7 @@ Zutaten: Eine Sammlung von Zutaten,
 die durch eine eindeutige ID identifiziert werden.
 
 
-DB Update wir haben Fertig und nun machen wir
+Das DB-Update ist fertig. Nun erledigen wir:
 
 # MySQL Installer 8.0.40
 
