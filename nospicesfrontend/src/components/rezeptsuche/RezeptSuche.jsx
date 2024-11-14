@@ -8,7 +8,7 @@ function RezeptSuche() {
   const [zutaten, setZutaten] = useState("");
   const [zutatenDaten, setZutatenDaten] = useState([]);
   const [filteredZutaten, setFilteredZutaten] = useState([]);
-  const [selectedIngredients, setSelectedIngredients] = useState([]); // Ausgewählte Zutaten
+  const [selectedIngredients, setSelectedIngredients] = useState([]);
   const [language, setLanguage] = useState("de");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
