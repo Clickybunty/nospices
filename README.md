@@ -1,30 +1,3 @@
-Hallo!
-Willkommen zu NoSpieces
-
-Team Stevan 51, Markus 24/5 und Stefan 24/5
-
-Frontend
-
-cd nospicesfrontend
-npx create-react-app nospices
-npm install axios
-
-npm start
-
-Backend
-
-cd backend
-npm init -y
-npm install express cors
-npm install nodemon
-node index.js
-oder
-npm run dev
-
-
-
-Hier ist die aktualisierte Dokumentation für dein Projekt, die die aktuellen Änderungen und Entwicklungen widerspiegelt:
-
 ---
 
 # NoSpieces - Dokumentation
@@ -47,6 +20,7 @@ Hier ist die aktualisierte Dokumentation für dein Projekt, die die aktuellen Ä
 Das Frontend ist mit React entwickelt, um eine benutzerfreundliche Oberfläche zu bieten. Es kommuniziert mit dem Backend über HTTP-Anfragen, um Rezepte und Zutaten anzuzeigen und zu verwalten.
 
 #### Installationsanweisungen:
+
 1. Navigiere ins Frontend-Verzeichnis:
    ```bash
    cd nospicesfrontend
@@ -65,6 +39,7 @@ Das Frontend ist mit React entwickelt, um eine benutzerfreundliche Oberfläche z
    ```
 
 #### Weitere Abhängigkeiten:
+
 ```bash
 npm install dotenv
 npm install react-world-flag
@@ -79,6 +54,7 @@ npm install axios
 Das Backend stellt APIs zur Verfügung, um Rezepte und Zutaten zu verwalten und mit der Datenbank zu kommunizieren.
 
 #### Installationsanweisungen:
+
 1. Navigiere ins Backend-Verzeichnis:
    ```bash
    cd backend
@@ -106,9 +82,11 @@ Das Backend stellt APIs zur Verfügung, um Rezepte und Zutaten zu verwalten und 
 ## Datenmodell
 
 ### Rezepte
+
 Die Rezepte sind in einem relationalen Datenmodell gespeichert. Jedes Rezept hat eine eindeutige ID und einen Namen.
 
 **Beispiel**:
+
 ```json
 {
   "Spaghetti Carbonara": "0001"
@@ -116,14 +94,17 @@ Die Rezepte sind in einem relationalen Datenmodell gespeichert. Jedes Rezept hat
 ```
 
 ### Zutaten
+
 Die Zutaten sind ebenfalls relational gespeichert und über eine eindeutige ID referenziert.
 
 **Beispiel**:
+
 ```json
 {
   "0001": [6002, 5001, 1002, 9002]
 }
 ```
+
 Die Zahlensequenzen (z. B. 6002, 5001, etc.) repräsentieren die IDs der Zutaten, die für das Rezept benötigt werden.
 
 ---
@@ -133,11 +114,13 @@ Die Zahlensequenzen (z. B. 6002, 5001, etc.) repräsentieren die IDs der Zutaten
 Die Anwendung nutzt **MariaDB** für die Speicherung von Rezepten, Zutaten und anderen relevanten Daten. Die Datenbank wird in **AWS** gehostet.
 
 #### MariaDB Setup:
+
 1. Erstellen Sie ein MariaDB-Cluster auf **MariaDB Atlas** oder einer anderen MariaDB-Instanz.
 2. Konfigurieren Sie den Cluster und generieren Sie eine Verbindung-URI.
 3. Fügen Sie diese URI in der Backend-Anwendung ein, um die Verbindung zur MariaDB-Datenbank herzustellen.
 
 ### Datenbankstruktur:
+
 - **Rezepte**: Eine Sammlung von Rezepten, wobei jedes Rezept eine Referenz zu den benötigten Zutaten hat.
 - **Zutaten**: Eine Sammlung von Zutaten, die durch eine eindeutige ID identifiziert werden.
 
@@ -146,6 +129,7 @@ Die Anwendung nutzt **MariaDB** für die Speicherung von Rezepten, Zutaten und a
 ## Änderungen am Frontend
 
 Im Frontend wurden mehrere Anpassungen vorgenommen, um die Benutzererfahrung zu verbessern:
+
 - **Zentrierte Ausrichtung** der Eingabemaske und der Auswahlbox.
 - Beim Eingeben einer Zutat werden **passende Vorschläge** aus der Auswahlbox angezeigt.
 - **Ausgewählte Zutaten** werden unterhalb der Eingabemaske angezeigt und gleichzeitig nicht von der Auswahlbox verdeckt.
@@ -155,11 +139,14 @@ Im Frontend wurden mehrere Anpassungen vorgenommen, um die Benutzererfahrung zu 
 ## Änderungen am Backend
 
 ### MySQL-Datenbank
+
 Der Wechsel von MongoDB zu **MariaDB** wurde durchgeführt, um die Anwendung stabiler zu gestalten und auf relationalen Datenbanken zu basieren. Dies beinhaltet:
+
 - Datenbankstruktur für Rezepte und Zutaten.
 - Skripte für die **Datenmigration** und **Datenformat-Transformation**.
 
 **Beispiel-Datenformat für Zutaten**:
+
 ```json
 {
   "id": "0001",
@@ -168,6 +155,7 @@ Der Wechsel von MongoDB zu **MariaDB** wurde durchgeführt, um die Anwendung sta
 ```
 
 ### Backend-APIs
+
 Die Backend-APIs wurden erweitert, um die neuen relationalen Datenstrukturen zu unterstützen. Insbesondere wurden Endpoints für das Abrufen von Rezepten und Zutaten sowie für die Manipulation der Daten in der MariaDB-Datenbank implementiert.
 
 ---
@@ -179,45 +167,9 @@ Während der Entwicklung gab es Herausforderungen beim **Mergen** der Branches, 
 ---
 
 ## Kommende Schritte
+
 1. **Backend-Optimierungen**: Implementierung zusätzlicher Endpoints für das Bearbeiten und Löschen von Rezepten und Zutaten.
 2. **Deployment**: Fertigstellung der Bereitstellung auf AWS, sowohl für das Backend als auch für die Datenbank.
 3. **Weitere Features im Frontend**: Erweiterung des Frontends um zusätzliche Funktionen wie Rezeptbewertungen, Benutzerprofile und Favoriten.
 
 ---
-
-
-
-## Monday	
-Projekt initialisieren und Struktur aufbauen
-Datenbank geändert auf MariaDB, aufgrund von Problemen mit der MongoDB	
-Backend und Frontend initialisiert	
-
-## Tuesday	
-MongoDB Setup und erste API-Verbindungen
-Zutaten Beispiel-Rezepte und IDs erstellt	
-
-## Tuesday	
-Beispiel-Rezepte und Zutaten IDs erstellt
-Datenbank lokal erstellt	
-
-## Wednesday
-Datenbank-Migration von MongoDB zu MariaDB durchgeführt
-Doku MongoDB hinzugefügt	
-
-## Wednesday	
-Datenbank lokal erstellt und konfiguriert
-Datenformat-Transformation und Insert-Skripte erstellt	
-
-## Wednesday	
-Datenformat-Transformation und Insert-Skripte erstellt
-Frontend-Anpassungen und Tests abgeschlossen	
-
-## Wednesday	
-Frontend-Anpassungen und Tests abgeschlossen
-Get Call und Frontend-Kommunikation implementiert	
-
-## Thursday	
-Get Call und Frontend-Kommunikation implementiert
-
-## Thursday	
-Ausgewählte Zutaten im Frontend ausgegeben
