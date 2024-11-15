@@ -70,6 +70,11 @@ npm install mysql
 npm install axios
 ```
 
+```bash
+npm install
+```
+
+
 ---
 
 ### Backend (Node.js mit Express)
