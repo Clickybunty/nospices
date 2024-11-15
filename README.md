@@ -11,8 +11,7 @@
 
 ---
 
-# Die README-Datei richtet sich an Benutzer und 
-# Entwickler, die mit dem Code arbeiten möchten. 
+# Die README-Datei richtet sich an Benutzer und Entwickler, die mit dem Code arbeiten möchten. 
 
 ## Sie erklärt:
 Voraussetzungen: Welche Software oder Pakete erforderlich sind.
