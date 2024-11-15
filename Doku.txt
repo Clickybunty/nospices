@@ -61,6 +61,10 @@ Get Call und Frontend-Kommunikation implementiert
 
 Ausgewählte Zutaten im Frontend ausgegeben
 
+## Friday
+MySQL Setup wurde zur `README.md` hinzugefügt, einschließlich der Befehle für das Erstellen der Datenbank und Tabelle.
+Eine allgemeine Erklärung zum Importieren von Daten in die MySQL-Datenbank wurde eingefügt.
+
 
 
 
