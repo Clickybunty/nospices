@@ -51,3 +51,20 @@ Get Call und Frontend-Kommunikation implementiert
 Get Call und Frontend-Kommunikation implementiert
 
 Ausgewählte Zutaten im Frontend ausgegeben
+
+
+
+
+## Probleme und Lösungen
+
+Während der Entwicklung gab es Herausforderungen beim **Mergen** der Branches, die als Bug identifiziert und behoben wurden. Alle Synchronisationen sind nun korrekt angepasst, und der Code befindet sich auf dem neuesten Stand.
+
+---
+
+## Kommende Schritte
+
+1. **Backend-Optimierungen**: Implementierung zusätzlicher Endpoints für das Bearbeiten und Löschen von Rezepten und Zutaten.
+2. **Deployment**: Fertigstellung der Bereitstellung auf AWS, sowohl für das Backend als auch für die Datenbank.
+3. **Weitere Features im Frontend**: Erweiterung des Frontends um zusätzliche Funktionen wie Rezeptbewertungen, Benutzerprofile und Favoriten.
+
+---
