@@ -1,5 +1,3 @@
----
-
 # NoSpieces - Dokumentation
 
 ## Projektübersicht
@@ -157,19 +155,5 @@ Der Wechsel von MongoDB zu **MariaDB** wurde durchgeführt, um die Anwendung sta
 ### Backend-APIs
 
 Die Backend-APIs wurden erweitert, um die neuen relationalen Datenstrukturen zu unterstützen. Insbesondere wurden Endpoints für das Abrufen von Rezepten und Zutaten sowie für die Manipulation der Daten in der MariaDB-Datenbank implementiert.
-
----
-
-## Probleme und Lösungen
-
-Während der Entwicklung gab es Herausforderungen beim **Mergen** der Branches, die als Bug identifiziert und behoben wurden. Alle Synchronisationen sind nun korrekt angepasst, und der Code befindet sich auf dem neuesten Stand.
-
----
-
-## Kommende Schritte
-
-1. **Backend-Optimierungen**: Implementierung zusätzlicher Endpoints für das Bearbeiten und Löschen von Rezepten und Zutaten.
-2. **Deployment**: Fertigstellung der Bereitstellung auf AWS, sowohl für das Backend als auch für die Datenbank.
-3. **Weitere Features im Frontend**: Erweiterung des Frontends um zusätzliche Funktionen wie Rezeptbewertungen, Benutzerprofile und Favoriten.
 
 ---
