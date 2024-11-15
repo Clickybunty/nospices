@@ -196,7 +196,6 @@ Backend und Frontend initialisiert
 MongoDB Setup und erste API-Verbindungen
 Zutaten Beispiel-Rezepte und IDs erstellt	
 
-## Tuesday	
 Beispiel-Rezepte und Zutaten IDs erstellt
 Datenbank lokal erstellt	
 
@@ -204,20 +203,16 @@ Datenbank lokal erstellt
 Datenbank-Migration von MongoDB zu MariaDB durchgeführt
 Doku MongoDB hinzugefügt	
 
-## Wednesday	
 Datenbank lokal erstellt und konfiguriert
-Datenformat-Transformation und Insert-Skripte erstellt	
+Datenformat-Transformation und Insert-Skripte erstellt
 
-## Wednesday	
 Datenformat-Transformation und Insert-Skripte erstellt
 Frontend-Anpassungen und Tests abgeschlossen	
 
-## Wednesday	
 Frontend-Anpassungen und Tests abgeschlossen
 Get Call und Frontend-Kommunikation implementiert	
 
 ## Thursday	
 Get Call und Frontend-Kommunikation implementiert
 
-## Thursday	
 Ausgewählte Zutaten im Frontend ausgegeben
