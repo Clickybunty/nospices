@@ -61,6 +61,15 @@ Get Call und Frontend-Kommunikation implementiert
 
 Ausgewählte Zutaten im Frontend ausgegeben
 
+## Friday
+MySQL Setup wurde zur `README.md` hinzugefügt, 
+einschließlich der Befehle für das Erstellen der Datenbank und Tabelle.
+Eine allgemeine Erklärung zum Importieren von Daten in die MySQL-Datenbank wurde eingefügt.
+
+Die Backend-APIs wurden erweitert, 
+um die neuen relationalen Datenstrukturen zu unterstützen. 
+Insbesondere wurden Endpoints für das Abrufen von Rezepten und 
+Zutaten sowie für die Manipulation der Daten in der MySQL-Datenbank implementiert.
 
 
 
