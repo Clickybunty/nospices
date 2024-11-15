@@ -11,6 +11,16 @@
 
 ---
 
+# Die README-Datei richtet sich an Benutzer und 
+# Entwickler, die mit dem Code arbeiten möchten. 
+
+## Sie erklärt:
+Voraussetzungen: Welche Software oder Pakete erforderlich sind.
+Installation: Schritt-für-Schritt-Anleitung zur Einrichtung der Anwendung.
+Ausführung: Anweisungen, wie der Code gestartet und verwendet wird.
+Features: Eine Übersicht über die wichtigsten Funktionen der Anwendung.
+Kontakt oder Beitragshinweise: Informationen, wie man bei Fragen oder zur Weiterentwicklung beitragen kann.
+---
 ## Architektur
 
 ### Frontend (React)
