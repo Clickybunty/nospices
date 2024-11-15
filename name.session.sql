@@ -1,2 +1,4 @@
-SHOW DATABASES;
+DESCRIBE zutaten;
+
+
 
