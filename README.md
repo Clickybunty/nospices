@@ -261,6 +261,8 @@ Der Wechsel von MongoDB zu **MySQL** wurde durchgeführt, um die Anwendung stabi
 
 Die Backend-APIs wurden erweitert, um die neuen relationalen Datenstrukturen zu unterstützen. Insbesondere wurden Endpoints für das Abrufen von Rezepten und Zutaten sowie für die Manipulation der Daten in der MySQL-Datenbank implementiert.
 
+##
+
 ### GitHub eine ASCII-Darstellung
 
 **Branch-Struktur**:
