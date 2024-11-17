@@ -1,2 +1,4 @@
+DESCRIBE zutaten;
+
 
 

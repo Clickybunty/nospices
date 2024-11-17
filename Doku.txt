@@ -70,6 +70,7 @@ Die Backend-APIs wurden erweitert,
 um die neuen relationalen Datenstrukturen zu unterstützen. 
 Insbesondere wurden Endpoints für das Abrufen von Rezepten und 
 Zutaten sowie für die Manipulation der Daten in der MySQL-Datenbank implementiert.
+Skript zur automatischen Befüllung der Datenbank wurde angepasst.
 
 
 
