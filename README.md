@@ -261,6 +261,26 @@ Der Wechsel von MongoDB zu **MySQL** wurde durchgeführt, um die Anwendung stabi
 
 Die Backend-APIs wurden erweitert, um die neuen relationalen Datenstrukturen zu unterstützen. Insbesondere wurden Endpoints für das Abrufen von Rezepten und Zutaten sowie für die Manipulation der Daten in der MySQL-Datenbank implementiert.
 
-```
+### GitHub eine ASCII-Darstellung für die Branch-Struktur:
 
-```
+main
+├── Testing
+│ ├── WorkBranch
+│ │ ├── TaskBranch1
+│ │ ├── TaskBranch2
+│ │ ├── TaskBranch3
+│ │ └── TaskBranchN
+│ └── FeatureBranch
+└── HotfixBranch
+
+## Erklärung:
+
+# main: Der Hauptzweig
+
+# Testing: Ein Zweig, der vom main-Branch ausgeht.
+
+# WorkBranch: Ein Unterzweig von Testing, der als Basis für spezifische Aufgaben dient.
+
+# TaskBranch1, TaskBranch2, ...: Branches, die von WorkBranch abzweigen und jeweils eine spezifische Aufgabe repräsentieren.
+
+# FeatureBranch & HotfixBranch: Zusätzliche Branches für Features oder Hotfixes, die parallel entwickelt werden.
