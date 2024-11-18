@@ -1,0 +1,802 @@
+[
+  {
+    "id": "0001",
+    "rezeptname": "Spaghetti Carbonara"
+  },
+  {
+    "id": "0002",
+    "rezeptname": "Spaghetti Bolognese"
+  },
+  {
+    "id": "0003",
+    "rezeptname": "Lasagne"
+  },
+  {
+    "id": "0004",
+    "rezeptname": "Pizza Margherita"
+  },
+  {
+    "id": "0005",
+    "rezeptname": "Pasta al Pesto"
+  },
+  {
+    "id": "0006",
+    "rezeptname": "Frittata"
+  },
+  {
+    "id": "0007",
+    "rezeptname": "Risotto"
+  },
+  {
+    "id": "0008",
+    "rezeptname": "Tiramisu"
+  },
+  {
+    "id": "0009",
+    "rezeptname": "Pizza Quattro Stagioni"
+  },
+  {
+    "id": "0010",
+    "rezeptname": "Gnocchi"
+  },
+  {
+    "id": "0011",
+    "rezeptname": "Penne all'Arrabbiata"
+  },
+  {
+    "id": "0012",
+    "rezeptname": "Minestrone"
+  },
+  {
+    "id": "0013",
+    "rezeptname": "Pizza Diavola"
+  },
+  {
+    "id": "0014",
+    "rezeptname": "Arancini"
+  },
+  {
+    "id": "0015",
+    "rezeptname": "Bruschetta"
+  },
+  {
+    "id": "0016",
+    "rezeptname": "Caprese-Salat"
+  },
+  {
+    "id": "0017",
+    "rezeptname": "Calzone"
+  },
+  {
+    "id": "0018",
+    "rezeptname": "Osso Buco"
+  },
+  {
+    "id": "0019",
+    "rezeptname": "Focaccia"
+  },
+  {
+    "id": "0020",
+    "rezeptname": "Cacciatore Huhn"
+  },
+  {
+    "id": "0021",
+    "rezeptname": "Parmigiana di Melanzane"
+  },
+  {
+    "id": "0022",
+    "rezeptname": "Saltimbocca alla Romana"
+  },
+  {
+    "id": "0023",
+    "rezeptname": "Polenta"
+  },
+  {
+    "id": "0024",
+    "rezeptname": "Panzanella"
+  },
+  {
+    "id": "0025",
+    "rezeptname": "Frutti di Mare"
+  },
+  {
+    "id": "0026",
+    "rezeptname": "Ribollita"
+  },
+  {
+    "id": "0027",
+    "rezeptname": "Bistecca alla Fiorentina"
+  },
+  {
+    "id": "0028",
+    "rezeptname": "Vitello Tonnato"
+  },
+  {
+    "id": "0029",
+    "rezeptname": "Salsiccia e Fagioli"
+  },
+  {
+    "id": "0030",
+    "rezeptname": "Zuppa di Pesce"
+  },
+  {
+    "id": "0031",
+    "rezeptname": "Moussaka"
+  },
+  {
+    "id": "0032",
+    "rezeptname": "Gyros"
+  },
+  {
+    "id": "0033",
+    "rezeptname": "Souvlaki"
+  },
+  {
+    "id": "0034",
+    "rezeptname": "Spanakopita"
+  },
+  {
+    "id": "0035",
+    "rezeptname": "Feta-Salat"
+  },
+  {
+    "id": "0036",
+    "rezeptname": "Fasolada"
+  },
+  {
+    "id": "0037",
+    "rezeptname": "Tzatziki"
+  },
+  {
+    "id": "0038",
+    "rezeptname": "Dolmades"
+  },
+  {
+    "id": "0039",
+    "rezeptname": "Saganaki"
+  },
+  {
+    "id": "0040",
+    "rezeptname": "Kleftiko"
+  },
+  {
+    "id": "0041",
+    "rezeptname": "Hummus"
+  },
+  {
+    "id": "0042",
+    "rezeptname": "Falafel"
+  },
+  {
+    "id": "0043",
+    "rezeptname": "Shawarma"
+  },
+  {
+    "id": "0044",
+    "rezeptname": "Shakshuka"
+  },
+  {
+    "id": "0045",
+    "rezeptname": "Sabich"
+  },
+  {
+    "id": "0046",
+    "rezeptname": "Bureka"
+  },
+  {
+    "id": "0047",
+    "rezeptname": "Meze"
+  },
+  {
+    "id": "0048",
+    "rezeptname": "Jachnun"
+  },
+  {
+    "id": "0049",
+    "rezeptname": "Kebab"
+  },
+  {
+    "id": "0050",
+    "rezeptname": "Lahmacun"
+  },
+  {
+    "id": "0051",
+    "rezeptname": "Baklava"
+  },
+  {
+    "id": "0052",
+    "rezeptname": "Pide"
+  },
+  {
+    "id": "0053",
+    "rezeptname": "Manti"
+  },
+  {
+    "id": "0054",
+    "rezeptname": "Cig Köfte"
+  },
+  {
+    "id": "0055",
+    "rezeptname": "Kumpir"
+  },
+  {
+    "id": "0056",
+    "rezeptname": "Börek"
+  },
+  {
+    "id": "0057",
+    "rezeptname": "Imambayıldı"
+  },
+  {
+    "id": "0058",
+    "rezeptname": "Koftes"
+  },
+  {
+    "id": "0059",
+    "rezeptname": "Adana Kebab"
+  },
+  {
+    "id": "0060",
+    "rezeptname": "Shepherd’s Pie"
+  },
+  {
+    "id": "0061",
+    "rezeptname": "Fish and Chips"
+  },
+  {
+    "id": "0062",
+    "rezeptname": "Full English Breakfast"
+  },
+  {
+    "id": "0063",
+    "rezeptname": "Bangers and Mash"
+  },
+  {
+    "id": "0064",
+    "rezeptname": "Beef Wellington"
+  },
+  {
+    "id": "0065",
+    "rezeptname": "Chicken Tikka Masala"
+  },
+  {
+    "id": "0066",
+    "rezeptname": "Cornish Pasty"
+  },
+  {
+    "id": "0067",
+    "rezeptname": "Yorkshire Pudding"
+  },
+  {
+    "id": "0068",
+    "rezeptname": "Eton Mess"
+  },
+  {
+    "id": "0069",
+    "rezeptname": "Ploughman’s Lunch"
+  },
+  {
+    "id": "0070",
+    "rezeptname": "Welsh Rarebit"
+  },
+  {
+    "id": "0071",
+    "rezeptname": "Paella"
+  },
+  {
+    "id": "0072",
+    "rezeptname": "Gazpacho"
+  },
+  {
+    "id": "0073",
+    "rezeptname": "Tortilla Española"
+  },
+  {
+    "id": "0074",
+    "rezeptname": "Croquetas"
+  },
+  {
+    "id": "0075",
+    "rezeptname": "Jamón Ibérico"
+  },
+  {
+    "id": "0076",
+    "rezeptname": "Pisto"
+  },
+  {
+    "id": "0077",
+    "rezeptname": "Fabada Asturiana"
+  },
+  {
+    "id": "0078",
+    "rezeptname": "Empanadas"
+  },
+  {
+    "id": "0079",
+    "rezeptname": "Pulpo a la Gallega"
+  },
+  {
+    "id": "0080",
+    "rezeptname": "Churros"
+  },
+  {
+    "id": "0081",
+    "rezeptname": "Salmorejo"
+  },
+  {
+    "id": "0082",
+    "rezeptname": "Paella Valenciana"
+  },
+  {
+    "id": "0083",
+    "rezeptname": "Piquillo Peppers"
+  },
+  {
+    "id": "0084",
+    "rezeptname": "Caldereta de Marisco"
+  },
+  {
+    "id": "0085",
+    "rezeptname": "Albondigas"
+  },
+  {
+    "id": "0086",
+    "rezeptname": "Ceviche"
+  },
+  {
+    "id": "0087",
+    "rezeptname": "Asado"
+  },
+  {
+    "id": "0088",
+    "rezeptname": "Empanadas Argentinas"
+  },
+  {
+    "id": "0089",
+    "rezeptname": "Choripan"
+  },
+  {
+    "id": "0090",
+    "rezeptname": "Churrasco"
+  },
+  {
+    "id": "0091",
+    "rezeptname": "Feijoada"
+  },
+  {
+    "id": "0092",
+    "rezeptname": "Moqueca"
+  },
+  {
+    "id": "0093",
+    "rezeptname": "Pão de Queijo"
+  },
+  {
+    "id": "0094",
+    "rezeptname": "Acarajé"
+  },
+  {
+    "id": "0095",
+    "rezeptname": "Farofa"
+  },
+  {
+    "id": "0096",
+    "rezeptname": "Tacos"
+  },
+  {
+    "id": "0097",
+    "rezeptname": "Burritos"
+  },
+  {
+    "id": "0098",
+    "rezeptname": "Enchiladas"
+  },
+  {
+    "id": "0099",
+    "rezeptname": "Guacamole"
+  },
+  {
+    "id": "0100",
+    "rezeptname": "Quesadillas"
+  },
+  {
+    "id": "0101",
+    "rezeptname": "Fajitas"
+  },
+  {
+    "id": "0102",
+    "rezeptname": "Pozole"
+  },
+  {
+    "id": "0103",
+    "rezeptname": "Mole Poblano"
+  },
+  {
+    "id": "0104",
+    "rezeptname": "Sopes"
+  },
+  {
+    "id": "0105",
+    "rezeptname": "Chiles Rellenos"
+  },
+  {
+    "id": "0106",
+    "rezeptname": "Sopes"
+  },
+  {
+    "id": "0107",
+    "rezeptname": "Tamales"
+  },
+  {
+    "id": "0108",
+    "rezeptname": "Jambalaya"
+  },
+  {
+    "id": "0109",
+    "rezeptname": "Gumbo"
+  },
+  {
+    "id": "0110",
+    "rezeptname": "Clam Chowder"
+  },
+  {
+    "id": "0111",
+    "rezeptname": "Caesar Salad"
+  },
+  {
+    "id": "0112",
+    "rezeptname": "Macaroni and Cheese"
+  },
+  {
+    "id": "0113",
+    "rezeptname": "Hamburgers"
+  },
+  {
+    "id": "0114",
+    "rezeptname": "Hot Dogs"
+  },
+  {
+    "id": "0115",
+    "rezeptname": "Buffalo Wings"
+  },
+  {
+    "id": "0116",
+    "rezeptname": "Philly Cheesesteak"
+  },
+  {
+    "id": "0117",
+    "rezeptname": "Biscuits and Gravy"
+  },
+  {
+    "id": "0118",
+    "rezeptname": "Cornbread"
+  },
+  {
+    "id": "0119",
+    "rezeptname": "New England Lobster Roll"
+  },
+  {
+    "id": "0120",
+    "rezeptname": "Key Lime Pie"
+  },
+  {
+    "id": "0121",
+    "rezeptname": "Pumpkin Pie"
+  },
+  {
+    "id": "0122",
+    "rezeptname": "Apple Pie"
+  },
+  {
+    "id": "0123",
+    "rezeptname": "Pecan Pie"
+  },
+  {
+    "id": "0124",
+    "rezeptname": "S'mores"
+  },
+  {
+    "id": "0125",
+    "rezeptname": "Meatloaf"
+  },
+  {
+    "id": "0126",
+    "rezeptname": "Chicken Fried Steak"
+  },
+  {
+    "id": "0127",
+    "rezeptname": "Ribs"
+  },
+  {
+    "id": "0128",
+    "rezeptname": "Roast Beef"
+  },
+  {
+    "id": "0129",
+    "rezeptname": "BBQ Pulled Pork"
+  },
+  {
+    "id": "0130",
+    "rezeptname": "Mac and Cheese"
+  },
+  {
+    "id": "0131",
+    "rezeptname": "Croissant"
+  },
+  {
+    "id": "0132",
+    "rezeptname": "Baguette"
+  },
+  {
+    "id": "0133",
+    "rezeptname": "Ratatouille"
+  },
+  {
+    "id": "0134",
+    "rezeptname": "Coq au Vin"
+  },
+  {
+    "id": "0135",
+    "rezeptname": "Quiche Lorraine"
+  },
+  {
+    "id": "0136",
+    "rezeptname": "Soupe à l'oignon"
+  },
+  {
+    "id": "0137",
+    "rezeptname": "Beef Bourguignon"
+  },
+  {
+    "id": "0138",
+    "rezeptname": "Duck Confit"
+  },
+  {
+    "id": "0139",
+    "rezeptname": "Croque Monsieur"
+  },
+  {
+    "id": "0140",
+    "rezeptname": "Escargots"
+  },
+  {
+    "id": "0141",
+    "rezeptname": "Pâté"
+  },
+  {
+    "id": "0142",
+    "rezeptname": "Tarte Tatin"
+  },
+  {
+    "id": "0143",
+    "rezeptname": "Creme Brulee"
+  },
+  {
+    "id": "0144",
+    "rezeptname": "Macaron"
+  },
+  {
+    "id": "0145",
+    "rezeptname": "Chateaubriand"
+  },
+  {
+    "id": "0146",
+    "rezeptname": "Blanquette de Veau"
+  },
+  {
+    "id": "0147",
+    "rezeptname": "Bouillabaisse"
+  },
+  {
+    "id": "0148",
+    "rezeptname": "Tarte Flambée"
+  },
+  {
+    "id": "0149",
+    "rezeptname": "Peking Duck"
+  },
+  {
+    "id": "0150",
+    "rezeptname": "Dim Sum"
+  },
+  {
+    "id": "0151",
+    "rezeptname": "Kung Pao Chicken"
+  },
+  {
+    "id": "0152",
+    "rezeptname": "Sweet and Sour Pork"
+  },
+  {
+    "id": "0153",
+    "rezeptname": "Spring Rolls"
+  },
+  {
+    "id": "0154",
+    "rezeptname": "Hot Pot"
+  },
+  {
+    "id": "0155",
+    "rezeptname": "Fried Rice"
+  },
+  {
+    "id": "0156",
+    "rezeptname": "Beef and Broccoli"
+  },
+  {
+    "id": "0157",
+    "rezeptname": "Mapo Tofu"
+  },
+  {
+    "id": "0158",
+    "rezeptname": "Dim Sum"
+  },
+  {
+    "id": "0159",
+    "rezeptname": "Szechuan Chicken"
+  },
+  {
+    "id": "0160",
+    "rezeptname": "Char Siu"
+  },
+  {
+    "id": "0161",
+    "rezeptname": "Egg Foo Young"
+  },
+  {
+    "id": "0162",
+    "rezeptname": "Wonton Soup"
+  },
+  {
+    "id": "0163",
+    "rezeptname": "Mongolian Beef"
+  },
+  {
+    "id": "0164",
+    "rezeptname": "Peking Duck"
+  },
+  {
+    "id": "0165",
+    "rezeptname": "Fish Tacos"
+  },
+  {
+    "id": "0166",
+    "rezeptname": "Chicken and Rice"
+  },
+  {
+    "id": "0167",
+    "rezeptname": "Burrata"
+  },
+  {
+    "id": "0168",
+    "rezeptname": "Grilled Cheese"
+  },
+  {
+    "id": "0169",
+    "rezeptname": "Lobster Roll"
+  },
+  {
+    "id": "0170",
+    "rezeptname": "Cacio e Pepe"
+  },
+  {
+    "id": "0171",
+    "rezeptname": "Oysters Rockefeller"
+  },
+  {
+    "id": "0172",
+    "rezeptname": "French Toast"
+  },
+  {
+    "id": "0173",
+    "rezeptname": "Beef Tacos"
+  },
+  {
+    "id": "0174",
+    "rezeptname": "Shrimp Po’ Boy"
+  },
+  {
+    "id": "0175",
+    "rezeptname": "Frittata"
+  },
+  {
+    "id": "0176",
+    "rezeptname": "Pad Thai"
+  },
+  {
+    "id": "0177",
+    "rezeptname": "Red Curry"
+  },
+  {
+    "id": "0178",
+    "rezeptname": "Tom Yum Soup"
+  },
+  {
+    "id": "0179",
+    "rezeptname": "Massaman Curry"
+  },
+  {
+    "id": "0180",
+    "rezeptname": "Green Curry"
+  },
+  {
+    "id": "0181",
+    "rezeptname": "Pad Krapow"
+  },
+  {
+    "id": "0182",
+    "rezeptname": "Som Tum"
+  },
+  {
+    "id": "0183",
+    "rezeptname": "Mango Sticky Rice"
+  },
+  {
+    "id": "0184",
+    "rezeptname": "Pineapple Fried Rice"
+  },
+  {
+    "id": "0185",
+    "rezeptname": "Spring Rolls"
+  },
+  {
+    "id": "0186",
+    "rezeptname": "Pho"
+  },
+  {
+    "id": "0187",
+    "rezeptname": "Bánh Mì"
+  },
+  {
+    "id": "0188",
+    "rezeptname": "Beef Noodle Soup"
+  },
+  {
+    "id": "0189",
+    "rezeptname": "Chicken Satay"
+  },
+  {
+    "id": "0190",
+    "rezeptname": "Beef Rendang"
+  },
+  {
+    "id": "0191",
+    "rezeptname": "Nasi Goreng"
+  },
+  {
+    "id": "0192",
+    "rezeptname": "Satay"
+  },
+  {
+    "id": "0193",
+    "rezeptname": "Laksa"
+  },
+  {
+    "id": "0194",
+    "rezeptname": "Char Kway Teow"
+  },
+  {
+    "id": "0195",
+    "rezeptname": "Hainanese Chicken Rice"
+  },
+  {
+    "id": "0196",
+    "rezeptname": "Chili Crab"
+  },
+  {
+    "id": "0197",
+    "rezeptname": "Okonomiyaki"
+  },
+  {
+    "id": "0198",
+    "rezeptname": "Sushi"
+  },
+  {
+    "id": "0199",
+    "rezeptname": "Tempura"
+  },
+  {
+    "id": "0200",
+    "rezeptname": "Ramen"
+  }
+]
