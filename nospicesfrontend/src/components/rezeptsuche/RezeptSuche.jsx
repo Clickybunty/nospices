@@ -21,7 +21,9 @@ import Flag from "react-world-flags";
 //     zu verwalten.
 import IngredientsList from "../ingredientslist/IngredientsList";
 
-//     Die Hauptkomponente `RezeptSuche` stellt die Benutzeroberfläche für die Zutaten-Suche und
+//     Die Hauptkomponente 
+//     `RezeptSuche` 
+//     stellt die Benutzeroberfläche für die Zutaten-Suche und
 //     -Auswahl bereit.
 function RezeptSuche() {
   //     Zustand zur Verwaltung der aktuellen Eingabe für die Suche.
