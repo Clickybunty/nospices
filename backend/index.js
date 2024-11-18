@@ -1,5 +1,8 @@
 const express = require("express");
 const cors = require("cors");
+const recipesRoute = require('./routes/recipes');
+app.use('/api/recipes', recipesRoute);
+
 
 const app = express();
 app.use(cors());
