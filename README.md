@@ -57,18 +57,12 @@ Das Frontend ist mit React entwickelt, um eine benutzerfreundliche Oberfläche z
 6.  ```bash
     npm install react-world-flag
     ```
-7.
-
-```bash
-npm install mysql
-```
-
-8.
-
-```bash
-
-npm install axios
-```
+7.  ```bash
+    npm install mysql
+    ```
+8.  ```bash
+    npm install axios
+    ```
 
 ---
 
@@ -179,11 +173,13 @@ Der Wechsel von MongoDB zu **MariaDB** wurde durchgeführt, um die Anwendung sta
 
 ## MySQL-Datenbank
 
-Das Backend verwendet **MySQL** für die Speicherung von Zutaten-IDs und Rezeptdaten. Die Datenbank ist lokal installiert und beinhaltet Tabellen für Zutaten und Rezepte. Die Tabellenstruktur ist relational, wobei Zutaten durch eindeutige IDs referenziert werden.
+Das Backend verwendet **MySQL** für die Speicherung von Zutaten-IDs und Rezeptdaten. 
+Die Datenbank ist lokal installiert und beinhaltet Tabellen für Zutaten und Rezepte. 
+Die Tabellenstruktur ist relational, wobei Zutaten durch eindeutige IDs referenziert werden.
 
 ### MySQL Setup
 
-1. **Datenbank erstellen:**
+1. **Datenbank "zutaten_db" erstellen:**
 
    Melde dich in MySQL Workbench an und erstelle die Datenbank `zutaten_db`:
 
@@ -192,7 +188,7 @@ Das Backend verwendet **MySQL** für die Speicherung von Zutaten-IDs und Rezeptd
    USE zutaten_db;
    ```
 
-2. **Tabelle erstellen:**
+2. **Tabelle "zutaten" erstellen:**
 
    Erstelle eine Tabelle für die Zutaten, die `id` und die zugehörigen `ids` speichert:
 
@@ -205,7 +201,44 @@ Das Backend verwendet **MySQL** für die Speicherung von Zutaten-IDs und Rezeptd
 
 3. **Daten einfügen:**
 
-   Um Daten in die MySQL-Datenbank zu importieren, stelle sicher, dass das Skript `insertData.js` (wie im Backend beschrieben) ausgeführt wird, um die umgewandelte `transformedZutatenIDs.json` in die Tabelle `zutaten` einzufügen.
+   Um Daten in die MySQL-Datenbank zu importieren, stelle sicher,
+   dass das Skript `insertData.js` (wie im Backend beschrieben) ausgeführt wird,
+   um die umgewandelte `transformedZutatenIDs.json` in die Tabelle `zutaten` einzufügen.
+
+4. **Tabelle "multilanguage" erstellen:**
+
+   Erstelle eine Tabelle multilanguage, Die SQL-Tabelle multilanguage muss wie folgt definiert sein:
+   
+   ```sql
+   CREATE TABLE multilanguage (
+     id INT NOT NULL,
+     land VARCHAR(10) NOT NULL,
+     zutat VARCHAR(255) NOT NULL,
+     PRIMARY KEY (id, land) -- Optional, wenn Kombination eindeutig sein soll
+   );
+   ```
+5. **Daten einfügen:**
+
+   Um Daten in die MySQL-Datenbank zu importieren, stelle sicher,
+   dass das Skript `insertZutatenMultiLanguageData.js` (wie im Backend beschrieben) ausgeführt wird,
+   um die umgewandelte `transformedZutatenMultiLanguageFile.json` in die Tabelle `multilanguage` einzufügen.
+
+6. **Tabelle "rezeptnames" erstellen:**
+
+   Erstelle eine Tabelle für die Rezeptnamen, die `id` und die zugehörigen `rezeptname` speichert:
+
+   ```sql
+   CREATE TABLE rezeptnames (
+     id VARCHAR(10) PRIMARY KEY,
+     ids JSON
+   );
+   ```
+
+7. **Daten einfügen:**
+
+   Um Daten in die MySQL-Datenbank zu importieren, stelle sicher,
+   dass das Skript `insertRezeptIDs.js` (wie im Backend beschrieben) ausgeführt wird,
+   um die umgewandelte `transformedRezeptIDs.json` in die Tabelle `rezeptnames` einzufügen.
 
 ---
 
