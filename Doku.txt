@@ -75,6 +75,14 @@ Skript zur automatischen Befüllung der Datenbank wurde angepasst.
 
 ## Monday Week 2
 Frontend RezepteSuchen in Components aufgeteilt.
+Datenbank wurde um mehrere Tabellen erweitert. 
+Merge mit Arbeitsbranch ist erfolgt. 
+Zwei Skripte zum Umwandeln der jsons wurden erstellt. 
+Darüber hinaus wurden Skripte geschrieben, die die Daten vorbereiten und
+zwei Skripte, die die Daten in die Datenbank hochladen. 
+
+Am Ende wurden in der bestehenden Datenbank zwei weitere Tabellen erstellt:
+Neben der Tabelle "zutaten" wurden die Tabellen "multilanguage" und "rezeptnamen" erstellt.
 
 
 ## Probleme und Lösungen
