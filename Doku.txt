@@ -90,8 +90,13 @@ Neben der Tabelle "zutaten" wurden die Tabellen "multilanguage" und "rezeptnamen
 CSS wurde an die ausgelagerten Components angepasst.
 
 DropDown Menü öffnet sich mit der gesamten Liste wenn man in das Suchfeld hinein klickt. 
+Dropdown Menü schließt sich wenn man erneut hinnein klickt. 
 
-Die Sprache wird jetzt automatisch an die Browsersprache angepasst und lässt sich noch nachträglich anpassen
+Die Sprache wird jetzt automatisch an die Browsersprache angepasst und lässt sich noch nachträglich anpassen.
+
+Namen für die App wurden ermittelt.
+5 Namen die laut erster Recharche sowohl als de als auch com verfügbar währen.
+3 Namen stehen in der engeren Auswahl. Entscheidung noch offen.
 
 
 
