@@ -98,6 +98,8 @@ Namen für die App wurden ermittelt.
 5 Namen die laut erster Recharche sowohl als de als auch com verfügbar währen.
 3 Namen stehen in der engeren Auswahl. Entscheidung noch offen.
 
+Ein erster Entwurf für das Backend bzgl. der Datenbankabfrage der Rezepte und der Abfrage
+nach YouTube- und Chefkoch-Videos wurde erstellt. Dieser wird aber noch überarbeitet.
 
 
 ## Probleme und Lösungen
