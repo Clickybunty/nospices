@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const recipesRoute = require('./routes/recipes');
-app.use('/api/recipes', recipesRoute);
+// const recipesRoute = require("./recipes");
+// app.use('/api/recipes', recipesRoute);
 const db = require("./callDbData"); // Importiere die Datenbankfunktionen aus callDbData.js
 
 
