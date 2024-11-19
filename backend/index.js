@@ -64,6 +64,34 @@ app.post('/zutaten', (req, res) => {
   });
 });
 
+// GET /rezepte: Alle Rezepte abrufen
+app.get('/rezepte', (req, res) => {
+  db.getAllRezepte((err, results) => {
+    if (err) {
+      return res.status(500).json({ error: 'Fehler beim Abrufen der Rezepte' });
+    }
+    res.json(results);
+  });
+});
+
+// GET /rezepte/:id: Ein Rezept abrufen
+app.get('/rezepte/:id', (req, res) => {
+  const id = req.params.id;
+  db.getRezeptById(id, (err, result) => {
+    if (err) {
+      return res.status(500).json({ error: 'Fehler beim Abrufen des Rezepts' });
+    }
+    if (!result) {
+      return res.status(404).json({ error: 'Rezept nicht gefunden' });
+    }
+    res.json(result);
+  });
+});
+
+app.listen(5000, () => {
+  console.log('Server läuft auf http://localhost:5000');
+});
+
 
 const PORT = 5000;
 app.listen(PORT, () => {
