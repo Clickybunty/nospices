@@ -53,9 +53,13 @@ function SearchInput({ language, onIngredientSelect }) {
         type="text"
         value={zutaten}
         onChange={(e) => setZutaten(e.target.value)}
-        onFocus={() => {
-          setIsDropdownOpen(true); // Öffne das Dropdown beim Fokussieren
-          setFilteredZutaten(zutatenDaten); // Zeige die alphabetische Liste
+        onClick={() => {
+          // Dropdown öffnen oder schließen
+          setIsDropdownOpen((prev) => !prev);
+          // Liste aktualisieren, wenn geöffnet
+          if (!isDropdownOpen) {
+            setFilteredZutaten(zutatenDaten);
+          }
         }}
         placeholder="🔍 Zutaten suchen"
       />

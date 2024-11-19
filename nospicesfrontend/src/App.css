@@ -1,36 +1,25 @@
-/* App.module.css */
+/* Stellt sicher, dass der gesamte Inhalt innerhalb des Viewports bleibt */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
 
+/* Setzt eine maximale Breite für den Hauptcontainer */
 .appContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #f8f9fa;
+  width: 100%;
+  max-width: 1200px; /* Maximale Breite für Desktop */
+  margin: 0 auto; /* Zentriert die App */
   padding: 20px;
-  font-family: "Arial", sans-serif;
-  box-sizing: border-box;
 }
 
-/* Optional: Styling für allgemeine Textausrichtung */
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-/* Optional: Ein globales Reset für eine konsistente Basis */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Responsives Design */
+/* Medienabfragen für verschiedene Bildschirmgrößen */
 @media (max-width: 768px) {
   .appContainer {
-    padding: 10px;
+    padding: 10px; /* Weniger Padding für kleinere Bildschirme */
   }
+
+  /* Weitere spezifische Anpassungen hier */
 }

@@ -1,75 +1,47 @@
-/* LanguageSelector.module.css */
-
 .languageSelector {
-  position: relative;
-  display: inline-block;
-  margin: 10px;
+  display: flex;
+  justify-content: flex-end; /* Fahne auf die rechte Seite schieben */
+  align-items: center;
+  padding: 10px;
+  position: relative; /* Für das Dropdown-Positioning */
 }
 
 .languageButton {
-  background-color: #ffffff;
-  border: 1px solid #dcdcdc;
-  border-radius: 6px;
-  padding: 5px;
+  background: none;
+  border: none;
   cursor: pointer;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
 }
 
 .languageButton:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .languageDropdown {
   position: absolute;
-  top: 45px;
-  right: 0;
+  top: 100%; /* Dropdown unter die Fahne setzen */
+  right: 0; /* Dropdown rechtsbündig */
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
   border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 10;
-  padding: 8px 0;
-  width: 150px;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.languageDropdown button {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  padding: 8px 12px;
-  text-align: left;
+  padding: 5px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.languageOption {
+  background: none;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  padding: 10px;
+  text-align: left;
+  transition: background-color 0.2s ease;
 }
 
-.languageDropdown button:hover {
-  background-color: #e6f7ff;
-  transform: scale(1.02);
-}
-
-.languageDropdown button:active {
-  background-color: #cceeff;
-}
-
-.languageDropdown img {
-  margin-right: 8px;
-}
-
-/* Animation for dropdown appearance */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.languageOption:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
