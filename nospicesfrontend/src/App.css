@@ -1,0 +1,36 @@
+/* App.module.css */
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Optional: Styling für allgemeine Textausrichtung */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Ein globales Reset für eine konsistente Basis */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+  .appContainer {
+    padding: 10px;
+  }
+}
