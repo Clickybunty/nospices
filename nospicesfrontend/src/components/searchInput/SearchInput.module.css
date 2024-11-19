@@ -1,0 +1,80 @@
+/* SearchInput.module.css */
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputField::placeholder {
+  color: #b0b0b0;
+  font-style: italic;
+}
+
+.inputField:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Dropdown styling integrated with the FilteredList component */
+.dropdownContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdownItem {
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #333333;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+.dropdownItem:active {
+  background-color: #e6f7ff;
+}
+
+/* Scrollbar customization */
+.dropdownContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdownContainer::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-radius: 3px;
+}
+
+.dropdownContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+}

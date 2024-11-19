@@ -1,1 +1,36 @@
+/* Content.module.css */
 
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 30px;
+}
+
+.contentContainer h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contentContainer > * {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    padding: 20px 10px;
+  }
+
+  .contentContainer h1 {
+    font-size: 24px;
+  }
+}
