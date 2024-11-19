@@ -31,19 +31,19 @@ oder
 npm run dev
 
 
-## Monday	
+## Monday Week 1   ( Tag 0 )
 Projekt initialisieren und Struktur aufbauen
 Datenbank geändert auf MariaDB, aufgrund von Problemen mit der MongoDB	
 Backend und Frontend initialisiert	
 
-## Tuesday	
+## Tuesday Week 1   ( Tag 1 )
 MongoDB Setup und erste API-Verbindungen
 Zutaten Beispiel-Rezepte und IDs erstellt	
 
 Beispiel-Rezepte und Zutaten IDs erstellt
 Datenbank lokal erstellt	
 
-## Wednesday
+## Wednesday Week 1   ( Tag 2 )
 Datenbank-Migration von MongoDB zu MariaDB durchgeführt
 Doku MongoDB hinzugefügt	
 
@@ -56,12 +56,12 @@ Frontend-Anpassungen und Tests abgeschlossen
 Frontend-Anpassungen und Tests abgeschlossen
 Get Call und Frontend-Kommunikation implementiert	
 
-## Thursday	
+## Thursday	Week 1   ( Tag 3 )
 Get Call und Frontend-Kommunikation implementiert
 
 Ausgewählte Zutaten im Frontend ausgegeben
 
-## Friday
+## Friday Week 1   ( Tag 4 )
 MySQL Setup wurde zur `README.md` hinzugefügt, 
 einschließlich der Befehle für das Erstellen der Datenbank und Tabelle.
 Eine allgemeine Erklärung zum Importieren von Daten in die MySQL-Datenbank wurde eingefügt.
@@ -73,7 +73,7 @@ Zutaten sowie für die Manipulation der Daten in der MySQL-Datenbank implementie
 Skript zur automatischen Befüllung der Datenbank wurde angepasst.
 
 
-## Monday Week 2
+## Monday Week 2   ( Tag 5 )
 Frontend RezepteSuchen in Components aufgeteilt.
 Datenbank wurde um mehrere Tabellen erweitert. 
 Merge mit Arbeitsbranch ist erfolgt. 
@@ -83,6 +83,16 @@ zwei Skripte, die die Daten in die Datenbank hochladen.
 
 Am Ende wurden in der bestehenden Datenbank zwei weitere Tabellen erstellt:
 Neben der Tabelle "zutaten" wurden die Tabellen "multilanguage" und "rezeptnamen" erstellt.
+
+
+## Tuesday Week 2   ( Tag 6 )
+
+CSS wurde an die ausgelagerten Components angepasst.
+
+DropDown Menü öffnet sich mit der gesamten Liste wenn man in das Suchfeld hinein klickt. 
+
+Die Sprache wird jetzt automatisch an die Browsersprache angepasst und lässt sich noch nachträglich anpassen
+
 
 
 ## Probleme und Lösungen
