@@ -14,7 +14,7 @@
 }
 
 .rezeptSuche > * {
-  width: 100%;
+  width: max-content;
   max-width: 600px;
 }
 

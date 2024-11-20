@@ -22,7 +22,7 @@
 }
 
 .contentContainer > * {
-  width: 100%;
+  width: max-content;
 }
 
 @media (max-width: 768px) {
