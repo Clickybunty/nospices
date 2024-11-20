@@ -1,38 +1,18 @@
 import React, { useState, useEffect } from "react";
-import LanguageSelector from "../languageselector/LanguageSelector";
 import SearchInput from "../searchInput/SearchInput";
 import IngredientsList from "../ingredientslist/IngredientsList";
-import Results from "../results/Results"; // Neue Komponente für die Ergebnisse
-
+import Results from "../results/Results";
+import { useLanguage } from "../../context/LanguageContext";
 import axios from "axios";
 import styles from "./RezeptSuche.module.css";
 
 function RezeptSuche() {
-  const [selectedIngredientIds, setSelectedIngredientIds] = useState([]); // IDs der Zutaten speichern
-  const [language, setLanguage] = useState("de"); // Standard-Sprache
-  const [zutatenData, setZutatenData] = useState({}); // Zutaten-Daten
-  const [results, setResults] = useState([]); // Ergebnisse vom Backend
+  const { language } = useLanguage();
+  const [selectedIngredientIds, setSelectedIngredientIds] = useState([]);
+  const [zutatenData, setZutatenData] = useState({});
+  const [results, setResults] = useState([]);
 
-  const languages = {
-    de: "DE",
-    en: "GB",
-    it: "IT",
-    fr: "FR",
-    es: "ES",
-    ar: "AE",
-    iw: "IL",
-    el: "GR",
-  };
-
-  // Automatische Sprachdetektion basierend auf der Browsersprache
-  useEffect(() => {
-    const browserLanguage = navigator.language.split("-")[0]; // "en-US" → "en"
-    if (languages[browserLanguage]) {
-      setLanguage(browserLanguage); // Setzt die Sprache basierend auf der Browsersprache
-    }
-  }, []); // Wird nur einmal beim Laden ausgeführt
-
-  // Zutaten aus JSON laden
+  // Load ingredient data
   useEffect(() => {
     axios
       .get("/zutaten.json")
@@ -40,10 +20,9 @@ function RezeptSuche() {
       .catch((error) => console.error("Fehler beim Laden der Zutaten:", error));
   }, []);
 
-  // IDs an Backend senden (nur simuliert)
+  // Send IDs to backend
   useEffect(() => {
     if (selectedIngredientIds.length > 0) {
-      // Simulierter Backend-Aufruf
       axios
         .post("/api/recipes", { ingredientIds: selectedIngredientIds })
         .then((response) => setResults(response.data))
@@ -51,7 +30,7 @@ function RezeptSuche() {
           console.error("Fehler beim Abrufen der Ergebnisse:", error)
         );
     } else {
-      setResults([]); // Leere Ergebnisse, wenn keine Zutaten ausgewählt
+      setResults([]);
     }
   }, [selectedIngredientIds]);
 
@@ -69,11 +48,6 @@ function RezeptSuche() {
 
   return (
     <div className={styles.rezeptSuche}>
-      <LanguageSelector
-        language={language}
-        languages={languages}
-        onLanguageChange={setLanguage}
-      />
       <SearchInput
         language={language}
         zutatenData={zutatenData}
@@ -86,7 +60,7 @@ function RezeptSuche() {
         }))}
         onRemove={handleRemoveIngredient}
       />
-      <Results results={results} /> {/* Neue Komponente für Ergebnisse */}
+      <Results results={results} />
     </div>
   );
 }

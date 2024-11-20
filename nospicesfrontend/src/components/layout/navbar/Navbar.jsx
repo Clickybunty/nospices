@@ -1,7 +1,11 @@
 import React from "react";
+import LanguageSelector from "../../languageselector/LanguageSelector";
+import { useLanguage } from "../../../context/LanguageContext";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
+  const { language, languages, changeLanguage } = useLanguage();
+
   return (
     <nav className={styles.navbar}>
       {/* Logo */}
@@ -25,8 +29,13 @@ export default function Navbar() {
         </li>
       </ul>
 
-      {/* Login Button */}
+      {/* Language Selector and Login */}
       <div className={styles.navActions}>
+        <LanguageSelector
+          language={language}
+          languages={languages}
+          onLanguageChange={changeLanguage}
+        />
         <button className={styles.loginButton}>Login</button>
       </div>
     </nav>
