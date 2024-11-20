@@ -32,86 +32,119 @@ npm run dev
 
 
 ## Monday Week 1   ( Tag 0 )
-Projekt initialisieren und Struktur aufbauen
-Datenbank geändert auf MariaDB, aufgrund von Problemen mit der MongoDB	
-Backend und Frontend initialisiert	
+
+    Projekt initialisieren und Struktur aufbauen
+
+    Datenbank geändert auf MariaDB, aufgrund von Problemen mit der MongoDB	
+
+    Backend und Frontend initialisiert	
 
 ## Tuesday Week 1   ( Tag 1 )
-MongoDB Setup und erste API-Verbindungen
-Zutaten Beispiel-Rezepte und IDs erstellt	
 
-Beispiel-Rezepte und Zutaten IDs erstellt
-Datenbank lokal erstellt	
+    MongoDB Setup und erste API-Verbindungen
+    Zutaten Beispiel-Rezepte und IDs erstellt	
+    
+    Beispiel-Rezepte und Zutaten IDs erstellt
+    Datenbank lokal erstellt	
 
 ## Wednesday Week 1   ( Tag 2 )
-Datenbank-Migration von MongoDB zu MariaDB durchgeführt
-Doku MongoDB hinzugefügt	
-
-Datenbank lokal erstellt und konfiguriert
-Datenformat-Transformation und Insert-Skripte erstellt
-
-Datenformat-Transformation und Insert-Skripte erstellt
-Frontend-Anpassungen und Tests abgeschlossen	
-
-Frontend-Anpassungen und Tests abgeschlossen
-Get Call und Frontend-Kommunikation implementiert	
+    
+    Datenbank-Migration von MongoDB zu MariaDB durchgeführt
+    Doku MongoDB hinzugefügt	
+    
+    Datenbank lokal erstellt und konfiguriert
+    Datenformat-Transformation und Insert-Skripte erstellt
+    
+    Datenformat-Transformation und Insert-Skripte erstellt
+    Frontend-Anpassungen und Tests abgeschlossen	
+    
+    Frontend-Anpassungen und Tests abgeschlossen
+    Get Call und Frontend-Kommunikation implementiert	
 
 ## Thursday	Week 1   ( Tag 3 )
-Get Call und Frontend-Kommunikation implementiert
 
-Ausgewählte Zutaten im Frontend ausgegeben
+    Get Call und Frontend-Kommunikation implementiert
+    
+    Ausgewählte Zutaten im Frontend ausgegeben
 
 ## Friday Week 1   ( Tag 4 )
-MySQL Setup wurde zur `README.md` hinzugefügt, 
-einschließlich der Befehle für das Erstellen der Datenbank und Tabelle.
-Eine allgemeine Erklärung zum Importieren von Daten in die MySQL-Datenbank wurde eingefügt.
 
-Die Backend-APIs wurden erweitert, 
-um die neuen relationalen Datenstrukturen zu unterstützen. 
-Insbesondere wurden Endpoints für das Abrufen von Rezepten und 
-Zutaten sowie für die Manipulation der Daten in der MySQL-Datenbank implementiert.
-Skript zur automatischen Befüllung der Datenbank wurde angepasst.
+    MySQL Setup wurde zur `README.md` hinzugefügt, 
+    einschließlich der Befehle für das Erstellen der Datenbank und Tabelle.
+    
+    Eine allgemeine Erklärung zum Importieren von Daten in die MySQL-Datenbank wurde eingefügt.
+    
+    Die Backend-APIs wurden erweitert, 
+    um die neuen relationalen Datenstrukturen zu unterstützen. 
+    
+    Insbesondere wurden Endpoints für das Abrufen von Rezepten und 
+    Zutaten sowie für die Manipulation der Daten in der MySQL-Datenbank implementiert.
+    
+    Skript zur automatischen Befüllung der Datenbank wurde angepasst.
 
 
 ## Monday Week 2   ( Tag 5 )
-Frontend RezepteSuchen in Components aufgeteilt.
-Datenbank wurde um mehrere Tabellen erweitert. 
-Merge mit Arbeitsbranch ist erfolgt. 
-Zwei Skripte zum Umwandeln der jsons wurden erstellt. 
-Darüber hinaus wurden Skripte geschrieben, die die Daten vorbereiten und
-zwei Skripte, die die Daten in die Datenbank hochladen. 
 
-Am Ende wurden in der bestehenden Datenbank zwei weitere Tabellen erstellt:
-Neben der Tabelle "zutaten" wurden die Tabellen "multilanguage" und "rezeptnamen" erstellt.
+    Frontend RezepteSuchen in Components aufgeteilt.
+    
+    Datenbank wurde um mehrere Tabellen erweitert. 
+    
+    Merge mit Arbeitsbranch ist erfolgt. 
+    
+    Zwei Skripte zum Umwandeln der jsons wurden erstellt. 
+    
+    Darüber hinaus wurden Skripte geschrieben, die die Daten vorbereiten und
+    zwei Skripte, die die Daten in die Datenbank hochladen. 
+    
+    Am Ende wurden in der bestehenden Datenbank zwei weitere Tabellen erstellt:
+    Neben der Tabelle "zutaten" wurden die Tabellen "multilanguage" und "rezeptnamen" erstellt.
 
 
 ## Tuesday Week 2   ( Tag 6 )
 
-CSS wurde an die ausgelagerten Components angepasst.
-
-DropDown Menü öffnet sich mit der gesamten Liste wenn man in das Suchfeld hinein klickt. 
-Dropdown Menü schließt sich wenn man erneut hinnein klickt. 
-
-Die Sprache wird jetzt automatisch an die Browsersprache angepasst und lässt sich noch nachträglich anpassen.
-
-Namen für die App wurden ermittelt.
-5 Namen die laut erster Recharche sowohl als de als auch com verfügbar währen.
-3 Namen stehen in der engeren Auswahl. Entscheidung noch offen.
-
-Ein erster Entwurf für das Backend bzgl. der Datenbankabfrage der Rezepte und der Abfrage
-nach YouTube- und Chefkoch-Videos wurde erstellt. Dieser wird aber noch überarbeitet.
+    CSS wurde an die ausgelagerten Components angepasst.
+    
+    DropDown Menü öffnet sich mit der gesamten Liste wenn man in das Suchfeld hinein klickt. 
+    Dropdown Menü schließt sich wenn man erneut hinnein klickt. 
+    
+    Die Sprache wird jetzt automatisch an die Browsersprache angepasst und lässt sich noch nachträglich anpassen.
+    
+    Namen für die App wurden ermittelt.
+    5 Namen die laut erster Recharche sowohl als de als auch com verfügbar währen.
+    3 Namen stehen in der engeren Auswahl. Entscheidung noch offen.
+    
+    Ein erster Entwurf für das Backend bzgl. der Datenbankabfrage der Rezepte und der Abfrage
+    nach YouTube- und Chefkoch-Videos wurde erstellt. Dieser wird aber noch überarbeitet.
 
 
 ## Wednesday Week 2   ( Tag 7 )
 
-Navbar wurde vorbereitet mit Platzhaltern und für die weitere Bearbeitung bereitgestellt.
+    Die Navbar wurde mit Platzhaltern vorbereitet und 
+    für die weitere Bearbeitung bereitgestellt.
+    
+    Der Footer wurde ebenfalls mit Platzhaltern vorbereitet und 
+    zur weiteren Bearbeitung bereitgestellt.
+    
+    Ein einstündiger Termin mit Patrick fand statt, 
+    um die Domain und 
+    die Anbindung in AWS zu besprechen.
+    
+    Die Zutatenliste war als String unbrauchbar und 
+    wurde für das Backend überarbeitet, 
+    sodass jetzt die IDs übergeben werden.
+    
+    Die Darstellung der ausgewählten Zutaten wurde ebenfalls überarbeitet.
+    
+    IDs werden simuliert an das Backend übertragen.
+    
+    Checkboxen für die Plattformen Google, Chefkoch und YouTube wurden erfolgreich implementiert.
+    
+    Ein Bugfix für die automatische Sprachanpassung basierend auf den Browsereinstellungen wurde durchgeführt.
 
-Footer wurde vorbereitet mit Platzhaltern und für die weitere Bearbeitung bereitgestellt.
 
-Termin mit Patrick bezüglich Domain und anbindung in AWS 1 Std.
+## Wednesday Week 2   ( Tag 8 )
 
-Die Zutatenliste ist als string unbrauchbar gewesen und wurde für das Backend überarbeitet "id Übergebe".
-Die Ausgewählten Zutaten überarbeitet.
+
 
 ## Probleme und Lösungen
 
