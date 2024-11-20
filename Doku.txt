@@ -139,10 +139,16 @@ npm run dev
     
     Checkboxen für die Plattformen Google, Chefkoch und YouTube wurden erfolgreich implementiert.
     
-    Ein Bugfix für die automatische Sprachanpassung basierend auf den Browsereinstellungen wurde durchgeführt.
+    Ein Bugfix... oder mehrere für die automatische Sprachanpassung 
+    basierend auf den Browsereinstellungen wurde(n) durchgeführt.
+
+    Die `LanguageSelector`-Komponente wurde in die Navbar neben den Login-Bereich verschoben.  
+
+    Eine neue Datei `src/context/LanguageContext.jsx` wurde erstellt und 
+    implementiert, um ein modulares Sprach-Handling zu ermöglichen.
 
 
-## Wednesday Week 2   ( Tag 8 )
+## Thursday Week 2   ( Tag 8 )
 
 
 
