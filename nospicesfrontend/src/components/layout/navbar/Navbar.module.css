@@ -1,14 +1,12 @@
-/* Navbar.module.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #ffffff; /* Heller Hintergrund */
-  border-bottom: 2px solid #f0f0f0; /* Dünner unterer Rand */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
-  position: sticky; /* Bleibt am oberen Rand */
+  padding: 60px;
+  background-color: #1a1a1a; /* Helles Grau für den Hintergrund */
+  border-bottom: 2px solid #cccccc; /* Dezenter, aber sichtbarer Rand */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Dimension */
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -17,46 +15,43 @@
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #ff6600; /* Akzentfarbe */
+  color: #e60023; /* Kräftiges Rot für das Logo */
 }
 
 .logo a:hover {
-  color: #ff884d; /* Hellerer Orange-Ton beim Hover */
+  color: #ff3333; /* Helleres Rot beim Hover */
 }
 
 .navLinks {
   list-style: none;
-  display: flex;
-  gap: 20px;
+  display: flex; /* Flexbox aktivieren für horizontale Anordnung */
+  gap: 20px; /* Abstand zwischen den Links */
   margin: 0;
   padding: 0;
 }
 
-.navLinks li {
-  font-size: 16px;
-}
-
 .navLinks a {
   text-decoration: none;
-  color: #333333; /* Dunkler Text */
+  color: #e60023; /* Kräftiges Rot für die Links */
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .navLinks a:hover {
-  color: #ff6600; /* Akzentfarbe beim Hover */
+  color: #ff3333; /* Helleres Rot beim Hover */
 }
 
-.navActions {
-  display: flex;
-  align-items: center;
+/* Verhindern, dass Links im "Aktiv"-Zustand lila werden */
+.navLinks a:active {
+  color: #e60023; /* Rot bleibt auch im aktiven Zustand */
 }
+
 
 .loginButton {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background-color: #ff6600; /* Akzentfarbe */
+  background-color: #e60023; /* Rotes Highlight für den Button */
   padding: 8px 16px;
   border: none;
   border-radius: 6px;
@@ -65,38 +60,20 @@
 }
 
 .loginButton:hover {
-  background-color: #e55b00; /* Dunkleres Orange beim Hover */
-  transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+  background-color: #cc4f00; /* Etwas dunkleres Rot beim Hover */
+  transform: scale(1.05);
 }
 
 .loginButton:active {
-  background-color: #cc4f00; /* Noch dunkler beim Klicken */
-  transform: scale(0.95); /* Leichtes Verkleinern beim Klicken */
+  background-color: #a3001b; /* Dunkelstes Rot beim Klicken */
+  transform: scale(0.95);
 }
 
-/* Responsives Design */
+/* Responsives Design: Links untereinander bei kleineren Bildschirmen */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
   .navLinks {
-    flex-direction: column; /* Menü vertikal anordnen */
-    gap: 10px;
-    width: 100%; /* Nimmt die gesamte Breite ein */
-    margin-top: 10px;
-  }
-
-  .navActions {
-    margin-top: 10px;
-    width: 100%;
-    justify-content: flex-start; /* Login-Button linksbündig */
-  }
-
-  .loginButton {
-    width: 100%; /* Nimmt die gesamte Breite ein */
-    text-align: center;
+    flex-direction: column; /* Links vertikal anordnen bei kleineren Bildschirmen */
+    gap: 10px; /* Weniger Abstand zwischen den Links */
   }
 }
+

@@ -1,15 +1,20 @@
 /* Footer.module.css */
 
 .footerContainer {
-  background-color: #333333; /* Dunkler Hintergrund */
-  color: #ffffff; /* Weiße Schrift */
-  padding: 20px;
+  background-color: #1a1a1a; /* Etwas dunklerer Hintergrund für mehr Kontrast */
+  color: #ffffff; /* Weiße Schrift bleibt */
+  padding: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   text-align: center;
 }
+
+body, .footerContainer {
+  font-family: 'Lato', sans-serif;
+}
+
 
 .linksContainer {
   display: flex;
@@ -19,7 +24,7 @@
 }
 
 .footerLink {
-  color: #ff6600; /* Akzentfarbe für Links */
+  color: #e60023; /* Knalliges Rot für Links */
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -27,14 +32,14 @@
 }
 
 .footerLink:hover {
-  color: #ff884d; /* Hellerer Orange-Ton beim Hover */
+  color: #ff3333; /* Kräftigeres Rot beim Hover */
 }
 
 .copyright {
   font-size: 12px;
   font-weight: 400;
   margin-top: 10px;
-  color: #cccccc; /* Hellgraue Schrift für Copyright */
+  color: #999999; /* Dezenter Hellgrau-Ton für Copyright */
 }
 
 /* Responsives Design */
@@ -47,3 +52,4 @@
     font-size: 12px;
   }
 }
+
