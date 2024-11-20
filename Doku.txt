@@ -102,6 +102,13 @@ Ein erster Entwurf für das Backend bzgl. der Datenbankabfrage der Rezepte und d
 nach YouTube- und Chefkoch-Videos wurde erstellt. Dieser wird aber noch überarbeitet.
 
 
+## Wednesday Week 2   ( Tag 7 )
+
+Navbar wurde vorbereitet mit Platzhaltern und für die weitere Bearbeitung bereitgestellt.
+
+Footer wurde vorbereitet mit Platzhaltern und für die weitere Bearbeitung bereitgestellt.
+
+
 ## Probleme und Lösungen
 
 Während der Entwicklung gab es Herausforderungen beim **Mergen** der Branches, die als Bug identifiziert und behoben wurden. Alle Synchronisationen sind nun korrekt angepasst, und der Code befindet sich auf dem neuesten Stand.
