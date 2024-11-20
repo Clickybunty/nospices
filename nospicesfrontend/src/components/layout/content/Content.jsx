@@ -5,7 +5,6 @@ import styles from "./Content.module.css";
 export default function Content() {
   return (
     <div className={styles.contentContainer}>
-      <h1>test</h1>
       <RezeptSuche />
       {/* <div className="contentContainer">Nospices</div> */}
     </div>

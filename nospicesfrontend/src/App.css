@@ -1,0 +1,25 @@
+/* Stellt sicher, dass der gesamte Inhalt innerhalb des Viewports bleibt */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
+
+/* Setzt eine maximale Breite für den Hauptcontainer */
+.appContainer {
+  width: 100%;
+  max-width: 1200px; /* Maximale Breite für Desktop */
+  margin: 0 auto; /* Zentriert die App */
+  padding: 20px;
+}
+
+/* Medienabfragen für verschiedene Bildschirmgrößen */
+@media (max-width: 768px) {
+  .appContainer {
+    padding: 10px; /* Weniger Padding für kleinere Bildschirme */
+  }
+
+  /* Weitere spezifische Anpassungen hier */
+}

@@ -8,9 +8,9 @@ function FilteredList({ items, onItemClick }) {
         <div
           key={index}
           className={styles.dropdownItem}
-          onClick={() => onItemClick(item)}
+          onClick={() => onItemClick(item)} // Das gesamte Objekt wird weitergegeben
         >
-          {item}
+          {item.name} {/* Nur die `name`-Eigenschaft wird gerendert */}
         </div>
       ))}
     </div>

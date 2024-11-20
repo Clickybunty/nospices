@@ -1,46 +1,43 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-import styles from "./SearchInput.module.css";
 import FilteredList from "../filteredlist/FilteredList";
+import styles from "./SearchInput.module.css";
 
-function SearchInput({ language, onIngredientSelect }) {
+function SearchInput({ language, zutatenData, onIngredientSelect }) {
   const [zutaten, setZutaten] = useState("");
-  const [zutatenDaten, setZutatenDaten] = useState([]);
   const [filteredZutaten, setFilteredZutaten] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const loadZutaten = () => {
-    axios
-      .get("/zutaten.json")
-      .then((response) => {
-        const sortedZutaten = Object.entries(response.data)
-          .sort((a, b) => a[1][language].localeCompare(b[1][language]))
-          .map(([id, zutat]) => zutat[language]);
-        setZutatenDaten(sortedZutaten);
-        setFilteredZutaten(sortedZutaten);
-      })
-      .catch((error) => {
-        console.error("Fehler beim Laden der Zutaten:", error);
-      });
-  };
-
+  // Filtere Zutaten basierend auf Eingabe
   useEffect(() => {
-    loadZutaten();
-  }, [language]);
-
-  useEffect(() => {
-    if (zutaten.trim() === "") {
-      setFilteredZutaten(zutatenDaten);
-      setIsDropdownOpen(false);
+    if (!zutaten.trim()) {
+      setFilteredZutaten(
+        Object.entries(zutatenData).map(([id, zutat]) => ({
+          id,
+          name: zutat[language],
+        }))
+      );
     } else {
       setFilteredZutaten(
-        zutatenDaten.filter((zutat) =>
-          zutat.toLowerCase().includes(zutaten.toLowerCase())
-        )
+        Object.entries(zutatenData)
+          .filter(([_, zutat]) =>
+            zutat[language].toLowerCase().includes(zutaten.toLowerCase())
+          )
+          .map(([id, zutat]) => ({ id, name: zutat[language] }))
       );
-      setIsDropdownOpen(true);
     }
-  }, [zutaten, zutatenDaten]);
+  }, [zutaten, zutatenData, language]);
+
+  const handleInputClick = () => {
+    setIsDropdownOpen((prev) => !prev); // Öffnen oder Schließen
+    if (!isDropdownOpen) {
+      setFilteredZutaten(
+        Object.entries(zutatenData).map(([id, zutat]) => ({
+          id,
+          name: zutat[language],
+        }))
+      );
+    }
+  };
 
   return (
     <div className={styles.inputContainer}>
@@ -49,15 +46,16 @@ function SearchInput({ language, onIngredientSelect }) {
         type="text"
         value={zutaten}
         onChange={(e) => setZutaten(e.target.value)}
-        onFocus={loadZutaten}
+        onClick={handleInputClick}
         placeholder="🔍 Zutaten suchen"
       />
       {isDropdownOpen && filteredZutaten.length > 0 && (
         <FilteredList
           items={filteredZutaten}
           onItemClick={(item) => {
-            onIngredientSelect(item);
-            setZutaten("");
+            onIngredientSelect(item.id); // Übergebe die ID
+            setZutaten(""); // Leere Eingabefeld
+            setIsDropdownOpen(false); // Schließe Dropdown
           }}
         />
       )}

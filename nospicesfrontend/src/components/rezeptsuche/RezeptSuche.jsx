@@ -1,51 +1,66 @@
-import React, { useState } from "react";
-import LanguageSelector from "../languageselector/LanguageSelector";
+import React, { useState, useEffect } from "react";
 import SearchInput from "../searchInput/SearchInput";
 import IngredientsList from "../ingredientslist/IngredientsList";
+import Results from "../results/Results";
+import { useLanguage } from "../../context/LanguageContext";
+import axios from "axios";
 import styles from "./RezeptSuche.module.css";
 
 function RezeptSuche() {
-  const [selectedIngredients, setSelectedIngredients] = useState([]);
-  const [language, setLanguage] = useState("de");
+  const { language } = useLanguage();
+  const [selectedIngredientIds, setSelectedIngredientIds] = useState([]);
+  const [zutatenData, setZutatenData] = useState({});
+  const [results, setResults] = useState([]);
 
-  const languages = {
-    de: "DE",
-    en: "GB",
-    it: "IT",
-    fr: "FR",
-    es: "ES",
-    ar: "AE",
-    iw: "IL",
-    el: "GR",
-  };
+  // Load ingredient data
+  useEffect(() => {
+    axios
+      .get("/zutaten.json")
+      .then((response) => setZutatenData(response.data))
+      .catch((error) => console.error("Fehler beim Laden der Zutaten:", error));
+  }, []);
 
-  const handleIngredientSelect = (ingredient) => {
-    if (!selectedIngredients.includes(ingredient)) {
-      setSelectedIngredients([...selectedIngredients, ingredient]);
+  // Send IDs to backend
+  useEffect(() => {
+    if (selectedIngredientIds.length > 0) {
+      axios
+        .post("/api/recipes", { ingredientIds: selectedIngredientIds })
+        .then((response) => setResults(response.data))
+        .catch((error) =>
+          console.error("Fehler beim Abrufen der Ergebnisse:", error)
+        );
+    } else {
+      setResults([]);
+    }
+  }, [selectedIngredientIds]);
+
+  const handleIngredientSelect = (ingredientId) => {
+    if (!selectedIngredientIds.includes(ingredientId)) {
+      setSelectedIngredientIds([...selectedIngredientIds, ingredientId]);
     }
   };
 
-  const handleRemoveIngredient = (ingredient) => {
-    setSelectedIngredients(
-      selectedIngredients.filter((item) => item !== ingredient)
+  const handleRemoveIngredient = (ingredientId) => {
+    setSelectedIngredientIds(
+      selectedIngredientIds.filter((id) => id !== ingredientId)
     );
   };
 
   return (
     <div className={styles.rezeptSuche}>
-      <LanguageSelector
-        language={language}
-        languages={languages}
-        onLanguageChange={setLanguage}
-      />
       <SearchInput
         language={language}
+        zutatenData={zutatenData}
         onIngredientSelect={handleIngredientSelect}
       />
       <IngredientsList
-        ingredients={selectedIngredients}
+        ingredients={selectedIngredientIds.map((id) => ({
+          id,
+          name: zutatenData[id] ? zutatenData[id][language] : "Unbekannt",
+        }))}
         onRemove={handleRemoveIngredient}
       />
+      <Results results={results} />
     </div>
   );
 }

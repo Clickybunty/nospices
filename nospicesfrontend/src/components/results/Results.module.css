@@ -1,0 +1,35 @@
+.resultsContainer {
+  margin-top: 20px;
+}
+
+.filterContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resultsList a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.resultsList a:hover {
+  text-decoration: underline;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.videoContainer iframe {
+  border-radius: 8px;
+}
