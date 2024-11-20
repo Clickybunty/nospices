@@ -110,6 +110,8 @@ Footer wurde vorbereitet mit Platzhaltern und für die weitere Bearbeitung berei
 
 Termin mit Patrick bezüglich Domain und anbindung in AWS 1 Std.
 
+Die Zutatenliste ist als string unbrauchbar gewesen und wurde für das Backend überarbeitet "id Übergebe".
+Die Ausgewählten Zutaten überarbeitet.
 
 ## Probleme und Lösungen
 
