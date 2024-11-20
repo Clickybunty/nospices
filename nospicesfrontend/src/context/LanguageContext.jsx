@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 
 // Create a LanguageContext to manage global language settings
 const LanguageContext = createContext();
@@ -16,6 +16,14 @@ export const LanguageProvider = ({ children }) => {
     iw: "IL",
     el: "GR",
   };
+
+  // Automatische Sprachdetektion beim ersten Laden
+  useEffect(() => {
+    const browserLanguage = navigator.language.split("-")[0]; // Beispiel: "en-US" -> "en"
+    if (languages[browserLanguage]) {
+      setLanguage(browserLanguage); // Setze die Browsersprache, falls unterstützt
+    }
+  }, []);
 
   const changeLanguage = (lang) => {
     if (languages[lang]) {
