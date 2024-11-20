@@ -108,6 +108,8 @@ Navbar wurde vorbereitet mit Platzhaltern und für die weitere Bearbeitung berei
 
 Footer wurde vorbereitet mit Platzhaltern und für die weitere Bearbeitung bereitgestellt.
 
+Termin mit Patrick bezüglich Domain und anbindung in AWS 1 Std.
+
 
 ## Probleme und Lösungen
 
