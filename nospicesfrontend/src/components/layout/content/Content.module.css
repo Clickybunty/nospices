@@ -1,5 +1,3 @@
-/* Content.module.css */
-
 .contentContainer {
   display: flex;
   flex-direction: column;
@@ -11,6 +9,8 @@
   max-width: 1200px;
   margin: 40px auto;
   gap: 30px;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
 .contentContainer h1 {
@@ -22,15 +22,22 @@
 }
 
 .contentContainer > * {
-  width: max-content;
+  width: 100%;
+  max-width: 800px;
 }
 
 @media (max-width: 768px) {
   .contentContainer {
-    padding: 20px 10px;
+    padding: 15px;
+    margin: 20px; /* Rand auf beiden Seiten für mobile Geräte */
   }
 
   .contentContainer h1 {
     font-size: 24px;
+  }
+
+  .contentContainer > * {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
