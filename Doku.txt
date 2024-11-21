@@ -150,6 +150,11 @@ npm run dev
 
 ## Thursday Week 2   ( Tag 8 )
 
+    Die ausgewählte Sprache wird nun durch die entsprechende Fahne in der Navbar angezeigt, 
+    anstatt im Content-Bereich.
+
+    Die App wurde durch CSS-Anpassungen für verschiedene Endgeräte responsiv gestaltet.
+
 
 
 ## Probleme und Lösungen
