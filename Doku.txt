@@ -150,8 +150,10 @@ npm run dev
 
 ## Thursday Week 2   ( Tag 8 )
 
-    Die ausgewählte Sprache wird nun durch die entsprechende Fahne in der Navbar angezeigt, 
-    anstatt im Content-Bereich.
+    Das Menü in der Navbar wurde zentriert. 
+    Die Landesfahne sowie der Login-Bereich wurden oben rechts, 
+    über dem ul-Menü, 
+    positioniert.
 
     Die App wurde durch CSS-Anpassungen für verschiedene Endgeräte responsiv gestaltet.
 
@@ -159,7 +161,11 @@ npm run dev
 
 ## Probleme und Lösungen
 
-Während der Entwicklung gab es Herausforderungen beim **Mergen** der Branches, die als Bug identifiziert und behoben wurden. Alle Synchronisationen sind nun korrekt angepasst, und der Code befindet sich auf dem neuesten Stand.
+Während der Entwicklung traten Herausforderungen mit dem Sprachmodul auf, 
+die als inkompatibel identifiziert wurden. 
+Daraufhin wurde das Modul modular umgebaut. 
+Alle Synchronisationen wurden korrekt angepasst und 
+der Code ist jetzt auf dem neuesten Stand.
 
 ---
 
