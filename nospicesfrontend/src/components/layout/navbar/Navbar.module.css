@@ -16,18 +16,23 @@ body, .footerContainer {
   font-family: 'Lato', sans-serif;
 }
 
-.logo a {
+.navbar.dark {
+  background-color: #1e1e1e; /* Dunkler Hintergrund im Dark Mode */
+  color: #ffffff; /* Helle Schrift im Dark Mode */
+}
+
+.navbar .logo a {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
   color: #ff6600;
 }
 
-.logo a:hover {
+.navbar .logo a:hover {
   color: #ff884d;
 }
 
-.navLinks {
+.navbar .navLinks {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -36,50 +41,50 @@ body, .footerContainer {
   flex-wrap: wrap; /* Verhindert Umbruch bei Platzmangel */
 }
 
-.navLinks li {
+.navbar .navLinks li {
   font-size: 16px;
   white-space: nowrap; /* Hält die Links in einer Zeile */
 }
 
-.navLinks a {
+.navbar .navLinks a {
   text-decoration: none;
   color: #333333;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.navLinks a:hover {
+.navbar .navLinks a:hover {
   color: #ff6600;
 }
 
-.navActions {
+.navbar .navActions {
   display: flex;
   align-items: center;
   margin-top: 10px;
 }
 
-.loginButton {
+.navbar .loginButton {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
   background-color: #ff6600;
   padding: 8px 16px;
-  /* border: none; */
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.loginButton:hover {
+.navbar .loginButton:hover {
   background-color: #e55b00;
   transform: scale(1.05);
 }
 
-.loginButton:active {
+.navbar .loginButton:active {
   background-color: #cc4f00;
   transform: scale(0.95);
 }
 
+/* Media Query für kleinere Bildschirme */
 @media (max-width: 10768px) {
   .navbar {
     padding: 10px;
@@ -95,3 +100,4 @@ body, .footerContainer {
     margin-left: auto;
   }
 }
+

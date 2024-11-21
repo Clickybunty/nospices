@@ -3,11 +3,11 @@ import LanguageSelector from "../../languageselector/LanguageSelector";
 import { useLanguage } from "../../../context/LanguageContext";
 import styles from "./Navbar.module.css";
 
-export default function Navbar() {
+export default function Navbar({ darkMode }) { // darkMode als Prop empfangen
   const { language, languages, changeLanguage } = useLanguage();
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${darkMode ? styles.dark : ""}`}> {/* Dynamische Klasse für Dark Mode */}
       {/* Logo */}
       <div className={styles.logo}>
         <a href="#home">NoSpices</a>
@@ -41,3 +41,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+
