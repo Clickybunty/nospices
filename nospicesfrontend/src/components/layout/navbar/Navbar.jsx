@@ -13,6 +13,16 @@ export default function Navbar() {
         <a href="#home">NoSpices</a>
       </div>
 
+      {/* Fahne und Login */}
+      <div className={styles.navActions}>
+        <LanguageSelector
+          language={language}
+          languages={languages}
+          onLanguageChange={changeLanguage}
+        />
+        <button className={styles.loginButton}>Login</button>
+      </div>
+
       {/* Menü */}
       <ul className={styles.navLinks}>
         <li>
@@ -28,16 +38,6 @@ export default function Navbar() {
           <a href="#contact">Kontakt</a>
         </li>
       </ul>
-
-      {/* Language Selector and Login */}
-      <div className={styles.navActions}>
-        <LanguageSelector
-          language={language}
-          languages={languages}
-          onLanguageChange={changeLanguage}
-        />
-        <button className={styles.loginButton}>Login</button>
-      </div>
     </nav>
   );
 }

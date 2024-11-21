@@ -60,7 +60,7 @@
   color: #ffffff;
   background-color: #ff6600;
   padding: 8px 16px;
-  border: none;
+  /* border: none; */
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -76,14 +76,14 @@
   transform: scale(0.95);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 10768px) {
   .navbar {
     padding: 10px;
   }
 
   .navLinks {
-    justify-content: space-between; /* Links gleichmäßig verteilen */
-    width: 100%; /* Volle Breite nutzen */
+    justify-content: space-between;
+    width: 100%;
   }
 
   .navActions {
