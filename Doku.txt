@@ -157,6 +157,10 @@ npm run dev
 
     Die App wurde durch CSS-Anpassungen für verschiedene Endgeräte responsiv gestaltet.
 
+    Es wurde ein erster Entwurf für einen Dark-Mode erstellt. Ebenfalls wurden Anpassungen 
+    an das Auswahlmenü der Zutaten vorgenommen. Dabei sollen Zutaten mit der Tastatur ausgewählt werden.
+    Zwar klappt dies, aber ist die Funktion noch mit Fehlern behaftet.
+
 
 
 ## Probleme und Lösungen
