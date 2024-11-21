@@ -78,3 +78,12 @@
 .dropdownContainer::-webkit-scrollbar-thumb:hover {
   background-color: #a0a0a0;
 }
+
+.focused {
+  background-color: #ffcccb; /* Leichtes Rot */
+  border: 1px solid #ff0000; /* Roter Rand */
+}
+
+.focused {
+  background-color: #ffcccb; /* Beispiel: Hintergrundfarbe für fokussiertes Element */
+}
