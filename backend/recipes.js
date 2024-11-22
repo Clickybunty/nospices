@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../callDbData");
-const { filterAndSortRecipes } = require("../utils/filterAndSortRecipes");
+const db = require("./callDbData");
 
-router.post("/search", (req, res) => {
-  // Logik der Suche
+// Standard-GET-Route, um die Verbindung zu testen
+router.get("/", (req, res) => {
+  res.status(200).json({ message: "Recipes API is working!" });
 });
 
 // Route für die Rezeptsuche basierend auf Zutaten
@@ -12,6 +12,7 @@ router.post("/search", (req, res) => {
   const { ingredients } = req.body;
 
   if (!ingredients || !Array.isArray(ingredients) || ingredients.length === 0) {
+    console.error("Ungültige Eingabe:", req.body);
     return res.status(400).json({ error: "Ungültige oder fehlende Zutaten." });
   }
 
@@ -23,7 +24,7 @@ router.post("/search", (req, res) => {
       });
     }
 
-    console.log("Gefundene Rezepte (vor Sortierung):", results);
+    console.log("Gefundene Rezepte (vor Filterung):", results);
 
     if (!results || results.length === 0) {
       return res
@@ -31,13 +32,13 @@ router.post("/search", (req, res) => {
         .json({ message: "Keine passenden Rezepte gefunden." });
     }
 
-    // Filtere und sortiere die Rezepte
-    const sortedRecipes = filterAndSortRecipes(results, ingredients);
+    // Rezeptnamen ohne Anführungszeichen senden
+    const recipeNames = results.map((recipe) =>
+      recipe.name.replace(/^"|"$/g, "")
+    );
+    console.log("Rezeptnamen, die ans Frontend gesendet werden:", recipeNames);
 
-    console.log("Ergebnisse, die ans Frontend gesendet werden:", sortedRecipes);
-
-    // Sende die sortierten Rezepte ans Frontend
-    res.status(200).json(sortedRecipes);
+    res.status(200).json(recipeNames);
   });
 });
 

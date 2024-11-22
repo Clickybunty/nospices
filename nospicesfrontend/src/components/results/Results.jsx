@@ -1,95 +1,122 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Results.module.css";
+import axios from "axios";
 
+function Results({ initialRecipes }) {
+  const [activeCategory, setActiveCategory] = useState("recipes");
+  const [results, setResults] = useState(initialRecipes || []);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-function Results({ results }) {
-  const [categories, setCategories] = useState({
-    google: true,
-    chefkoch: true,
-    youtube: true,
-  });
+  useEffect(() => {
+    const fetchResults = async () => {
+      if (activeCategory === "recipes") {
+        setResults(initialRecipes || []);
+        return;
+      }
 
-  const handleCheckboxChange = (category) => {
-    setCategories((prev) => ({
-      ...prev,
-      [category]: !prev[category],
-    }));
+      setLoading(true);
+      setError(null);
+
+      try {
+        let apiUrl = "";
+        if (activeCategory === "youtube") {
+          apiUrl = `/api/youtube?query=Rezepte`;
+        } else if (activeCategory === "chefkoch") {
+          apiUrl = `/api/chefkoch?query=Rezepte`;
+        } else if (activeCategory === "google") {
+          apiUrl = `/api/google?query=Rezepte`;
+        }
+
+        const response = await axios.get(apiUrl);
+        setResults(response.data || []);
+      } catch (err) {
+        console.error("Fehler beim Abrufen der Ergebnisse:", err);
+        setError("Fehler beim Abrufen der Ergebnisse.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchResults();
+  }, [activeCategory, initialRecipes]);
+
+  const handleCategoryChange = (category) => {
+    setActiveCategory(category);
   };
-
-  if (!results) {
-    return <p>Lade Ergebnisse...</p>;
-  }
 
   return (
     <div className={styles.resultsContainer}>
       <h4>Ergebnisse:</h4>
 
-      {/* Filteroptionen */}
+      {/* Rezeptnamen */}
+      {activeCategory === "recipes" && (
+        <div className={styles.recipeNames}>
+          <h5>Rezepte:</h5>
+          <ul>
+            {results.map((recipe, index) => (
+              <li key={index}>{recipe}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Kategorieauswahl */}
       <div className={styles.filterContainer}>
         <label>
           <input
-            type="checkbox"
-            checked={categories.google}
-            onChange={() => handleCheckboxChange("google")}
+            type="radio"
+            name="category"
+            checked={activeCategory === "recipes"}
+            onChange={() => handleCategoryChange("recipes")}
           />
-          Google
+          Rezepte
         </label>
         <label>
           <input
-            type="checkbox"
-            checked={categories.chefkoch}
-            onChange={() => handleCheckboxChange("chefkoch")}
+            type="radio"
+            name="category"
+            checked={activeCategory === "youtube"}
+            onChange={() => handleCategoryChange("youtube")}
+          />
+          YouTube
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="category"
+            checked={activeCategory === "chefkoch"}
+            onChange={() => handleCategoryChange("chefkoch")}
           />
           Chefkoch
         </label>
         <label>
           <input
-            type="checkbox"
-            checked={categories.youtube}
-            onChange={() => handleCheckboxChange("youtube")}
+            type="radio"
+            name="category"
+            checked={activeCategory === "google"}
+            onChange={() => handleCategoryChange("google")}
           />
-          YouTube
+          Google
         </label>
       </div>
 
       {/* Ergebnisse */}
-      <div className={styles.resultsList}>
-        {categories.google &&
-          (results.google && results.google.length > 0 ? (
-            results.google.map((link, index) => (
-              <a
-                key={index}
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Google: {link}
-              </a>
-            ))
-          ) : (
-            <p>Keine Google-Ergebnisse gefunden.</p>
-          ))}
-
-        {categories.chefkoch &&
-          (results.chefkoch && results.chefkoch.length > 0 ? (
-            results.chefkoch.map((link, index) => (
-              <a
-                key={index}
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chefkoch: {link}
-              </a>
-            ))
-          ) : (
-            <p>Keine Chefkoch-Ergebnisse gefunden.</p>
-          ))}
-
-        {categories.youtube &&
-          (results.youtube && results.youtube.length > 0 ? (
-            results.youtube.map((video, index) => (
-              <div key={index} className={styles.videoContainer}>
+      {loading ? (
+        <p>Loading...</p>
+      ) : error ? (
+        <p style={{ color: "red" }}>{error}</p>
+      ) : (
+        <div className={styles.resultsList}>
+          {activeCategory === "recipes" &&
+            results.map((recipe, index) => (
+              <div key={index} className={styles.recipeItem}>
+                <h5>{recipe}</h5>
+              </div>
+            ))}
+          {activeCategory === "youtube" &&
+            results.map((video, index) => (
+              <div key={index} className={styles.videoItem}>
                 <iframe
                   width="300"
                   height="200"
@@ -101,11 +128,31 @@ function Results({ results }) {
                 ></iframe>
                 <p>{video.title}</p>
               </div>
-            ))
-          ) : (
-            <p>Keine YouTube-Ergebnisse gefunden.</p>
-          ))}
-      </div>
+            ))}
+          {activeCategory === "chefkoch" &&
+            results.map((link, index) => (
+              <a
+                key={index}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link}
+              </a>
+            ))}
+          {activeCategory === "google" &&
+            results.map((link, index) => (
+              <a
+                key={index}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link}
+              </a>
+            ))}
+        </div>
+      )}
     </div>
   );
 }

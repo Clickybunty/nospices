@@ -38,15 +38,17 @@ function RezeptSuche() {
     );
   };
 
-  // IDs an das Backend senden
+  // IDs an das Backend senden und Ergebnisse laden
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
         if (selectedIngredientIds.length > 0) {
+          console.log("Senden an Backend:", selectedIngredientIds); // Debugging
           const response = await axios.post(
             "http://localhost:5000/api/recipes/search",
             { ingredients: selectedIngredientIds }
           );
+          console.log("Ergebnisse vom Backend:", response.data); // Debugging
           setResults(response.data);
           setError(null);
         } else {
@@ -84,7 +86,11 @@ function RezeptSuche() {
       {error && <p style={{ color: "red" }}>{error}</p>}
 
       {/* Ergebnisse anzeigen */}
-      <Results results={results} />
+      {results.length > 0 ? (
+        <Results initialRecipes={results} />
+      ) : (
+        <p>Keine Ergebnisse gefunden.</p>
+      )}
     </div>
   );
 }

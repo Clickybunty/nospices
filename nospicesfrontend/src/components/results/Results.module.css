@@ -1,22 +1,97 @@
 .resultsContainer {
   margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
 .filterContainer {
   display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.filterContainer label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.filterContainer input[type="radio"] {
+  margin-right: 8px;
 }
 
 .resultsList {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.recipeNames {
+  margin-bottom: 20px;
+}
+
+.recipeNames h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recipeNames ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.recipeNames li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.resultsList .recipeItem,
+.resultsList .videoItem {
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resultsList .recipeItem:hover,
+.resultsList .videoItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resultsList h5 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .resultsList a {
+  color: #007bff;
   text-decoration: none;
-  color: #0073e6;
+  font-size: 16px;
 }
 
 .resultsList a:hover {
@@ -27,9 +102,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .videoContainer iframe {
   border-radius: 8px;
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.loadingMessage {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px;
 }
