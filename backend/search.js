@@ -1,13 +1,5 @@
-const express = require("express");
-const router = express.Router();
-const db = require("../callDbData");
-const { filterAndSortRecipes } = require("../utils/filterAndSortRecipes");
+const { filterAndSortRecipes } = require("./utils/filterAndSortRecipes");
 
-router.post("/search", (req, res) => {
-  // Logik der Suche
-});
-
-// Route für die Rezeptsuche basierend auf Zutaten
 router.post("/search", (req, res) => {
   const { ingredients } = req.body;
 
@@ -23,8 +15,6 @@ router.post("/search", (req, res) => {
       });
     }
 
-    console.log("Gefundene Rezepte (vor Sortierung):", results);
-
     if (!results || results.length === 0) {
       return res
         .status(404)
@@ -34,11 +24,7 @@ router.post("/search", (req, res) => {
     // Filtere und sortiere die Rezepte
     const sortedRecipes = filterAndSortRecipes(results, ingredients);
 
-    console.log("Ergebnisse, die ans Frontend gesendet werden:", sortedRecipes);
-
     // Sende die sortierten Rezepte ans Frontend
     res.status(200).json(sortedRecipes);
   });
 });
-
-module.exports = router;
