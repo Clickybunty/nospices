@@ -161,7 +161,14 @@ npm run dev
     an das Auswahlmenü der Zutaten vorgenommen. Dabei sollen Zutaten mit der Tastatur ausgewählt werden.
     Zwar klappt dies, aber ist die Funktion noch mit Fehlern behaftet.
 
+## Friday Week 2   ( Tag 9 )
 
+    Die API ist erfolgreich implementiert und 
+    liefert nun Ergebnisse "Rezepte!"
+    Im Frontend werden die passenden Rezepte angezeigt, 
+    nachdem Zutaten in das Suchfeld eingetragen wurden.
+
+    Sikiric:  
 
 ## Probleme und Lösungen
 
