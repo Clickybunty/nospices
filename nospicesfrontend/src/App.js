@@ -5,13 +5,14 @@ import Navbar from "./components/layout/navbar/Navbar";
 import useDarkMode from "./hooks/useDarkMode";
 import DarkModeToggle from "./components/Dark_Mode/DarkModeToggle";
 import { LanguageProvider } from "./context/LanguageContext";
+import styles from "./App.css";
 
 function App() {
   const [darkMode, toggleDarkMode] = useDarkMode();
 
   return (
     <LanguageProvider>
-      <div className={darkMode ? "dark-mode" : ""}>
+      <div className={styles.darkMode ? "dark-mode" : ""}>
         <Navbar darkMode={darkMode} />
         <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Content darkMode={darkMode} />
