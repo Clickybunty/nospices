@@ -1,20 +1,29 @@
 import React from "react";
 import LanguageSelector from "../../languageselector/LanguageSelector";
+import DarkModeToggle from "../../Dark_Mode/DarkModeToggle"; // Importiere den Dark Mode Toggle
 import { useLanguage } from "../../../context/LanguageContext";
 import styles from "./Navbar.module.css";
 
-export default function Navbar({ darkMode }) { // darkMode als Prop empfangen
+export default function Navbar({ darkMode, toggleDarkMode }) {
+  // toggleDarkMode als Prop hinzufügen
   const { language, languages, changeLanguage } = useLanguage();
 
   return (
-    <nav className={`${styles.navbar} ${darkMode ? styles.dark : ""}`}> {/* Dynamische Klasse für Dark Mode */}
+    <nav className={`${styles.navbar} ${darkMode ? styles.dark : ""}`}>
+      {" "}
+      {/* Dynamische Klasse für Dark Mode */}
       {/* Logo */}
       <div className={styles.logo}>
         <a href="#home">NoSpices</a>
       </div>
-
-      {/* Fahne und Login */}
+      {/* Fahne und Dark Mode Toggle */}
       <div className={styles.navActions}>
+        {/* Dark Mode Button links neben der Fahne */}
+        <DarkModeToggle
+          className={styles.darkModeToggle}
+          darkMode={darkMode}
+          toggleDarkMode={toggleDarkMode}
+        />
         <LanguageSelector
           language={language}
           languages={languages}
@@ -22,7 +31,6 @@ export default function Navbar({ darkMode }) { // darkMode als Prop empfangen
         />
         <button className={styles.loginButton}>Login</button>
       </div>
-
       {/* Menü */}
       <ul className={styles.navLinks}>
         <li>
@@ -41,5 +49,3 @@ export default function Navbar({ darkMode }) { // darkMode als Prop empfangen
     </nav>
   );
 }
-
-

@@ -12,8 +12,9 @@
   flex-wrap: wrap; /* Ermöglicht Anpassung bei kleinen Bildschirmen */
 }
 
-body, .footerContainer {
-  font-family: 'Lato', sans-serif;
+body,
+.footerContainer {
+  font-family: "Lato", sans-serif;
 }
 
 .navbar.dark {
@@ -98,6 +99,32 @@ body, .footerContainer {
   .navActions {
     margin: 0;
     margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Abstand zwischen Dark Mode Button und Fahne */
+  }
+
+  .darkModeToggle {
+    background-color: var(
+      --primary-color
+    ); /* Verwende die Hauptfarbe deiner App */
+    border: none;
+    color: var(--text-color); /* Textfarbe dynamisch */
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .darkModeToggle:hover {
+    background-color: var(--primary-hover-color); /* Farbe beim Hover */
+    transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+  }
+
+  .darkModeToggle:active {
+    transform: scale(0.95); /* Effekt beim Klick */
   }
 }
-
