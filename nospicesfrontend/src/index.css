@@ -12,20 +12,3 @@ code {
     monospace;
 } */
 
-/* Dark Mode für die gesamte App */
-.dark-mode {
-  background-color: #121212; /* Dunkler Hintergrund */
-  color: #ffffff; /* Helle Schrift */
-}
-
-/* Spezifische Stile für Navbar */
-.dark-mode .navbar {
-  background-color: #1e1e1e; /* Dunklerer Hintergrund */
-  color: #ffffff;
-}
-
-/* Spezifische Stile für Content */
-.dark-mode .content {
-  background-color: #1a1a1a; /* Dunkler Hintergrund */
-  color: #e0e0e0; /* Angepasste Schriftfarbe */
-}
