@@ -323,3 +323,31 @@ WorkBranch: Ein Unterzweig von Testing, der als Basis für spezifische Aufgaben 
 TaskBranch1, TaskBranch2, ...: Branches, die von WorkBranch abzweigen und jeweils eine spezifische Aufgabe repräsentieren.
 
 FeatureBranch & HotfixBranch: Zusätzliche Branches für Features oder Hotfixes, die parallel entwickelt werden.
+
+
+## DARK MODE "like a vader"
+
+ Der Dark Mode funktioniert, 
+ indem das Design in der Anwendung zwischen zwei Farbschemata wechselt: hell (Light Mode) und 
+ dunkel (Dark Mode). 
+ Dabei kommen CSS-Variablen ins Spiel, 
+ die zentrale Farben wie den Hintergrund, 
+ den Text oder Ränder definieren. Diese Variablen ändern ihre Werte, 
+ wenn der Dark Mode aktiviert wird.
+
+ Der Wechsel erfolgt, 
+ indem ein data-theme-Attribut (z. B. auf dem <html>-Element) gesetzt wird. 
+ Wenn dieses Attribut dark ist, 
+ werden die Dark Mode-Farben 
+ (z. B. ein dunkler Hintergrund und helle Schrift) 
+ aus den CSS-Variablen geladen. 
+ So passt sich das gesamte Design dynamisch an, 
+ ohne die HTML- oder CSS-Struktur zu ändern.
+
+
+
+
+
+
+
+
