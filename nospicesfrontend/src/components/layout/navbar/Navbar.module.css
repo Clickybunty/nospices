@@ -1,102 +1,144 @@
-/* Navbar.module.css */
+:root {
+  --background-color: #ffffff; /* Standard: weiß */
+  --text-color: #333333; /* Standard: dunkelgrau */
+  --link-hover-color: #ff6600; /* Orange für Links beim Hover */
+  --border-color: #f0f0f0; /* Standard: hellgrau */
+  --button-bg-color: #ff6600; /* Orange für Buttons */
+  --button-bg-hover-color: #e55b00; /* Dunkleres Orange beim Hover */
+  --button-bg-active-color: #cc4f00; /* Noch dunkler beim Klicken */
+}
+
+[data-theme="dark"] {
+  --background-color: #1e1e1e; /* Dark Mode: dunkelgrau */
+  --text-color: #ffffff; /* Hellgrau/Weiß */
+  --link-hover-color: #ff884d; /* Helleres Orange im Dark Mode */
+  --border-color: #736b5e; /* Dunkleres Grau für die Border */
+  --button-bg-color: #ff6600; /* Orange bleibt gleich */
+  --button-bg-hover-color: #e55b00; /* Etwas dunkler */
+  --button-bg-active-color: #cc4f00; /* Noch dunkler */
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #ffffff; /* Heller Hintergrund */
-  border-bottom: 2px solid #f0f0f0; /* Dünner unterer Rand */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
-  position: sticky; /* Bleibt am oberen Rand */
+  background-color: var(--background-color); /* Dynamische Hintergrundfarbe */
+  color: var(--text-color); /* Dynamische Textfarbe */
+  border-bottom: 2px solid var(--border-color); /* Dynamische Border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
   top: 0;
   z-index: 1000;
+  flex-wrap: wrap; /* Anpassung bei kleinen Bildschirmen */
 }
 
-.logo a {
+body,
+.footerContainer {
+  font-family: "Lato", sans-serif;
+}
+
+.navbar .logo a {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #ff6600; /* Akzentfarbe */
+  color: var(--link-hover-color); /* Dynamische Linkfarbe */
 }
 
-.logo a:hover {
-  color: #ff884d; /* Hellerer Orange-Ton beim Hover */
+.navbar .logo a:hover {
+  color: var(--link-hover-color); /* Gleiche Farbe beim Hover */
 }
 
-.navLinks {
+.navbar .navLinks {
   list-style: none;
   display: flex;
   gap: 20px;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap; /* Verhindert Umbruch bei Platzmangel */
 }
 
-.navLinks li {
+.navbar .navLinks li {
   font-size: 16px;
+  white-space: nowrap; /* Hält die Links in einer Zeile */
 }
 
-.navLinks a {
+.navbar .navLinks a {
   text-decoration: none;
-  color: #333333; /* Dunkler Text */
+  color: var(--text-color); /* Dynamische Linkfarbe */
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.navLinks a:hover {
-  color: #ff6600; /* Akzentfarbe beim Hover */
+.navbar .navLinks a:hover {
+  color: var(--link-hover-color); /* Dynamische Hoverfarbe */
 }
 
-.navActions {
+.navbar .navActions {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
-.loginButton {
+.navbar .loginButton {
   font-size: 14px;
   font-weight: 600;
-  color: #ffffff;
-  background-color: #ff6600; /* Akzentfarbe */
+  color: var(--text-color); /* Dynamische Textfarbe */
+  background-color: var(--button-bg-color); /* Dynamische Buttonfarbe */
   padding: 8px 16px;
-  border: none;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.loginButton:hover {
-  background-color: #e55b00; /* Dunkleres Orange beim Hover */
-  transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+.navbar .loginButton:hover {
+  background-color: var(--button-bg-hover-color); /* Dynamische Hoverfarbe */
+  transform: scale(1.05);
 }
 
-.loginButton:active {
-  background-color: #cc4f00; /* Noch dunkler beim Klicken */
-  transform: scale(0.95); /* Leichtes Verkleinern beim Klicken */
+.navbar .loginButton:active {
+  background-color: var(--button-bg-active-color); /* Dynamische Klickfarbe */
+  transform: scale(0.95);
 }
 
-/* Responsives Design */
-@media (max-width: 768px) {
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 10768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
     padding: 10px;
   }
 
   .navLinks {
-    flex-direction: column; /* Menü vertikal anordnen */
-    gap: 10px;
-    width: 100%; /* Nimmt die gesamte Breite ein */
-    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
   }
 
   .navActions {
-    margin-top: 10px;
-    width: 100%;
-    justify-content: flex-start; /* Login-Button linksbündig */
+    margin: 0;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Abstand zwischen Dark Mode Button und Fahne */
   }
 
-  .loginButton {
-    width: 100%; /* Nimmt die gesamte Breite ein */
-    text-align: center;
+  .darkModeToggle {
+    background-color: var(--button-bg-color);
+    border: none;
+    color: var(--text-color); /* Textfarbe dynamisch */
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .darkModeToggle:hover {
+    background-color: var(--button-bg-hover-color); /* Farbe beim Hover */
+    transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+  }
+
+  .darkModeToggle:active {
+    transform: scale(0.95); /* Effekt beim Klick */
   }
 }

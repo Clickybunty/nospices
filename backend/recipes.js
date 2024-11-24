@@ -1,51 +1,45 @@
 const express = require("express");
 const router = express.Router();
-const mysql = require("mysql");
+const db = require("./callDbData");
 
-// MySQL-Verbindung einrichten
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "0000",
-  database: "zutaten_db",
-});
-
-// Verbindung zur Datenbank herstellen
-connection.connect((err) => {
-  if (err) {
-    console.error("Fehler beim Verbinden zur Datenbank: " + err.stack);
-    return;
-  }
-  console.log("Verbunden mit der Datenbank als ID " + connection.threadId);
+// Standard-GET-Route, um die Verbindung zu testen
+router.get("/", (req, res) => {
+  res.status(200).json({ message: "Recipes API is working!" });
 });
 
 // Route für die Rezeptsuche basierend auf Zutaten
 router.post("/search", (req, res) => {
-  const { ingredients } = req.body; // Zutaten vom Frontend
+  const { ingredients } = req.body; // Zutaten aus dem Request-Body
+  console.log("Anfrage an POST /search:", ingredients);
 
-  if (!ingredients || ingredients.length === 0) {
-    return res.status(400).json({ error: "Keine Zutaten angegeben." });
+  if (!ingredients || !Array.isArray(ingredients) || ingredients.length === 0) {
+    console.error("Ungültige Eingabe:", req.body);
+    return res.status(400).json({ error: "Ungültige oder fehlende Zutaten." });
   }
 
-  // SQL-Abfrage: Suche nach Rezepten, die mindestens eine der Zutaten enthalten
-  const placeholders = ingredients.map(() => "?").join(",");
-  const query = `
-    SELECT r.id, r.name
-    FROM rezepte r
-    JOIN rezept_zutaten rz ON r.id = rz.rezept_id
-    JOIN zutaten z ON rz.zutat_id = z.id
-    WHERE z.name IN (${placeholders})
-    GROUP BY r.id, r.name
-    ORDER BY COUNT(DISTINCT z.name) DESC
-  `;
-
-  connection.query(query, ingredients, (err, results) => {
+  db.getRecipesByIngredients(ingredients, (err, results) => {
     if (err) {
-      console.error("Fehler bei der Abfrage:", err);
-      return res.status(500).json({ error: "Datenbankfehler." });
+      console.error("Fehler bei der Rezeptsuche:", err.message);
+      return res.status(500).json({
+        error: "Datenbankfehler bei der Rezeptsuche. Bitte prüfe die Logs.",
+      });
     }
 
-    res.json(results);
+    console.log("Gefundene Rezepte (vor Filterung):", results);
+
+    if (!results || results.length === 0) {
+      return res
+        .status(404)
+        .json({ message: "Keine passenden Rezepte gefunden." });
+    }
+
+    // Rezeptnamen ohne Anführungszeichen senden
+    const recipeNames = results.map((recipe) =>
+      recipe.name.replace(/^"|"$/g, "")
+    );
+    console.log("Rezeptnamen, die ans Frontend gesendet werden:", recipeNames);
+
+    res.status(200).json(recipeNames);
   });
 });
 

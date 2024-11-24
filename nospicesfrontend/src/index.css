@@ -1,13 +1,39 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --background-color: #ffffff; /* Hintergrund */
+  --text-color: #4a4a4a; /* Standard Textfarbe */
+  --border-color: #dcdcdc; /* Border */
+  --hover-background-color: #e6f7ff; /* Hover-Hintergrund */
+  --hover-text-color: #007bff; /* Hover-Textfarbe */
+  --active-background-color: #cceeff; /* Active-Hintergrund */
+  --active-text-color: #0056b3; /* Active-Textfarbe */
+  --focus-background-color: #3399ff; /* Fokus-Hintergrund */
+  --focus-text-color: #ffffff; /* Fokus-Textfarbe */
+  --scrollbar-thumb-color: #cccccc; /* Scrollbar */
+  --scrollbar-thumb-hover-color: #aaaaaa; /* Scrollbar-Hover */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+[data-theme="dark"] {
+  --background-color: #181a1b; /* Hintergrund */
+  --text-color: #e8e6e3; /* Standard Textfarbe */
+  --border-color: #454a4d; /* Border */
+  --hover-background-color: #333333; /* Hover-Hintergrund */
+  --hover-text-color: #e8e6e3; /* Hover-Textfarbe */
+  --active-background-color: #004daa; /* Active-Hintergrund */
+  --active-text-color: #ffffff; /* Active-Textfarbe */
+  --focus-background-color: #88ccff; /* Fokus-Hintergrund */
+  --focus-text-color: #000000; /* Fokus-Textfarbe */
+  --scrollbar-thumb-color: #5a5a5a; /* Scrollbar */
+  --scrollbar-thumb-hover-color: #777777; /* Scrollbar-Hover */
+}
+
+body {
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
+  color: var(--text-color); /* Dynamische Textfarbe */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Sanfter Übergang */
+}
+
+.container {
+  padding: 20px;
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
+  color: var(--text-color); /* Dynamische Textfarbe */
+}

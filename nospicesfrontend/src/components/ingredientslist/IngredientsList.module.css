@@ -1,19 +1,19 @@
-/* IngredientsList.module.css */
-
 .selectedListContainer {
   margin: 20px 0;
   padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #dcdcdc;
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
+  border: 1px solid var(--border-color); /* Dynamische Border */
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: var(--text-color); /* Dynamische Textfarbe */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Sanfter Übergang */
 }
 
 .selectedListContainer h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #333333;
+  color: var(--text-color); /* Dynamische Textfarbe */
 }
 
 .selectedListContainer ul {
@@ -28,20 +28,24 @@
   align-items: center;
   padding: 8px 12px;
   margin-bottom: 8px;
-  background-color: #f9f9f9;
-  border: 1px solid #e0e0e0;
+  background-color: var(
+    --secondary-background-color
+  ); /* Leicht abgesetzter Hintergrund */
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .selectedItem:hover {
-  background-color: #f0f0f0;
+  background-color: var(
+    --hover-background-color
+  ); /* Dynamischer Hover-Hintergrund */
   transform: scale(1.02);
 }
 
 .selectedItem button {
-  background: #ff4d4d;
-  color: #ffffff;
+  background: var(--button-bg-color); /* Dynamische Buttonfarbe */
+  color: var(--button-text-color); /* Dynamische Textfarbe */
   border: none;
   border-radius: 4px;
   padding: 4px 8px;
@@ -51,7 +55,7 @@
 }
 
 .selectedItem button:hover {
-  background-color: #e60000;
+  background-color: var(--button-hover-color); /* Dynamische Hoverfarbe */
 }
 
 .resultsContainer {
@@ -62,7 +66,7 @@
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #333333;
+  color: var(--text-color); /* Dynamische Textfarbe */
 }
 
 .resultsContainer ul {
@@ -73,16 +77,20 @@
 
 .resultsContainer li {
   padding: 8px 12px;
-  background-color: #f9f9f9;
-  border: 1px solid #e0e0e0;
+  background-color: var(
+    --secondary-background-color
+  ); /* Dynamischer Hintergrund */
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   margin-bottom: 8px;
   font-size: 16px;
-  color: #555555;
+  color: var(--secondary-text-color); /* Dynamische Textfarbe */
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .resultsContainer li:hover {
-  background-color: #e6f7ff;
+  background-color: var(
+    --hover-background-color
+  ); /* Dynamischer Hover-Hintergrund */
   transform: scale(1.02);
 }
