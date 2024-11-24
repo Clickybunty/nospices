@@ -3,20 +3,22 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background-color: #ffffff;
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
+  color: var(--text-color); /* Dynamische Textfarbe */
   border-radius: 12px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Beibehaltung des Schattens */
   max-width: 1200px;
   margin: 40px auto;
   gap: 30px;
   box-sizing: border-box;
   overflow-x: hidden; /* Verhindert horizontales Scrollen */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Sanfter Übergang */
 }
 
 .contentContainer h1 {
   font-size: 32px;
   font-weight: 700;
-  color: #333333;
+  color: var(--text-color); /* Dynamische Textfarbe für Überschrift */
   margin-bottom: 20px;
   text-align: center;
 }

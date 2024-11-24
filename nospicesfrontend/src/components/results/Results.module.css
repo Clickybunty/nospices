@@ -1,10 +1,12 @@
 .resultsContainer {
   margin-top: 20px;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color); /* Dynamische Border */
+  color: var(--text-color); /* Dynamische Textfarbe */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .filterContainer {
@@ -13,14 +15,17 @@
   align-items: center;
   margin-bottom: 20px;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: var(
+    --secondary-background-color
+  ); /* Leicht abgesetzter Hintergrund */
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
 }
 
 .filterContainer label {
   font-size: 16px;
-  color: #333;
+  color: var(--text-color); /* Dynamische Textfarbe */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -43,7 +48,7 @@
 .recipeNames h5 {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color); /* Dynamische Textfarbe */
   margin-bottom: 10px;
 }
 
@@ -55,14 +60,14 @@
 .recipeNames li {
   font-size: 16px;
   margin-bottom: 5px;
-  color: #444;
+  color: var(--secondary-text-color); /* Dynamische Sekundärfarbe */
 }
 
 .resultsList .recipeItem,
 .resultsList .videoItem {
   padding: 15px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
+  border: 1px solid var(--border-color); /* Dynamische Border */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -78,7 +83,7 @@
 .resultsList h5 {
   font-size: 18px;
   margin-top: 10px;
-  color: #333;
+  color: var(--text-color); /* Dynamische Textfarbe */
 }
 
 iframe {
@@ -89,13 +94,14 @@ iframe {
 }
 
 .resultsList a {
-  color: #007bff;
+  color: var(--link-color); /* Dynamische Linkfarbe */
   text-decoration: none;
   font-size: 16px;
 }
 
 .resultsList a:hover {
   text-decoration: underline;
+  color: var(--link-hover-color); /* Dynamische Hoverfarbe */
 }
 
 .videoContainer {
@@ -110,7 +116,7 @@ iframe {
 }
 
 .errorMessage {
-  color: red;
+  color: var(--error-color); /* Dynamische Fehlerfarbe */
   text-align: center;
   font-size: 14px;
   margin-top: 20px;
@@ -119,6 +125,6 @@ iframe {
 .loadingMessage {
   text-align: center;
   font-size: 16px;
-  color: #555;
+  color: var(--secondary-text-color); /* Dynamische Sekundärfarbe */
   margin-top: 20px;
 }
