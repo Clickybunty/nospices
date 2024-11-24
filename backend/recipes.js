@@ -9,7 +9,8 @@ router.get("/", (req, res) => {
 
 // Route für die Rezeptsuche basierend auf Zutaten
 router.post("/search", (req, res) => {
-  const { ingredients } = req.body;
+  const { ingredients } = req.body; // Zutaten aus dem Request-Body
+  console.log("Anfrage an POST /search:", ingredients);
 
   if (!ingredients || !Array.isArray(ingredients) || ingredients.length === 0) {
     console.error("Ungültige Eingabe:", req.body);
