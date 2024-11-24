@@ -63,3 +63,20 @@
 .dropdownContainer::-webkit-scrollbar-thumb:hover {
   background-color: #aaaaaa;
 }
+
+.focused {
+  background-color: #d3d3d3; /* Beispiel: hellgrauer Hintergrund für den Fokus */
+  color: #000; /* Textfarbe ändern, falls nötig */
+}
+
+.dropdownItem.focused {
+  background-color: #d3d3d3; /* Beispiel für Fokusfarbe */
+  color: #000;
+}
+
+.dropdownItem:focus,
+.dropdownItem.focused {
+  background-color: #3399ff; /* Typisches Blau */
+  color: white; /* Weißer Text */
+  outline: none; /* Entfernt zusätzliche Umrandungen */
+}

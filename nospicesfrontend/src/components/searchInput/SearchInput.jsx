@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import FilteredList from "../filteredlist/FilteredList";
 import styles from "./SearchInput.module.css";
 
 function SearchInput({ language, zutatenData, onIngredientSelect }) {
   const [zutaten, setZutaten] = useState("");
   const [filteredZutaten, setFilteredZutaten] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [focusedIndex, setFocusedIndex] = useState(null);
-  const containerRef = useRef(null); // Referenz für den gesamten Container
+  const [focusedIndex, setFocusedIndex] = useState(null); // Für die Tastaturnavigation
 
   // Filtere Zutaten basierend auf Eingabe
   useEffect(() => {
@@ -29,81 +29,67 @@ function SearchInput({ language, zutatenData, onIngredientSelect }) {
   }, [zutaten, zutatenData, language]);
 
   const handleInputClick = () => {
-    setIsDropdownOpen(true);
-    setFocusedIndex(null); // Fokus zurücksetzen
+    setIsDropdownOpen((prev) => !prev); // Öffnen oder Schließen
+    if (!isDropdownOpen) {
+      setFocusedIndex(null); // Fokus zurücksetzen
+      setFilteredZutaten(
+        Object.entries(zutatenData).map(([id, zutat]) => ({
+          id,
+          name: zutat[language],
+        }))
+      );
+    }
   };
 
-  // Tastatursteuerung für Dropdown
   const handleKeyDown = (e) => {
-    if (!isDropdownOpen) return;
+    if (!isDropdownOpen || filteredZutaten.length === 0) return;
 
-    if (e.key === "ArrowDown") {
-      setFocusedIndex((prevIndex) =>
-        prevIndex === null ? 0 : Math.min(filteredZutaten.length - 1, prevIndex + 1)
-      );
-    }
-
-    if (e.key === "ArrowUp") {
-      setFocusedIndex((prevIndex) =>
-        prevIndex === null ? 0 : Math.max(0, prevIndex - 1)
-      );
-    }
-
-    if (e.key === "Enter" && focusedIndex !== null) {
-      onIngredientSelect(filteredZutaten[focusedIndex].id);
-      setZutaten("");
-      setIsDropdownOpen(false);
-      setFocusedIndex(null);
-    }
-
-    if (e.key === "Escape") {
-      setIsDropdownOpen(false);
+    switch (e.key) {
+      case "ArrowDown":
+        setFocusedIndex((prev) =>
+          prev === null || prev === filteredZutaten.length - 1 ? 0 : prev + 1
+        );
+        break;
+      case "ArrowUp":
+        setFocusedIndex((prev) =>
+          prev === null || prev === 0 ? filteredZutaten.length - 1 : prev - 1
+        );
+        break;
+      case "Enter":
+        if (focusedIndex !== null) {
+          const selectedItem = filteredZutaten[focusedIndex];
+          onIngredientSelect(selectedItem.id); // Übergebe die ID
+          setZutaten(""); // Leere Eingabefeld
+          setIsDropdownOpen(false); // Schließe Dropdown
+          setFocusedIndex(null); // Fokus zurücksetzen
+        }
+        break;
+      default:
+        break;
     }
   };
-
-  // Schließen des Dropdowns bei einem Klick außerhalb
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (containerRef.current && !containerRef.current.contains(event.target)) {
-        setIsDropdownOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
 
   return (
-    <div className={styles.inputContainer} ref={containerRef}>
+    <div className={styles.inputContainer}>
       <input
         className={styles.inputField}
         type="text"
         value={zutaten}
         onChange={(e) => setZutaten(e.target.value)}
         onClick={handleInputClick}
-        onKeyDown={handleKeyDown}
+        onKeyDown={handleKeyDown} // Event-Listener für die Tastatur
         placeholder="🔍 Zutaten suchen"
       />
       {isDropdownOpen && filteredZutaten.length > 0 && (
-        <ul className={styles.dropdownList}>
-          {filteredZutaten.map((item, index) => (
-            <li
-              key={item.id}
-              className={`${styles.dropdownItem} ${
-                focusedIndex === index ? styles.focused : ""
-              }`}
-              onClick={() => {
-                onIngredientSelect(item.id);
-                setZutaten("");
-                setIsDropdownOpen(false);
-              }}
-            >
-              {item.name}
-            </li>
-          ))}
-        </ul>
+        <FilteredList
+          items={filteredZutaten}
+          focusedIndex={focusedIndex} // Übergebe den fokussierten Index
+          onItemClick={(item) => {
+            onIngredientSelect(item.id); // Übergebe die ID
+            setZutaten(""); // Leere Eingabefeld
+            setIsDropdownOpen(false); // Schließe Dropdown
+          }}
+        />
       )}
     </div>
   );
