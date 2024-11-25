@@ -199,6 +199,7 @@ npm run dev
     Rezepte mit den meisten Übereinstimmungen (matchCount) werden bevorzugt.
     Bei gleicher Anzahl an Übereinstimmungen werden Rezepte mit weniger Zutaten bevorzugt.
 
+    Cookie-Banner wurde eingefügt, um die Cookies zu Beginn des Aufrufs der App/Webseite abzufragen.
 
 ## Probleme und Lösungen
 
