@@ -5,10 +5,10 @@ const port = 3306;
 
 // MySQL-Verbindung einrichten
 const connection = mysql.createConnection({
-  host: "localhost", // Die Adresse des MySQL-Servers (lokal)
+  host: '18.194.88.143', //"localhost", // Die Adresse des MySQL-Servers (lokal)
   user: "root", // Dein MySQL-Benutzername (standardmäßig 'root')
   password: "0000", // Dein MySQL-Passwort (leerlassen, falls du kein Passwort gesetzt hast)
-  database: "zutaten_db", // Der Name der Datenbank, die du erstellt hast
+  database: "ZutatenDB", // Der Name der Datenbank, die du erstellt hast
 });
 
 // Verbindung herstellen
