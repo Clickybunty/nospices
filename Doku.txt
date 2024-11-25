@@ -189,6 +189,11 @@ npm run dev
     So passt sich das gesamte Design dynamisch an, 
     ohne die HTML- oder CSS-Struktur zu ändern.
 
+    Markus Onboarding nach Auszeit!
+
+    Die Domains NoSpices.de und 
+    NoSpices.com wurden über den Anbieter Strato.de erworben. 
+
 
 ## Probleme und Lösungen
 
