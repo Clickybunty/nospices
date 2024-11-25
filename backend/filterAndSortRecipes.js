@@ -1,4 +1,4 @@
-// filterAndSortRecipes.js
+
 function filterAndSortRecipes(recipes, ingredients) {
   console.log("Filter- und Sortierprozess gestartet...");
   console.log("Eingegebene Zutaten:", ingredients);
@@ -12,20 +12,16 @@ function filterAndSortRecipes(recipes, ingredients) {
         recipeIngredients.includes(id)
       ).length;
 
-      const isExactMatch =
-        matchCount === numericIngredients.length &&
-        numericIngredients.every((id) => recipeIngredients.includes(id));
-
       return {
         ...recipe,
         matchCount,
-        isExactMatch,
+        totalIngredients: recipeIngredients.length,
       };
     })
+    .filter((recipe) => recipe.matchCount > 0)
     .sort((a, b) => {
-      if (a.isExactMatch && !b.isExactMatch) return -1;
-      if (!a.isExactMatch && b.isExactMatch) return 1;
-      return b.matchCount - a.matchCount;
+      if (b.matchCount !== a.matchCount) return b.matchCount - a.matchCount;
+      return a.totalIngredients - b.totalIngredients;
     });
 
   console.log("Gefilterte und sortierte Rezepte:", sortedRecipes);
