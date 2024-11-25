@@ -345,7 +345,18 @@ FeatureBranch & HotfixBranch: Zusätzliche Branches für Features oder Hotfixes,
  ohne die HTML- oder CSS-Struktur zu ändern.
 
 
+## Domainerwerb
+### NoSpices.de und NoSpices.com
 
+   Die Domains NoSpices.de und 
+   NoSpices.com wurden über den Anbieter Strato.de erworben. 
+   Strato bietet eine benutzerfreundliche Plattform für die Domainregistrierung sowie umfassende Verwaltungsoptionen für DNS-Einstellungen, 
+   die in diesem Projekt genutzt werden.
+
+   Beide Domains werden für das Hosting der Webseite verwendet, 
+   die auf AWS betrieben wird. 
+   Die DNS-Konfiguration wurde entsprechend angepasst, 
+   um eine problemlose Verbindung zur AWS-Infrastruktur zu gewährleisten.
 
 
 
