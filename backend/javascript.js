@@ -4,6 +4,16 @@ require('dotenv').config({ path: './zugangsdaten.env' });
 const mysql = require('mysql');
 const fs = require('fs');
 
+/*try {
+  const connection = mysql.createConnection({
+      // ... connection details
+  });
+  // ... use the connection
+} catch (error) {
+  console.error('Error connecting to the database:', error);
+  // Handle the error, e.g., log, notify, or retry
+} */
+
 // Verbindung zur MySQL-Datenbank herstellen
 const connection = mysql.createConnection({
   host: process.env.DB_HOST,
