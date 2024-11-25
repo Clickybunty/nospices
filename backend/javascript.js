@@ -16,11 +16,11 @@ const fs = require('fs');
 
 // Verbindung zur MySQL-Datenbank herstellen
 const connection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
+  host: '18.194.88.143', //process.env.DB_HOST,
+  port: '3306', //process.env.DB_PORT,
+  user: 'root', //process.env.DB_USER,
+  password: '0000', //process.env.DB_PASSWORD,
+  database: 'ZutatenDB' //process.env.DB_NAME
 });
 
 // JSON-Daten einlesen

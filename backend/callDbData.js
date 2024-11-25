@@ -5,7 +5,7 @@ const pool = mysql.createPool({
   host: "localhost",
   user: "root",
   password: "0000",
-  database: "zutaten_db",
+  database: "ZutatenDB",
   port: 3306,
   connectionLimit: 10, // Maximale Verbindungen
 });
