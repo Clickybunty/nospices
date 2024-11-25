@@ -5,9 +5,9 @@ const pool = mysql.createPool({
   host: "localhost",
   user: "root",
   password: "0000",
-  database: "ZutatenDB",
-  port: 3306,
-  connectionLimit: 10, // Maximale Verbindungen
+  database: "zutaten_db",
+  port: "3306",
+  connectionLimit: "10" // Maximale Verbindungen
 });
 
 // Funktion zum Abrufen aller Zutaten
