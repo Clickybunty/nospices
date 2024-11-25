@@ -194,6 +194,11 @@ npm run dev
     Die Domains NoSpices.de und 
     NoSpices.com wurden über den Anbieter Strato.de erworben. 
 
+    Aktualisierung der Logik für die Rezeptsuche:
+    Der Algorithmus durchsucht die gesamte Rezeptdatenbank bei jeder Anfrage.
+    Rezepte mit den meisten Übereinstimmungen (matchCount) werden bevorzugt.
+    Bei gleicher Anzahl an Übereinstimmungen werden Rezepte mit weniger Zutaten bevorzugt.
+
 
 ## Probleme und Lösungen
 
