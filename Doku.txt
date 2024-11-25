@@ -73,7 +73,7 @@ Zutaten sowie für die Manipulation der Daten in der MySQL-Datenbank implementie
 Skript zur automatischen Befüllung der Datenbank wurde angepasst.
 
 ## Monday
-ECS Instanz aufgesetz mit Ami Image Debian, Sicherheitsgruppe erstellt, Ports freigegeben,
+ECS Instanz aufgesetzt mit Ami Image Debian, Sicherheitsgruppe erstellt, Ports freigegeben,
 Neuer User in EC2 mit Adminrechten hinzugefügt. Die Repo mit git geklont. 
 Installationen vorgenommen: Nginx, MariaDB, nodejs und npm.
 Den root path in /etc/nginx/sites-availabe/default geändert, Nginx Dienst neugestartet.
