@@ -63,6 +63,11 @@ Das Frontend ist mit React entwickelt, um eine benutzerfreundliche Oberfläche z
 8.  ```bash
     npm install axios
     ```
+9.
+   ### Cockies
+   ```bash
+   npm install react-cookie-consent
+   ```
 
 ---
 
@@ -357,6 +362,9 @@ FeatureBranch & HotfixBranch: Zusätzliche Branches für Features oder Hotfixes,
    die auf AWS betrieben wird. 
    Die DNS-Konfiguration wurde entsprechend angepasst, 
    um eine problemlose Verbindung zur AWS-Infrastruktur zu gewährleisten.
+
+
+   
 
 
 
