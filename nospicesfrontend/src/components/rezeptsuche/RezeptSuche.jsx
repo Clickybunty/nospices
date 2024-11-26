@@ -45,8 +45,8 @@ function RezeptSuche() {
         if (selectedIngredientIds.length > 0) {
           console.log("Senden an Backend:", selectedIngredientIds); // Debugging
           const response = await axios.post(
-            //"http://localhost:5000/api/recipes/search",
-            "http://18.194.88.143:5000/api/recipes/search",
+            "http://localhost:5000/api/recipes/search",
+            //"http://18.194.88.143:5000/api/recipes/search",
             { ingredients: selectedIngredientIds }
           );
           console.log("Ergebnisse vom Backend:", response.data); // Debugging
