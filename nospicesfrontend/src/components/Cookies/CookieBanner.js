@@ -1,25 +1,27 @@
 import React from "react";
-import CookieConsent from "react-cookie-consent";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 const CookieBanner = () => {
   return (
     <CookieConsent
       location="bottom"
-      buttonText="Akzeptieren"
+      buttonText="Annehmen"
       declineButtonText="Ablehnen"
       enableDeclineButton
+      cookieName="userConsent" // Der Name des Cookies
       onAccept={() => {
-        console.log("Cookies wurden akzeptiert.");
+        Cookies.set("userConsent", "accepted", { expires: 365 });
+        console.log("Cookies akzeptiert.");
       }}
       onDecline={() => {
-        console.log("Cookies wurden abgelehnt.");
+        Cookies.set("userConsent", "declined", { expires: 365 });
+        console.log("Cookies abgelehnt.");
       }}
-      cookieName="userConsent"
-      style={{ background: "#2B373B" }}
-      buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-      declineButtonStyle={{ color: "#ffffff", background: "#f44336" }}
+      style={{ background: "#2B373B", color: "#ffffff" }}
+      buttonStyle={{ background: "#4CAF50", color: "#ffffff", fontSize: "13px" }}
+      declineButtonStyle={{ background: "#f44336", color: "#ffffff", fontSize: "13px" }}
     >
-      Wir verwenden Cookies, um Ihre Erfahrung zu verbessern.{" "}
+      Diese Website verwendet Cookies, um Ihre Erfahrung zu verbessern.{" "}
       <a href="/datenschutz" style={{ color: "#4e9fff" }}>
         Mehr erfahren
       </a>.
@@ -28,3 +30,4 @@ const CookieBanner = () => {
 };
 
 export default CookieBanner;
+
