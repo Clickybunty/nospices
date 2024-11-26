@@ -11,7 +11,7 @@
   margin: 40px auto;
   gap: 30px;
   box-sizing: border-box;
-  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+  overflow-x: visible; /* Verhindert horizontales Scrollen */
   transition: background-color 0.3s ease, color 0.3s ease; /* Sanfter Übergang */
 }
 
