@@ -5,7 +5,7 @@ import styles from "./Content.module.css";
 export default function Content() {
   return (
     <div className={styles.contentContainer}>
-      <h1>Willkommen bei NoSpices!</h1>
+      <h1>Willkommen Nospices!</h1>
       <RezeptSuche />
     </div>
   );

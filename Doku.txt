@@ -82,6 +82,13 @@ npm run dev
     
     Skript zur automatischen Befüllung der Datenbank wurde angepasst.
 
+## Monday
+ECS Instanz aufgesetzt mit Ami Image Debian, Sicherheitsgruppe erstellt, Ports freigegeben,
+Neuer User in EC2 mit Adminrechten hinzugefügt. Die Repo mit git geklont. 
+Installationen vorgenommen: Nginx, MariaDB, nodejs und npm.
+Den root path in /etc/nginx/sites-availabe/default geändert, Nginx Dienst neugestartet.
+Die Seite rennt bis auf ein paar Kleinigkeiten die noch behoben werden. 
+
 
 ## Monday Week 2   ( Tag 5 )
 

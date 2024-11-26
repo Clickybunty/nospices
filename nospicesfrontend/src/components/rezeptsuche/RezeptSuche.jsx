@@ -16,7 +16,7 @@ function RezeptSuche() {
   // Zutaten-Daten laden
   useEffect(() => {
     axios
-      .get("/zutaten.json")
+      .get("zutaten.json") //.get("/zutaten.json")
       .then((response) => setZutatenData(response.data))
       .catch((error) => {
         console.error("Fehler beim Laden der Zutaten:", error);
@@ -46,6 +46,7 @@ function RezeptSuche() {
           console.log("Senden an Backend:", selectedIngredientIds); // Debugging
           const response = await axios.post(
             "http://localhost:5000/api/recipes/search",
+            //"http://18.194.88.143:5000/api/recipes/search",
             { ingredients: selectedIngredientIds }
           );
           console.log("Ergebnisse vom Backend:", response.data); // Debugging
