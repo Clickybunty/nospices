@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "passport-google-oauth20": "^2.0.0",
+    "react-cookie-consent": "^9.0.0"
+  }
+}
