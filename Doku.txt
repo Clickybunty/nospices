@@ -196,7 +196,7 @@ Die Seite rennt bis auf ein paar Kleinigkeiten die noch behoben werden.
     So passt sich das gesamte Design dynamisch an, 
     ohne die HTML- oder CSS-Struktur zu ändern.
 
-    Markus Onboarding nach Auszeit!
+    Markus Onboarding 1/2 nach Auszeit!
 
     Die Domains NoSpices.de und 
     NoSpices.com wurden über den Anbieter Strato.de erworben. 
@@ -206,15 +206,23 @@ Die Seite rennt bis auf ein paar Kleinigkeiten die noch behoben werden.
     Rezepte mit den meisten Übereinstimmungen (matchCount) werden bevorzugt.
     Bei gleicher Anzahl an Übereinstimmungen werden Rezepte mit weniger Zutaten bevorzugt.
 
+## Tuesday Week 3   ( Tag 11 )
+
     Cookie-Banner wurde eingefügt, um die Cookies zu Beginn des Aufrufs der App/Webseite abzufragen.
+
+    BugFix im Backend    Rezepliste und Localhost
+
+    Onboarding 2/2 "Workflow-Branches" Einführung in die Arbeitsweise mit den Projekt-Branches
+
+    
 
 ## Probleme und Lösungen
 
-Während der Entwicklung traten Herausforderungen mit dem Sprachmodul auf, 
-die als inkompatibel identifiziert wurden. 
-Daraufhin wurde das Modul modular umgebaut. 
-Alle Synchronisationen wurden korrekt angepasst und 
-der Code ist jetzt auf dem neuesten Stand.
+    Während der Entwicklung traten Herausforderungen mit dem Sprachmodul auf, 
+    die als inkompatibel identifiziert wurden. 
+    Daraufhin wurde das Modul modular umgebaut. 
+    Alle Synchronisationen wurden korrekt angepasst und 
+    der Code ist jetzt auf dem neuesten Stand.
 
 ---
 
