@@ -1,0 +1,40 @@
+
+.cookieBanner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #2B373B;
+    color: #ffffff;
+    z-index: 99999;
+    padding: 20px;
+}
+
+.cookieBannerButton {
+    background: #4CAF50;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cookieBannerButton.decline {
+    background: #f44336;
+}
+
+.cookieBannerButton.settings {
+    background: #008CBA;
+}
+
+.cookieSettings {
+    margin-top: 10px;
+}
+
+.cookieSettings h4 {
+    margin-bottom: 10px;
+}
+
+.cookieSettings label {
+    display: block;
+    margin: 5px 0;
+}
