@@ -247,6 +247,14 @@ Die Seite rennt bis auf ein paar Kleinigkeiten die noch behoben werden.
     Schnellere und klarere Eingabeprozesse, 
     die das Finden von Rezepten erleichtern.
 
+    Datenschutzerklärung
+    Komponente: PrivacyPolicy
+    Die PrivacyPolicy-Komponente dient der Darstellung einer Datenschutzerklärung, 
+    die den rechtlichen Anforderungen der DSGVO entspricht. 
+    Sie ist modular gestaltet und 
+    kann in verschiedenen Bereichen der Anwendung eingebunden werden, 
+    z. B. im Footer oder als eigenständige Seite.
+
 ## Probleme und Lösungen
 
     Während der Entwicklung traten Herausforderungen mit dem Sprachmodul auf, 
