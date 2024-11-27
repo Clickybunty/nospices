@@ -14,18 +14,20 @@ function App() {
 
   useEffect(() => {
     const consent = Cookies.get("userConsent");
-    console.log("Cookie-Zustimmung:", consent);
-
-    // Beispiel: Aktionen basierend auf der Zustimmung
-    if (consent === "accepted") {
-      console.log("Alle Cookies aktiviert.");
-      // Google Analytics oder Tracking-Tools hier starten
-    } else if (consent === "declined") {
-      console.log("Keine Cookies aktiviert.");
-    } else if (consent === "custom") {
-      console.log("Benutzer hat benutzerdefinierte Cookie-Einstellungen.");
+    if (consent) {
+      const parsedConsent = JSON.parse(consent);
+      if (parsedConsent.statistics) {
+        console.log("Statistik-Tracking aktiviert.");
+        // Tracking-Code für Statistik aktivieren
+      }
+      if (parsedConsent.marketing) {
+        console.log("Marketing-Tracking aktiviert.");
+        // Tracking-Code für Marketing aktivieren
+      }
     }
   }, []);
+  
+  
 
   return (
     <LanguageProvider>
