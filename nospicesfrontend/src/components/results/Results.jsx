@@ -7,8 +7,9 @@ function Results({ initialRecipes }) {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState({}); // Aktueller Index für jedes Rezept
 
-  const YOUTUBE_API_KEY = "AIzaSyD6tqjw5IyzMjJUkka4CZ4vSV189Ha1koE";
+  const YOUTUBE_API_KEY = "AIzaSyBTzRqNCwYXtmAwSMtuq9xX_3Qf7AAwg84";
 
   // Funktion, um Videos pro Rezept zu laden
   const fetchYouTubeVideosForRecipes = async (recipes) => {
@@ -25,22 +26,28 @@ function Results({ initialRecipes }) {
                 part: "snippet",
                 q: `Rezept ${recipe}`, // Suche nach Rezept + Name
                 type: "video",
-                maxResults: 1, // Nur ein Ergebnis
+                maxResults: 5, // Hole 5 Videos
                 key: YOUTUBE_API_KEY,
               },
             }
           );
 
-          const video = response.data.items[0];
-          return {
-            recipe,
-            videoId: video?.id.videoId || null,
-            title: video?.snippet.title || "Kein Video gefunden",
-          };
+          const videos = response.data.items.map((item) => ({
+            videoId: item.id.videoId,
+            title: item.snippet.title,
+          }));
+
+          return { recipe, videos };
         })
       );
 
       setResults(videoResults);
+      // Setze den Index für jedes Rezept auf das erste Video
+      const initialIndexes = recipes.reduce((acc, recipe) => {
+        acc[recipe] = 0;
+        return acc;
+      }, {});
+      setCurrentVideoIndex(initialIndexes);
     } catch (err) {
       console.error("Fehler beim Abrufen der YouTube-Videos:", err.message);
       setError("Fehler beim Abrufen der YouTube-Videos.");
@@ -49,14 +56,22 @@ function Results({ initialRecipes }) {
     }
   };
 
-  // Effekt: Rezepte oder Videos laden
+  // Effekt: Videos laden, wenn die Kategorie "YouTube" ist
   useEffect(() => {
     if (activeCategory === "youtube") {
       fetchYouTubeVideosForRecipes(initialRecipes || []);
-    } else if (activeCategory === "recipes") {
-      setResults(initialRecipes.map((recipe) => ({ recipe })));
+    } else {
+      setResults(initialRecipes.map((recipe) => ({ recipe, videos: [] })));
     }
   }, [activeCategory, initialRecipes]);
+
+  // Zum nächsten Video wechseln
+  const handleNextVideo = (recipe) => {
+    setCurrentVideoIndex((prevIndex) => {
+      const nextIndex = (prevIndex[recipe] + 1) % results.find((r) => r.recipe === recipe).videos.length;
+      return { ...prevIndex, [recipe]: nextIndex };
+    });
+  };
 
   // Kategorie ändern
   const handleCategoryChange = (category) => {
@@ -94,36 +109,39 @@ function Results({ initialRecipes }) {
         <p>Loading...</p>
       ) : error ? (
         <p style={{ color: "red" }}>{error}</p>
+      ) : activeCategory === "recipes" ? (
+        <div className={styles.recipeNames}>
+          <h5>Rezepte:</h5>
+          <ul>
+            {initialRecipes.map((recipe, index) => (
+              <li key={index}>{recipe}</li>
+            ))}
+          </ul>
+        </div>
       ) : (
         <div className={styles.resultsList}>
-          {activeCategory === "recipes" &&
-            results.map((item, index) => (
-              <div key={index} className={styles.recipeItem}>
-                <h5>{item.recipe}</h5>
+          {results.map((item, index) => (
+            <div key={index} className={styles.recipeSection}>
+              <h5 className={styles.categoryTitle}>{item.recipe}</h5>
+              <div className={styles.videoContainer}>
+                <iframe
+                  className={styles.video}
+                  src={`https://www.youtube.com/embed/${item.videos[currentVideoIndex[item.recipe]]?.videoId}`}
+                  title={item.videos[currentVideoIndex[item.recipe]]?.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <button
+                  className={styles.nextButton}
+                  onClick={() => handleNextVideo(item.recipe)}
+                >
+                  Nächstes Video &rarr;
+                </button>
+                <p>{item.videos[currentVideoIndex[item.recipe]]?.title}</p>
               </div>
-            ))}
-
-          {activeCategory === "youtube" &&
-            results.map((item, index) => (
-              <div key={index} className={styles.videoItem}>
-                {item.videoId ? (
-                  <>
-                    <iframe
-                      width="300"
-                      height="200"
-                      src={`https://www.youtube.com/embed/${item.videoId}`}
-                      title={item.title}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                    <p>{item.title}</p>
-                  </>
-                ) : (
-                  <p>Kein Video für "{item.recipe}" gefunden</p>
-                )}
-              </div>
-            ))}
+            </div>
+          ))}
         </div>
       )}
     </div>
