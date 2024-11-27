@@ -3,6 +3,7 @@ import LanguageSelector from "../../languageselector/LanguageSelector";
 import DarkModeToggle from "../../Dark_Mode/DarkModeToggle"; // Importiere den neuen Toggle
 import { useLanguage } from "../../../context/LanguageContext";
 import styles from "./Navbar.module.css";
+import ShareButton from "../../sharebutton/ShareButton";
 
 export default function Navbar({ darkMode, toggleDarkMode }) {
   const { language, languages, changeLanguage } = useLanguage();
@@ -21,7 +22,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
           languages={languages}
           onLanguageChange={changeLanguage}
         />
-        <button className={styles.loginButton}>Login</button>
+        <ShareButton />
       </div>
       {/* Menü */}
       <ul className={styles.navLinks}>
