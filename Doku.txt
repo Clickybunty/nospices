@@ -214,6 +214,8 @@ Die Seite rennt bis auf ein paar Kleinigkeiten die noch behoben werden.
 
     Onboarding 2/2 "Workflow-Branches" Einführung in die Arbeitsweise mit den Projekt-Branches
 
+    Videos von YouTube werden jetzt als Ergebnisse der Rezeptsuche im Frontend eingeblendet. 
+
     
 
 ## Probleme und Lösungen
