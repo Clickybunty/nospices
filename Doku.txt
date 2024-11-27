@@ -255,6 +255,9 @@ Die Seite rennt bis auf ein paar Kleinigkeiten die noch behoben werden.
     kann in verschiedenen Bereichen der Anwendung eingebunden werden, 
     z. B. im Footer oder als eigenständige Seite.
 
+    Cookiebanner wurde erfolgreich implementiert. Das Tracking läuft korrekt.
+    Es kann zwischen "Alle annhemen", "Alle ablehnen" und "Einstellungen" ausgewählt werden.
+
 ## Probleme und Lösungen
 
     Während der Entwicklung traten Herausforderungen mit dem Sprachmodul auf, 
