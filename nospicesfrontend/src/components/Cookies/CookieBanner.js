@@ -1,11 +1,13 @@
+
 import React, { useState } from "react";
 import Cookies from "js-cookie";
+import styles from "./CookieBanner.module.css";
 
 const CookieBanner = () => {
-  const [isVisible, setIsVisible] = useState(true); // Banner ist standardmäßig sichtbar
+  const [isVisible, setIsVisible] = useState(true); 
   const [showDetails, setShowDetails] = useState(false);
   const [consent, setConsent] = useState({
-    necessary: true, // Immer erforderlich
+    necessary: true, 
     statistics: false,
     marketing: false,
   });
@@ -21,12 +23,12 @@ const CookieBanner = () => {
       statistics: true,
       marketing: true,
     }));
-    setIsVisible(false); // Banner ausblenden
+    setIsVisible(false); 
   };
 
   const handleDeclineAll = () => {
     setConsent({
-      necessary: true, // Notwendige Cookies bleiben aktiv
+      necessary: true, 
       statistics: false,
       marketing: false,
     });
@@ -35,44 +37,44 @@ const CookieBanner = () => {
       statistics: false,
       marketing: false,
     }));
-    setIsVisible(false); // Banner ausblenden
+    setIsVisible(false); 
   };
 
   const handleSavePreferences = () => {
     Cookies.set("userConsent", JSON.stringify(consent));
-    setIsVisible(false); // Banner ausblenden
+    setIsVisible(false);
   };
 
   if (!isVisible) {
-    return null; // Wenn der Banner nicht sichtbar ist, wird nichts gerendert
+    return null; 
   }
 
   return (
-    <div style={{ position: "fixed", bottom: 0, width: "100%", background: "#2B373B", color: "#ffffff", zIndex: 99999, padding: "20px" }}>
+    <div className={styles.cookieBanner}>
       <p>Diese Website verwendet Cookies, um Ihre Erfahrung zu verbessern.</p>
       {!showDetails ? (
         <div>
           <button
             onClick={handleAcceptAll}
-            style={{ background: "#4CAF50", color: "#ffffff", padding: "10px", margin: "5px", border: "none", borderRadius: "5px" }}
+            className={styles.cookieBannerButton}
           >
             Alle akzeptieren
           </button>
           <button
             onClick={handleDeclineAll}
-            style={{ background: "#f44336", color: "#ffffff", padding: "10px", margin: "5px", border: "none", borderRadius: "5px" }}
+            className={`${styles.cookieBannerButton} ${styles.decline}`}
           >
             Alle ablehnen
           </button>
           <button
             onClick={() => setShowDetails(true)}
-            style={{ background: "#008CBA", color: "#ffffff", padding: "10px", margin: "5px", border: "none", borderRadius: "5px" }}
+            className={`${styles.cookieBannerButton} ${styles.settings}`}
           >
             Einstellungen
           </button>
         </div>
       ) : (
-        <div style={{ marginTop: "10px" }}>
+        <div className={styles.cookieSettings}>
           <h4>Cookie-Einstellungen</h4>
           <div>
             <label>
@@ -106,13 +108,13 @@ const CookieBanner = () => {
           </div>
           <button
             onClick={handleSavePreferences}
-            style={{ background: "#4CAF50", color: "#ffffff", padding: "10px", margin: "5px", border: "none", borderRadius: "5px" }}
+            className={styles.cookieBannerButton}
           >
             Speichern
           </button>
           <button
             onClick={() => setShowDetails(false)}
-            style={{ background: "#f44336", color: "#ffffff", padding: "10px", margin: "5px", border: "none", borderRadius: "5px" }}
+            className={`${styles.cookieBannerButton} ${styles.decline}`}
           >
             Abbrechen
           </button>
