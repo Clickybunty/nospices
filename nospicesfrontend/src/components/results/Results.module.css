@@ -128,3 +128,17 @@ iframe {
   color: var(--secondary-text-color); /* Dynamische Sekundärfarbe */
   margin-top: 20px;
 }
+
+.youTubePreview {
+  display: flex;
+  gap: 1em;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  aspect-ratio: 16/9;
+}
