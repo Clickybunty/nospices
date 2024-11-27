@@ -22,7 +22,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
           languages={languages}
           onLanguageChange={changeLanguage}
         />
-        <ShareButton />
+        <ShareButton darkMode={darkMode} />
       </div>
       {/* Menü */}
       <ul className={styles.navLinks}>
