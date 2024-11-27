@@ -214,9 +214,38 @@ Die Seite rennt bis auf ein paar Kleinigkeiten die noch behoben werden.
 
     Onboarding 2/2 "Workflow-Branches" Einführung in die Arbeitsweise mit den Projekt-Branches
 
-    Videos von YouTube werden jetzt als Ergebnisse der Rezeptsuche im Frontend eingeblendet. 
+ ## Wednesday Week 3   ( Tag 12 )   
 
+    Einbindung von YouTube-Videos
+    YouTube-Videos werden nun als zusätzliche Ergebnisse der Rezeptsuche im Frontend angezeigt. 
+    Diese bieten ergänzende visuelle Anleitungen und 
+    Inspirationen für die ausgewählten Rezepte.
+
+    Funktion zum Teilen von Inhalten
+    Es wurde eine Funktion hinzugefügt, 
+    die es ermöglicht, 
+    Rezepte oder Ergebnisse direkt zu teilen. 
+    Unterstützte Optionen:
+        WhatsApp: 
+    Rezepte können direkt an Kontakte gesendet werden.
+        Link kopieren: 
+    Ein direkter Link wird erstellt und kopiert, 
+    der leicht weitergegeben werden kann.
+        Discord: 
+    Inhalte können direkt in Discord-Servern oder Chats geteilt werden.
+
+    Dark Mode
+    Ein Dark Mode wurde umgesetzt, 
+    um die Benutzeroberfläche an die individuellen Vorlieben der Nutzer anzupassen und 
+    die Augenbelastung bei schlechten Lichtverhältnissen zu reduzieren.
     
+    Verbesserte Usability bei der Eingabe
+    Die Benutzerfreundlichkeit der Eingabefelder wurde optimiert:
+    Intuitive Steuerung: 
+    Verbesserungen bei der automatischen Vervollständigung.
+    Effizientere Suchvorgänge: 
+    Schnellere und klarere Eingabeprozesse, 
+    die das Finden von Rezepten erleichtern.
 
 ## Probleme und Lösungen
 
