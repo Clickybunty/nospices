@@ -1,5 +1,5 @@
-/* Hauptcontainer der Datenschutzerklärung */
-.privacyPolicyContainer {
+/* Hauptcontainer des Impressums */
+.impressumContainer {
   background-color: var(--background-color); /* Dynamischer Hintergrund */
   color: var(--text-color); /* Dynamische Textfarbe */
   padding: 20px 30px; /* Mehr Padding für bessere Lesbarkeit */
@@ -13,41 +13,41 @@
 }
 
 /* Überschriften */
-.privacyPolicyContainer h1,
-.privacyPolicyContainer h2,
-.privacyPolicyContainer h3 {
+.impressumContainer h1,
+.impressumContainer h2,
+.impressumContainer h3 {
   color: var(--text-color); /* Dynamische Überschriftenfarbe */
   margin-bottom: 15px; /* Abstand unter Überschriften */
   font-weight: bold; /* Hervorhebung der Überschriften */
 }
 
 /* Absätze */
-.privacyPolicyContainer p {
+.impressumContainer p {
   margin: 10px 0;
   font-size: 16px; /* Größere Schrift für bessere Lesbarkeit */
 }
 
 /* Links */
-.privacyPolicyLink {
+.impressumLink {
   color: var(--hover-text-color); /* Linkfarbe */
   text-decoration: underline;
   font-weight: 500; /* Leichte Hervorhebung */
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-.privacyPolicyLink:hover,
-.privacyPolicyLink:focus {
+.impressumLink:hover,
+.impressumLink:focus {
   color: var(--active-text-color); /* Hover-Farbe */
   text-decoration: none; /* Entfernt Unterstreichung beim Hover */
 }
 
-/* Listen (optional, falls in der Datenschutzerklärung verwendet) */
-.privacyPolicyContainer ul {
+/* Listen (optional, falls im Impressum verwendet) */
+.impressumContainer ul {
   padding-left: 20px; /* Einzug für Listen */
   margin: 10px 0;
 }
 
-.privacyPolicyContainer ul li {
+.impressumContainer ul li {
   margin: 5px 0;
   color: var(--text-color); /* Dynamische Textfarbe */
 }

@@ -1,9 +1,7 @@
-/* Footer.module.css */
-
 /* Hauptcontainer des Footers */
 .footerContainer {
-  background-color: #2b2b2b; /* Dunkler Hintergrund */
-  color: #ffffff; /* Weiße Schrift */
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
+  color: var(--text-color); /* Dynamische Textfarbe */
   padding: 20px;
   text-align: center;
   font-size: 14px;
@@ -11,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Links-Bereich */
@@ -24,7 +23,7 @@
 
 /* Links-Stil */
 .footerLink {
-  color: #ff6600; /* Akzentfarbe */
+  color: var(--text-color); /* Dynamische Farbe */
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -33,43 +32,44 @@
 
 .footerLink:hover,
 .footerLink:focus {
-  color: #ff884d; /* Hellerer Orange-Ton bei Hover/Focus */
+  color: var(--hover-text-color); /* Dynamische Hover-Farbe */
 }
 
 /* Button für Datenschutzerklärung */
-.privacyButton {
+.footerButton {
   background: none;
   border: none;
-  color: #ffffff;
+  color: var(--text-color); /* Dynamische Farbe */
   cursor: pointer;
   font-size: 14px;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
-.privacyButton:hover,
-.privacyButton:focus {
-  color: #00adee; /* Hellblauer Effekt */
+.footerButton:hover,
+.footerButton:focus {
+  color: var(--hover-text-color); /* Dynamische Hover-Farbe */
 }
 
 /* Datenschutz-Anzeige */
 .policyContainer {
   margin-top: 20px;
   padding: 15px;
-  background-color: #f9f9f9; /* Heller Hintergrund */
-  color: #333;
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
+  color: var(--text-color); /* Dynamische Textfarbe */
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 90%; /* Maximaler Platzbedarf */
-  max-width: 800px; /* Begrenzte Breite */
+  width: 90%;
+  max-width: 800px;
   text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Copyright-Bereich */
 .copyright {
   margin-top: 15px;
   font-size: 12px;
-  color: #cccccc; /* Hellgraue Schrift */
+  color: var(--text-color); /* Dynamische Textfarbe */
 }
 
 /* Responsives Design */

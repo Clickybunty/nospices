@@ -1,13 +1,12 @@
-
 import React, { useState } from "react";
 import Cookies from "js-cookie";
 import styles from "./CookieBanner.module.css";
 
 const CookieBanner = () => {
-  const [isVisible, setIsVisible] = useState(true); 
+  const [isVisible, setIsVisible] = useState(true);
   const [showDetails, setShowDetails] = useState(false);
   const [consent, setConsent] = useState({
-    necessary: true, 
+    necessary: true,
     statistics: false,
     marketing: false,
   });
@@ -18,26 +17,32 @@ const CookieBanner = () => {
       statistics: true,
       marketing: true,
     });
-    Cookies.set("userConsent", JSON.stringify({
-      necessary: true,
-      statistics: true,
-      marketing: true,
-    }));
-    setIsVisible(false); 
+    Cookies.set(
+      "userConsent",
+      JSON.stringify({
+        necessary: true,
+        statistics: true,
+        marketing: true,
+      })
+    );
+    setIsVisible(false);
   };
 
   const handleDeclineAll = () => {
     setConsent({
-      necessary: true, 
-      statistics: false,
-      marketing: false,
-    });
-    Cookies.set("userConsent", JSON.stringify({
       necessary: true,
       statistics: false,
       marketing: false,
-    }));
-    setIsVisible(false); 
+    });
+    Cookies.set(
+      "userConsent",
+      JSON.stringify({
+        necessary: true,
+        statistics: false,
+        marketing: false,
+      })
+    );
+    setIsVisible(false);
   };
 
   const handleSavePreferences = () => {
@@ -46,7 +51,7 @@ const CookieBanner = () => {
   };
 
   if (!isVisible) {
-    return null; 
+    return null;
   }
 
   return (
@@ -64,13 +69,13 @@ const CookieBanner = () => {
             onClick={handleDeclineAll}
             className={`${styles.cookieBannerButton} ${styles.decline}`}
           >
-            Alle ablehnen
+            Nur notwendige
           </button>
           <button
             onClick={() => setShowDetails(true)}
             className={`${styles.cookieBannerButton} ${styles.settings}`}
           >
-            Einstellungen
+            Anpassen
           </button>
         </div>
       ) : (
@@ -78,11 +83,7 @@ const CookieBanner = () => {
           <h4>Cookie-Einstellungen</h4>
           <div>
             <label>
-              <input
-                type="checkbox"
-                checked={consent.necessary}
-                disabled
-              />
+              <input type="checkbox" checked={consent.necessary} disabled />
               Notwendige Cookies (immer aktiv)
             </label>
           </div>
@@ -91,7 +92,9 @@ const CookieBanner = () => {
               <input
                 type="checkbox"
                 checked={consent.statistics}
-                onChange={(e) => setConsent({ ...consent, statistics: e.target.checked })}
+                onChange={(e) =>
+                  setConsent({ ...consent, statistics: e.target.checked })
+                }
               />
               Statistik-Cookies
             </label>
@@ -101,7 +104,9 @@ const CookieBanner = () => {
               <input
                 type="checkbox"
                 checked={consent.marketing}
-                onChange={(e) => setConsent({ ...consent, marketing: e.target.checked })}
+                onChange={(e) =>
+                  setConsent({ ...consent, marketing: e.target.checked })
+                }
               />
               Marketing-Cookies
             </label>
