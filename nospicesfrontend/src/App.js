@@ -7,6 +7,7 @@ import { LanguageProvider } from "./context/LanguageContext";
 import CookieBanner from "./components/Cookies/CookieBanner"; // Richtig importiert
 import styles from "./App.css";
 import Cookies from "js-cookie";
+import { initializeTracking } from "./components/Cookies/tracking";
 
 
 function App() {
@@ -16,16 +17,10 @@ function App() {
     const consent = Cookies.get("userConsent");
     if (consent) {
       const parsedConsent = JSON.parse(consent);
-      if (parsedConsent.statistics) {
-        console.log("Statistik-Tracking aktiviert.");
-        // Tracking-Code für Statistik aktivieren
-      }
-      if (parsedConsent.marketing) {
-        console.log("Marketing-Tracking aktiviert.");
-        // Tracking-Code für Marketing aktivieren
-      }
+      initializeTracking(parsedConsent); // Korrekt verwenden
     }
   }, []);
+  
   
   
 
