@@ -260,11 +260,11 @@ Die Seite rennt bis auf ein paar Kleinigkeiten die noch behoben werden.
 
 ## Thursday Week 3   ( Tag 13 )
 
-    Heute wurde die Zutaten-Datenbank um Übersetzungen in acht Sprachen erweitert und 
+    Heute wurde die Zutaten-Datenbank erweitert und 
     mit eindeutigen IDs strukturiert. 
-    Über 200 Rezepte wurden erfasst und mit ihren wesentlichen Zutaten-IDs verknüpft. 
+    200 Rezepte wurden erfasst und mit ihren wesentlichen Zutaten-IDs verknüpft. 
     Fehler wie "Trig" wurden korrigiert (z.B. zu "Teig").
-    Die Daten wurden im JSON-Format dokumentiert und 
+    Die Daten ist im JSON-Format dokumentiert.
 
     Präsentationsvorbereitung gestartet
 
