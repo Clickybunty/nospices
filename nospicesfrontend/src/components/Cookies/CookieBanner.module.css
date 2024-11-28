@@ -1,40 +1,43 @@
+/* CookieBanner.module.css */
 
 .cookieBanner {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #2B373B;
+    background: #2b373b;
     color: #ffffff;
     z-index: 99999;
     padding: 20px;
-}
-
-.cookieBannerButton {
-    background: #4CAF50;
+  }
+  
+  .button {
+    background: #4caf50;
     color: #ffffff;
     padding: 10px;
     margin: 5px;
     border: none;
     border-radius: 5px;
-}
-
-.cookieBannerButton.decline {
+    cursor: pointer;
+  }
+  
+  .button.decline {
     background: #f44336;
-}
-
-.cookieBannerButton.settings {
-    background: #008CBA;
-}
-
-.cookieSettings {
+  }
+  
+  .button.settings {
+    background: #008cba;
+  }
+  
+  .details {
     margin-top: 10px;
-}
-
-.cookieSettings h4 {
-    margin-bottom: 10px;
-}
-
-.cookieSettings label {
+  }
+  
+  .checkboxLabel {
     display: block;
     margin: 5px 0;
-}
+  }
+  
+  .disabledCheckbox {
+    cursor: not-allowed;
+  }
+  

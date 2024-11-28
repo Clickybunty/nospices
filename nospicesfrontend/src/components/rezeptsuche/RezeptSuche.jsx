@@ -19,8 +19,8 @@ function RezeptSuche() {
       .get("zutaten.json") //.get("/zutaten.json")
       .then((response) => setZutatenData(response.data))
       .catch((error) => {
-        console.error("Fehler beim Laden der Zutaten:", error);
-        setError("Fehler beim Laden der Zutaten.");
+        console.error("Bitte versuche es mit anderen Zutaten.", error);
+        setError("Bitte versuche es mit anderen Zutaten.");
       });
   }, []);
 
@@ -56,8 +56,8 @@ function RezeptSuche() {
           setResults([]);
         }
       } catch (error) {
-        console.error("Fehler beim Abrufen der Ergebnisse:", error);
-        setError("Fehler beim Abrufen der Rezepte.");
+        console.error("Bitte versuche es mit anderen Zutaten.", error);
+        setError("Bitte versuche es mit anderen Zutaten.");
       }
     };
 

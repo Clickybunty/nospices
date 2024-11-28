@@ -31,8 +31,8 @@ function Results({ initialRecipes }) {
         const response = await axios.get(apiUrl);
         setResults(response.data || []);
       } catch (err) {
-        console.error("Fehler beim Abrufen der Ergebnisse:", err);
-        setError("Fehler beim Abrufen der Ergebnisse.");
+        console.error("Bitte versuche es mit anderen Zutaten.", err);
+        setError("Bitte versuche es mit anderen Zutaten.");
       } finally {
         setLoading(false);
       }
