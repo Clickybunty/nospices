@@ -23,7 +23,7 @@ export const LanguageProvider = ({ children }) => {
     if (languages[browserLanguage]) {
       setLanguage(browserLanguage); // Setze die Browsersprache, falls unterstützt
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const changeLanguage = (lang) => {
     if (languages[lang]) {
