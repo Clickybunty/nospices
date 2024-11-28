@@ -258,6 +258,19 @@ Die Seite rennt bis auf ein paar Kleinigkeiten die noch behoben werden.
     Cookiebanner wurde erfolgreich implementiert. Das Tracking läuft korrekt.
     Es kann zwischen "Alle annhemen", "Alle ablehnen" und "Einstellungen" ausgewählt werden.
 
+## Thursday Week 3   ( Tag 13 )
+
+    Heute wurde die Zutaten-Datenbank um Übersetzungen in acht Sprachen erweitert und 
+    mit eindeutigen IDs strukturiert. 
+    Über 200 Rezepte wurden erfasst und mit ihren wesentlichen Zutaten-IDs verknüpft. 
+    Fehler wie "Trig" wurden korrigiert (z.B. zu "Teig").
+    Die Daten wurden im JSON-Format dokumentiert und 
+
+    Präsentationsvorbereitung gestartet
+
+    
+
+
 ## Probleme und Lösungen
 
     Während der Entwicklung traten Herausforderungen mit dem Sprachmodul auf, 
