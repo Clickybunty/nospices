@@ -39,6 +39,16 @@
     "el": "Πουλερικά",
     "en": "Poultry"
   },
+  "1005": {
+    "de": "Speck",
+    "it": "Pancetta",
+    "fr": "Lard",
+    "es": "Tocino",
+    "ar": "لحم مقدد",
+    "iw": "בייקון",
+    "el": "Μπέικον",
+    "en": "Bacon"
+  },
   "2001": {
     "de": "Fisch",
     "it": "Pesce",
@@ -218,6 +228,26 @@
     "iw": "שעועית",
     "el": "Φασόλια",
     "en": "Beans"
+  },
+  "3014": {
+    "de": "Kapern",
+    "it": "Capperi",
+    "fr": "Câpres",
+    "es": "Alcaparras",
+    "ar": "كبر",
+    "iw": "צנוברים",
+    "el": "Κάπαρη",
+    "en": "Capers"
+  },
+  "3015": {
+    "de": "Oliven",
+    "it": "Olive",
+    "fr": "Olives",
+    "es": "Aceitunas",
+    "ar": "زيتون",
+    "iw": "זיתים",
+    "el": "Ελιές",
+    "en": "Olives"
   },
   "4001": {
     "de": "Äpfel",
@@ -549,6 +579,26 @@
     "el": "Σόγια",
     "en": "Soybeans"
   },
+  "7006": {
+    "de": "Tofu",
+    "it": "Tofu",
+    "fr": "Tofu",
+    "es": "Tofu",
+    "ar": "التوفو",
+    "iw": "טופו",
+    "el": "Τόφου",
+    "en": "Tofu"
+  },
+  "7007": {
+    "de": "Sojasauce",
+    "it": "Salsa di soia",
+    "fr": "Sauce soja",
+    "es": "Salsa de soja",
+    "ar": "صلصة الصويا",
+    "iw": "רוטב סויה",
+    "el": "Σάλτσα σόγιας",
+    "en": "Soy sauce"
+  },
   "8001": {
     "de": "Mandeln",
     "it": "Mandorle",
@@ -689,7 +739,467 @@
     "el": "Μασκαρπόνε",
     "en": "Mascarpone"
   },
-  "1016": {
+  "9008": {
+    "de": "Crème fraîche",
+    "it": "Crème fraîche",
+    "fr": "Crème fraîche",
+    "es": "Crème fraîche",
+    "ar": "كريم فراش",
+    "iw": "קרם פרש",
+    "el": "Κρέμα γάλακτος",
+    "en": "Crème fraîche"
+  },
+  "9009": {
+    "de": "Kokosmilch",
+    "it": "Latte di cocco",
+    "fr": "Lait de coco",
+    "es": "Leche de coco",
+    "ar": "حليب جوز الهند",
+    "iw": "חלב קוקוס",
+    "el": "Γάλα καρύδας",
+    "en": "Coconut milk"
+  },
+  "9010": {
+    "de": "Frischkäse",
+    "it": "Formaggio fresco",
+    "fr": "Fromage frais",
+    "es": "Queso fresco",
+    "ar": "جبن طازج",
+    "iw": "גבינה טרייה",
+    "el": "Φρέσκο τυρί",
+    "en": "Cream cheese"
+  },
+  "9011": {
+    "de": "Pesto",
+    "it": "Pesto",
+    "fr": "Pesto",
+    "es": "Pesto",
+    "ar": "بيستو",
+    "iw": "פסטו",
+    "el": "Πέστο",
+    "en": "Pesto"
+  },
+  "9012": {
+    "de": "Sauerrahm",
+    "it": "Panna acida",
+    "fr": "Crème aigre",
+    "es": "Crema agria",
+    "ar": "كريمة حامضة",
+    "iw": "שמנת חמוצה",
+    "el": "Ξινή κρέμα",
+    "en": "Sour cream"
+  },
+  "1101": {
+    "de": "Olivenöl",
+    "it": "Olio d'oliva",
+    "fr": "Huile d'olive",
+    "es": "Aceite de oliva",
+    "ar": "زيت الزيتون",
+    "iw": "שמן זית",
+    "el": "Ελαιόλαδο",
+    "en": "Olive oil"
+  },
+  "1102": {
+    "de": "Sonnenblumenöl",
+    "it": "Olio di girasole",
+    "fr": "Huile de tournesol",
+    "es": "Aceite de girasol",
+    "ar": "زيت عباد الشمس",
+    "iw": "שמן חמניות",
+    "el": "Ηλιέλαιο",
+    "en": "Sunflower oil"
+  },
+  "1103": {
+    "de": "Rapsöl",
+    "it": "Olio di colza",
+    "fr": "Huile de colza",
+    "es": "Aceite de colza",
+    "ar": "زيت بذور اللفت",
+    "iw": "שמן קנולה",
+    "el": "Ελαιοκράμβη",
+    "en": "Rapeseed oil"
+  },
+  "1104": {
+    "de": "Kokosöl",
+    "it": "Olio di cocco",
+    "fr": "Huile de coco",
+    "es": "Aceite de coco",
+    "ar": "زيت جوز الهند",
+    "iw": "שמן קוקוס",
+    "el": "Έλαιο καρύδας",
+    "en": "Coconut oil"
+  },
+  "1105": {
+    "de": "Butter",
+    "it": "Burro",
+    "fr": "Beurre",
+    "es": "Mantequilla",
+    "ar": "زبدة",
+    "iw": "חמאה",
+    "el": "Βούτυρο",
+    "en": "Butter"
+  },
+  "1106": {
+    "de": "Margarine",
+    "it": "Margarina",
+    "fr": "Margarine",
+    "es": "Margarina",
+    "ar": "سمن نباتي",
+    "iw": "מרגרינה",
+    "el": "Μαργαρίνη",
+    "en": "Margarine"
+  },
+  "1107": {
+    "de": "Öl",
+    "it": "Olio",
+    "fr": "Huile",
+    "es": "Aceite",
+    "ar": "زيت",
+    "iw": "שמן",
+    "el": "Λάδι",
+    "en": "Oil"
+  },
+  "1201": {
+    "de": "Zucker",
+    "it": "Zucchero",
+    "fr": "Sucre",
+    "es": "Azúcar",
+    "ar": "سكر",
+    "iw": "סוכר",
+    "el": "Ζάχαρη",
+    "en": "Sugar"
+  },
+  "1202": {
+    "de": "Honig",
+    "it": "Miele",
+    "fr": "Miel",
+    "es": "Miel",
+    "ar": "عسل",
+    "iw": "דבש",
+    "el": "Μέλι",
+    "en": "Honey"
+  },
+  "1203": {
+    "de": "Ahornsirup",
+    "it": "Sciroppo d'acero",
+    "fr": "Sirop d'érable",
+    "es": "Jarabe de arce",
+    "ar": "شراب القيقب",
+    "iw": "סירופ מייפל",
+    "el": "Σιρόπι σφενδάμου",
+    "en": "Maple syrup"
+  },
+  "1204": {
+    "de": "Agavendicksaft",
+    "it": "Sciroppo di agave",
+    "fr": "Sirop d'agave",
+    "es": "Jarabe de agave",
+    "ar": "شراب الصبار",
+    "iw": "סירופ אגבה",
+    "el": "Σιρόπι αγαύης",
+    "en": "Agave syrup"
+  },
+  "1205": {
+    "de": "Stevia",
+    "it": "Stevia",
+    "fr": "Stévia",
+    "es": "Stevia",
+    "ar": "ستيفيا",
+    "iw": "סטיביה",
+    "el": "Στέβια",
+    "en": "Stevia"
+  },
+  "1206": {
+    "de": "Schokolade",
+    "it": "Cioccolato",
+    "fr": "Chocolat",
+    "es": "Chocolate",
+    "ar": "شوكولاتة",
+    "iw": "שוקולד",
+    "el": "Σοκολάτα",
+    "en": "Chocolate"
+  },
+  "1207": {
+    "de": "Vanille",
+    "it": "Vaniglia",
+    "fr": "Vanille",
+    "es": "Vainilla",
+    "ar": "فانيليا",
+    "iw": "וניל",
+    "el": "Βανίλια",
+    "en": "Vanilla"
+  },
+  "1208": {
+    "de": "Marmelade",
+    "it": "Marmellata",
+    "fr": "Confiture",
+    "es": "Mermelada",
+    "ar": "مربى",
+    "iw": "ריבה",
+    "el": "Μαρμελάδα",
+    "en": "Jam"
+  },
+  "1301": {
+    "de": "Wasser",
+    "it": "Acqua",
+    "fr": "Eau",
+    "es": "Agua",
+    "ar": "ماء",
+    "iw": "מים",
+    "el": "Νερό",
+    "en": "Water"
+  },
+  "1302": {
+    "de": "Tee",
+    "it": "Tè",
+    "fr": "Thé",
+    "es": "Té",
+    "ar": "شاي",
+    "iw": "תה",
+    "el": "Τσάι",
+    "en": "Tea"
+  },
+  "1303": {
+    "de": "Kaffee",
+    "it": "Caffè",
+    "fr": "Café",
+    "es": "Café",
+    "ar": "قهوة",
+    "iw": "קפה",
+    "el": "Καφές",
+    "en": "Coffee"
+  },
+  "1304": {
+    "de": "Fruchtsäfte",
+    "it": "Succhi di frutta",
+    "fr": "Jus de fruits",
+    "es": "Zumos de frutas",
+    "ar": "عصائر فواكه",
+    "iw": "מיצי פירות",
+    "el": "Χυμοί φρούτων",
+    "en": "Fruit juices"
+  },
+  "1305": {
+    "de": "Limonade",
+    "it": "Limonata",
+    "fr": "Limonade",
+    "es": "Limonada",
+    "ar": "ليمونادة",
+    "iw": "לימונדה",
+    "el": "Λεμονάδα",
+    "en": "Lemonade"
+  },
+  "1306": {
+    "de": "Milchshakes",
+    "it": "Frullati di latte",
+    "fr": "Milkshakes",
+    "es": "Batidos de leche",
+    "ar": "ميلك شيك",
+    "iw": "מילקשייק",
+    "el": "Μιλκσέικ",
+    "en": "Milkshakes"
+  },
+  "1307": {
+    "de": "Rotwein",
+    "it": "Vino rosso",
+    "fr": "Vin rouge",
+    "es": "Vino tinto",
+    "ar": "نبيذ أحمر",
+    "iw": "יין אדום",
+    "el": "Κόκκινο κρασί",
+    "en": "Red wine"
+  },
+  "1308": {
+    "de": "Weißwein",
+    "it": "Vino bianco",
+    "fr": "Vin blanc",
+    "es": "Vino blanco",
+    "ar": "نبيذ أبيض",
+    "iw": "יין לבן",
+    "el": "Λευκό κρασί",
+    "en": "White wine"
+  },
+  "1401": {
+    "de": "Weizenmehl",
+    "it": "Farina di frumento",
+    "fr": "Farine de blé",
+    "es": "Harina de trigo",
+    "ar": "دقيق القمح",
+    "iw": "קמח חיטה",
+    "el": "Αλεύρι σιταριού",
+    "en": "Wheat flour"
+  },
+  "1402": {
+    "de": "Roggenmehl",
+    "it": "Farina di segale",
+    "fr": "Farine de seigle",
+    "es": "Harina de centeno",
+    "ar": "دقيق الجاودار",
+    "iw": "קמח שיפון",
+    "el": "Αλεύρι σίκαλης",
+    "en": "Rye flour"
+  },
+  "1403": {
+    "de": "Dinkelmehl",
+    "it": "Farina di farro",
+    "fr": "Farine d'épeautre",
+    "es": "Harina de espelta",
+    "ar": "دقيق الحنطة",
+    "iw": "קמח כוסמין",
+    "el": "Αλεύρι ντίνκελ",
+    "en": "Spelt flour"
+  },
+  "1404": {
+    "de": "Maismehl",
+    "it": "Farina di mais",
+    "fr": "Farine de maïs",
+    "es": "Harina de maíz",
+    "ar": "دقيق الذرة",
+    "iw": "קמח תירס",
+    "el": "Αλεύρι καλαμποκιού",
+    "en": "Corn flour"
+  },
+  "1405": {
+    "de": "Reismehl",
+    "it": "Farina di riso",
+    "fr": "Farine de riz",
+    "es": "Harina de arroz",
+    "ar": "دقيق الأرز",
+    "iw": "קמח אורז",
+    "el": "Αλεύρι ρυζιού",
+    "en": "Rice flour"
+  },
+  "1406": {
+    "de": "Hafermehl",
+    "it": "Farina d'avena",
+    "fr": "Farine d'avoine",
+    "es": "Harina de avena",
+    "ar": "دقيق الشوفان",
+    "iw": "קמח שיבולת שועל",
+    "el": "Αλεύρι βρώμης",
+    "en": "Oat flour"
+  },
+  "1407": {
+    "de": "Mehl",
+    "it": "Farina",
+    "fr": "Farine",
+    "es": "Harina",
+    "ar": "دقيق",
+    "iw": "קמח",
+    "el": "Αλεύρι",
+    "en": "Flour"
+  },
+  "1408": {
+    "de": "Teig",
+    "it": "Impasto",
+    "fr": "Pâte",
+    "es": "Masa",
+    "ar": "عجين",
+    "iw": "בצק",
+    "el": "Ζύμη",
+    "en": "Dough"
+  },
+  "1409": {
+    "de": "Backpulver",
+    "it": "Lievito in polvere",
+    "fr": "Levure chimique",
+    "es": "Polvo de hornear",
+    "ar": "مسحوق الخبز",
+    "iw": "אבקת אפייה",
+    "el": "Μπέικιν πάουντερ",
+    "en": "Baking powder"
+  },
+  "1410": {
+    "de": "Hefe",
+    "it": "Lievito",
+    "fr": "Levure",
+    "es": "Levadura",
+    "ar": "خميرة",
+    "iw": "שמרים",
+    "el": "Μαγιά",
+    "en": "Yeast"
+  },
+  "1411": {
+    "de": "Pasta",
+    "it": "Pasta",
+    "fr": "Pâtes",
+    "es": "Pasta",
+    "ar": "مكرونة",
+    "iw": "פסטה",
+    "el": "Ζυμαρικά",
+    "en": "Pasta"
+  },
+  "1501": {
+    "de": "Brot",
+    "it": "Pane",
+    "fr": "Pain",
+    "es": "Pan",
+    "ar": "خبز",
+    "iw": "לחם",
+    "el": "Ψωμί",
+    "en": "Bread"
+  },
+  "1502": {
+    "de": "Brötchen",
+    "it": "Panini",
+    "fr": "Petits pains",
+    "es": "Panecillos",
+    "ar": "لفائف",
+    "iw": "לחמניות",
+    "el": "Ψωμάκια",
+    "en": "Bread rolls"
+  },
+  "1503": {
+    "de": "Croissants",
+    "it": "Croissant",
+    "fr": "Croissants",
+    "es": "Cruasanes",
+    "ar": "كرواسون",
+    "iw": "קרואסונים",
+    "el": "Κρουασάν",
+    "en": "Croissants"
+  },
+  "1504": {
+    "de": "Baguette",
+    "it": "Baguette",
+    "fr": "Baguette",
+    "es": "Baguette",
+    "ar": "باجيت",
+    "iw": "באגט",
+    "el": "Μπαγκέτα",
+    "en": "Baguette"
+  },
+  "1505": {
+    "de": "Kuchen",
+    "it": "Torta",
+    "fr": "Gâteau",
+    "es": "Pastel",
+    "ar": "كعكة",
+    "iw": "עוגה",
+    "el": "Κέικ",
+    "en": "Cake"
+  },
+  "1506": {
+    "de": "Kekse",
+    "it": "Biscotti",
+    "fr": "Biscuits",
+    "es": "Galletas",
+    "ar": "بسكويت",
+    "iw": "עוגיות",
+    "el": "Μπισκότα",
+    "en": "Cookies"
+  },
+  "1507": {
+    "de": "Muffins",
+    "it": "Muffin",
+    "fr": "Muffins",
+    "es": "Muffins",
+    "ar": "مافن",
+    "iw": "מאפינס",
+    "el": "Μάφιν",
+    "en": "Muffins"
+  },
+  "1616": {
     "de": "Salz",
     "it": "Sale",
     "fr": "Sel",
@@ -699,7 +1209,7 @@
     "el": "Αλάτι",
     "en": "Salt"
   },
-  "1017": {
+  "1617": {
     "de": "Pfeffer",
     "it": "Pepe",
     "fr": "Poivre",
@@ -709,7 +1219,7 @@
     "el": "Πιπέρι",
     "en": "Pepper"
   },
-  "1018": {
+  "1618": {
     "de": "Paprika",
     "it": "Paprika",
     "fr": "Paprika",
@@ -719,7 +1229,7 @@
     "el": "Πάπρικα",
     "en": "Paprika"
   },
-  "1019": {
+  "1619": {
     "de": "Chili",
     "it": "Peperoncino",
     "fr": "Piment",
@@ -729,7 +1239,7 @@
     "el": "Τσίλι",
     "en": "Chili"
   },
-  "1005": {
+  "1605": {
     "de": "Oregano",
     "it": "Origano",
     "fr": "Origan",
@@ -739,7 +1249,7 @@
     "el": "Ρίγανη",
     "en": "Oregano"
   },
-  "1006": {
+  "1606": {
     "de": "Basilikum",
     "it": "Basilico",
     "fr": "Basilic",
@@ -749,7 +1259,7 @@
     "el": "Βασιλικός",
     "en": "Basil"
   },
-  "1007": {
+  "1607": {
     "de": "Petersilie",
     "it": "Prezzemolo",
     "fr": "Persil",
@@ -759,7 +1269,7 @@
     "el": "Μαϊντανός",
     "en": "Parsley"
   },
-  "1008": {
+  "1608": {
     "de": "Thymian",
     "it": "Timo",
     "fr": "Thym",
@@ -769,7 +1279,7 @@
     "el": "Θυμάρι",
     "en": "Thyme"
   },
-  "1009": {
+  "1609": {
     "de": "Rosmarin",
     "it": "Rosmarino",
     "fr": "Romarin",
@@ -779,7 +1289,7 @@
     "el": "Δεντρολίβανο",
     "en": "Rosemary"
   },
-  "1010": {
+  "1610": {
     "de": "Muskatnuss",
     "it": "Noce moscata",
     "fr": "Muscade",
@@ -789,7 +1299,7 @@
     "el": "Μοσχοκάρυδο",
     "en": "Nutmeg"
   },
-  "1011": {
+  "1611": {
     "de": "Kreuzkümmel",
     "it": "Cumino",
     "fr": "Cumin",
@@ -799,7 +1309,7 @@
     "el": "Κύμινο",
     "en": "Cumin"
   },
-  "1012": {
+  "1612": {
     "de": "Curry",
     "it": "Curry",
     "fr": "Curry",
@@ -809,7 +1319,7 @@
     "el": "Κάρυ",
     "en": "Curry"
   },
-  "1013": {
+  "1613": {
     "de": "Zimt",
     "it": "Cannella",
     "fr": "Cannelle",
@@ -819,7 +1329,7 @@
     "el": "Κανέλα",
     "en": "Cinnamon"
   },
-  "1014": {
+  "1614": {
     "de": "Ingwer",
     "it": "Zenzero",
     "fr": "Gingembre",
@@ -829,7 +1339,7 @@
     "el": "Τζίντζερ",
     "en": "Ginger"
   },
-  "1015": {
+  "1615": {
     "de": "Knoblauch",
     "it": "Aglio",
     "fr": "Ail",
@@ -838,5 +1348,45 @@
     "iw": "שום",
     "el": "Σκόρδο",
     "en": "Garlic"
+  },
+  "1701": {
+    "de": "Essig",
+    "it": "Aceto",
+    "fr": "Vinaigre",
+    "es": "Vinagre",
+    "ar": "خل",
+    "iw": "חומץ",
+    "el": "Ξίδι",
+    "en": "Vinegar"
+  },
+  "1702": {
+    "de": "Senf",
+    "it": "Senape",
+    "fr": "Moutarde",
+    "es": "Mostaza",
+    "ar": "خردل",
+    "iw": "חרדל",
+    "el": "Μουστάρδα",
+    "en": "Mustard"
+  },
+  "1703": {
+    "de": "Mayonnaise",
+    "it": "Maionese",
+    "fr": "Mayonnaise",
+    "es": "Mayonesa",
+    "ar": "مايونيز",
+    "iw": "מיונז",
+    "el": "Μαγιονέζα",
+    "en": "Mayonnaise"
+  },
+  "1704": {
+    "de": "Ketchup",
+    "it": "Ketchup",
+    "fr": "Ketchup",
+    "es": "Kétchup",
+    "ar": "كاتشب",
+    "iw": "קטשופ",
+    "el": "Κέτσαπ",
+    "en": "Ketchup"
   }
 }

@@ -4,8 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  overflow-x: hidden; /* Verhindert horizontales Scrollen */
-}
+/* overflow-x: hidden; */ /* Vorübergehend entfernt */}
 
 /* Setzt eine maximale Breite für den Hauptcontainer */
 .appContainer {

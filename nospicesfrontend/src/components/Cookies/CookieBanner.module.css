@@ -1,0 +1,82 @@
+/* Hauptcontainer des Cookie-Banners */
+.cookieBanner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--background-color); /* Dynamischer Hintergrund */
+  color: var(--text-color); /* Dynamische Textfarbe */
+  z-index: 99999;
+  padding: 20px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Schatten für Abhebung */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Buttons im Cookie-Banner */
+.cookieBannerButton {
+  background: var(--active-background-color); /* Dynamische Hintergrundfarbe */
+  color: var(--active-text-color); /* Dynamische Textfarbe */
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.cookieBannerButton:hover {
+  background: var(--hover-background-color); /* Hover-Farbe */
+  color: var(--hover-text-color); /* Hover-Textfarbe */
+  transform: scale(1.05); /* Leichter Vergrößerungseffekt */
+}
+
+.cookieBannerButton.decline {
+  background: var(--border-color); /* Dynamische Farbe für Ablehnen */
+  color: var(--text-color); /* Dynamische Textfarbe */
+}
+
+.cookieBannerButton.decline:hover {
+  background: var(--hover-background-color); /* Hover-Farbe für Ablehnen */
+  color: var(--hover-text-color);
+}
+
+.cookieBannerButton.settings {
+  background: var(
+    --hover-background-color
+  ); /* Dynamische Farbe für Einstellungen */
+  color: var(--text-color); /* Dynamische Textfarbe */
+}
+
+.cookieBannerButton.settings:hover {
+  background: var(
+    --active-background-color
+  ); /* Hover-Farbe für Einstellungen */
+  color: var(--active-text-color);
+}
+
+/* Cookie-Einstellungen */
+.cookieSettings {
+  margin-top: 15px;
+  background: var(--background-color); /* Dynamischer Hintergrund */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cookieSettings h4 {
+  margin-bottom: 10px;
+  color: var(--text-color); /* Dynamische Textfarbe */
+  font-size: 16px;
+}
+
+.cookieSettings label {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--text-color); /* Dynamische Textfarbe */
+}
+
+.cookieSettings input {
+  margin-right: 10px;
+}

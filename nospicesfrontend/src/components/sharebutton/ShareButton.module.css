@@ -1,0 +1,117 @@
+/* Button zum Öffnen des Modals */
+.shareButton {
+  padding: 0.5rem 1rem;
+  background-color: var(--button-bg-color); /* Dynamisch */
+  color: var(--text-color); /* Dynamisch */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shareButton:hover {
+  background-color: var(--button-bg-hover-color); /* Dynamisch */
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Immer gleich */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.modal {
+  background-color: var(--background-color); /* Dynamisch */
+  color: var(--text-color); /* Dynamisch */
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal h2 {
+  color: var(--text-color); /* Dynamisch */
+}
+
+.modal button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  background-color: var(--hover-background-color); /* Dynamisch */
+  border: 1px solid var(--border-color); /* Dynamisch */
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--text-color); /* Dynamisch */
+}
+
+.modal button:hover {
+  background-color: var(--hover-text-color); /* Dynamisch */
+}
+
+/* Schließen-Button */
+.closeButton {
+  margin-top: 1rem;
+  background-color: var(--active-background-color); /* Dynamisch */
+  color: var(--focus-text-color); /* Dynamisch */
+  font-weight: bold;
+}
+
+/* Modal Header */
+.modal h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Animation für das Modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Modal Dark Mode */
+.modalDark {
+  background-color: #333; /* Dunkler Hintergrund */
+  color: white; /* Helle Schriftfarbe */
+}
+
+.modalDark button {
+  background-color: #444; /* Dunklere Buttons */
+  color: white; /* Helle Schrift */
+  border: 1px solid #555;
+}
+
+.modalDark button:hover {
+  background-color: #555;
+}
+
+.closeButton.modalDark {
+  background-color: #ff6666; /* Etwas helleres Rot für Dark Mode */
+}
+
+.modal button.emailButton {
+  background-color: #0072c6; /* Blaue Farbe für E-Mail */
+  color: white;
+}
+
+.modal button.emailButton:hover {
+  background-color: #005bb5; /* Dunkleres Blau beim Hover */
+}

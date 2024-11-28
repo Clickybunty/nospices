@@ -26,22 +26,24 @@ function SearchInput({ language, zutatenData, onIngredientSelect }) {
           .map(([id, zutat]) => ({ id, name: zutat[language] }))
       );
     }
+
+    // Öffne das Dropdown automatisch bei Eingabe
+    if (zutaten.trim()) {
+      setIsDropdownOpen(true);
+    }
   }, [zutaten, zutatenData, language]);
 
   const handleInputClick = () => {
     setIsDropdownOpen((prev) => !prev); // Öffnen oder Schließen
-    if (!isDropdownOpen) {
-      setFocusedIndex(null); // Fokus zurücksetzen
-      setFilteredZutaten(
-        Object.entries(zutatenData).map(([id, zutat]) => ({
-          id,
-          name: zutat[language],
-        }))
-      );
-    }
+    setFocusedIndex(null); // Fokus zurücksetzen
   };
 
   const handleKeyDown = (e) => {
+    if (!isDropdownOpen && filteredZutaten.length > 0) {
+      // Öffnet das Dropdown bei einer beliebigen Eingabe
+      setIsDropdownOpen(true);
+    }
+
     if (!isDropdownOpen || filteredZutaten.length === 0) return;
 
     switch (e.key) {
@@ -77,7 +79,7 @@ function SearchInput({ language, zutatenData, onIngredientSelect }) {
         value={zutaten}
         onChange={(e) => setZutaten(e.target.value)}
         onClick={handleInputClick}
-        onKeyDown={handleKeyDown} // Event-Listener für die Tastatur
+        onKeyDown={handleKeyDown} // Öffnet Dropdown bei Tastatureingabe
         placeholder="🔍 Zutaten suchen"
       />
       {isDropdownOpen && filteredZutaten.length > 0 && (

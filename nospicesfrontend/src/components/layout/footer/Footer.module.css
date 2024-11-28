@@ -1,48 +1,89 @@
-/* Footer.module.css */
-
+/* Hauptcontainer des Footers */
 .footerContainer {
-  color: #ffffff; /* Weiße Schrift */
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
+  color: var(--text-color); /* Dynamische Textfarbe */
   padding: 20px;
+  text-align: center;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  text-align: center;
+  gap: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Links-Bereich */
 .linksContainer {
   display: flex;
-  flex-wrap: wrap; /* Ermöglicht Umbruch bei kleineren Bildschirmen */
+  flex-wrap: wrap; /* Umbruch bei kleinen Bildschirmen */
   justify-content: center;
-  gap: 20px; /* Abstand zwischen den Links */
+  gap: 20px;
+  margin-bottom: 10px;
 }
 
+/* Links-Stil */
 .footerLink {
-  color: #ff6600; /* Akzentfarbe für Links */
+  color: var(--text-color); /* Dynamische Farbe */
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.footerLink:hover {
-  color: #ff884d; /* Hellerer Orange-Ton beim Hover */
+.footerLink:hover,
+.footerLink:focus {
+  color: var(--hover-text-color); /* Dynamische Hover-Farbe */
 }
 
+/* Button für Datenschutzerklärung */
+.footerButton {
+  background: none;
+  border: none;
+  color: var(--text-color); /* Dynamische Farbe */
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footerButton:hover,
+.footerButton:focus {
+  color: var(--hover-text-color); /* Dynamische Hover-Farbe */
+}
+
+/* Datenschutz-Anzeige */
+.policyContainer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: var(--background-color); /* Dynamischer Hintergrund */
+  color: var(--text-color); /* Dynamische Textfarbe */
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Copyright-Bereich */
 .copyright {
+  margin-top: 15px;
   font-size: 12px;
-  font-weight: 400;
-  margin-top: 10px;
-  color: #cccccc; /* Hellgraue Schrift für Copyright */
+  color: var(--text-color); /* Dynamische Textfarbe */
 }
 
 /* Responsives Design */
 @media (max-width: 768px) {
   .linksContainer {
-    gap: 15px; /* Weniger Abstand zwischen den Links */
+    gap: 10px; /* Weniger Abstand bei kleinen Bildschirmen */
   }
 
   .footerLink {
-    font-size: 12px;
+    font-size: 12px; /* Kleinere Schriftgröße */
+  }
+
+  .policyContainer {
+    padding: 10px;
+    font-size: 13px; /* Kleinere Schrift für Lesbarkeit */
   }
 }

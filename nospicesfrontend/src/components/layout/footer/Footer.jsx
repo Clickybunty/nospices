@@ -1,24 +1,46 @@
+import { useState } from "react";
 import React from "react";
 import styles from "./Footer.module.css";
+import PrivacyPolicy from "../../PrivacyPolicy/PrivacyPolicy";
+import Impressum from "../../impressum/Impressum";
 
 export default function Footer() {
+  const [showPolicy, setShowPolicy] = useState(false);
+  const [showImpressum, setShowImpressum] = useState(false);
+
   return (
     <footer className={styles.footerContainer}>
       {/* Footer-Inhalt */}
-      <div className={styles.linksContainer}>
-        <a href="#impressum" className={styles.footerLink}>
-          Impressum
-        </a>
-        <a href="#datenschutz" className={styles.footerLink}>
-          Datenschutz
-        </a>
-        <a href="#teilen" className={styles.footerLink}>
-          Teilen
-        </a>
-        <a href="#history" className={styles.footerLink}>
-          History
-        </a>
-      </div>
+      <nav className={styles.linksContainer} aria-label="Footer-Navigation">
+        <div>
+          <button
+            onClick={() => setShowImpressum(!showImpressum)}
+            className={styles.footerButton}
+            aria-expanded={showImpressum}
+          >
+            Impressum
+          </button>
+          {/* Datenschutz anzeigen */}
+          {showImpressum && (
+            <div className={styles.impressumContainer}>
+              <Impressum />
+            </div>
+          )}
+          <button
+            onClick={() => setShowPolicy(!showPolicy)}
+            className={styles.footerButton}
+            aria-expanded={showPolicy}
+          >
+            Datenschutzerklärung
+          </button>
+          {/* Datenschutz anzeigen */}
+          {showPolicy && (
+            <div className={styles.policyContainer}>
+              <PrivacyPolicy />
+            </div>
+          )}
+        </div>
+      </nav>
 
       {/* Copyright */}
       <div className={styles.copyright}>
