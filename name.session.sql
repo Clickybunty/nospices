@@ -1,1 +1,3 @@
-SELECT JSON_TYPE(ids) FROM zutaten;
+SELECT id FROM zutaten WHERE ids LIKE '%1615%';
+
+
