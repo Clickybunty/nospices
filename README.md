@@ -364,6 +364,22 @@ FeatureBranch & HotfixBranch: Zusätzliche Branches für Features oder Hotfixes,
    um eine problemlose Verbindung zur AWS-Infrastruktur zu gewährleisten.
 
 
+## Zählen der geschriebenen JavaScript- und JSX-Zeilen
+
+Um die Anzahl der geschriebenen `.js`- und `.jsx`-Dateien in einem Verzeichnis (wo der `.git`-Ordner liegt) zu ermitteln, kann folgender Befehl in der Bash-Konsole ausgeführt werden:
+
+
+```Bash
+    git log --author="Clickybunty" --pretty=tformat: --numstat | grep -E "\.js$|\.jsx$" | awk '{add+=$1; del+=$2} END {print "Hinzugefügte Zeilen: ", add, "\nEntfernte Zeilen: ", del, "\nNetto Zeilen: ", add-del}'
+```
+
+Beschreibung
+find .: Durchsucht das aktuelle Verzeichnis und dessen Unterverzeichnisse.
+-type f: Sucht nur nach Dateien.
+-name "*.js" -o -name "*.jsx": Filtert nach Dateien mit den Endungen .js und .jsx.
+-exec wc -l {} +: Führt den wc -l-Befehl aus, um die Zeilenanzahl jeder Datei zu zählen.
+awk: Summiert alle Zeilen und gibt das Gesamtergebnis aus.
+
    
 
 
