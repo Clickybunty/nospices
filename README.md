@@ -1,5 +1,14 @@
 # NoSpieces - Dokumentation
 
+## 🔏 License & Copyright
+
+This work is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)**.  
+This means you are free to share and build upon this work, as long as you credit me as the author.
+
+📜 [View License](https://creativecommons.org/licenses/by/4.0/)
+
+---
+
 ## Projektübersicht
 
 **NoSpieces** ist eine Anwendung, die Rezepte und deren Zutaten verwaltet. Die App enthält ein **Frontend**, das mit **React** entwickelt wurde, und ein **Backend**, das mit **Node.js** und **Express** aufgebaut ist. Die Daten werden in einer **MariaDB-Datenbank** gespeichert, die in **AWS** gehostet wird, um Skalierbarkeit und hohe Verfügbarkeit zu gewährleisten.
