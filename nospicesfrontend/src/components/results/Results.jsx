@@ -9,7 +9,8 @@ function Results({ initialRecipes }) {
   const [error, setError] = useState(null);
   const [currentVideoIndex, setCurrentVideoIndex] = useState({}); // Aktueller Index für jedes Rezept
 
-  const YOUTUBE_API_KEY = "AIzaSyBTzRqNCwYXtmAwSMtuq9xX_3Qf7AAwg84";
+  // API.md erklärt den weg zum API-Token
+  const YOUTUBE_API_KEY = "API-Schlüssel erstellen und hier rein schreiben.";
 
   // Funktion, um Videos pro Rezept zu laden
   const fetchYouTubeVideosForRecipes = async (recipes) => {
